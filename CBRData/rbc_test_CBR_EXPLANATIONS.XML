@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.6">
+  <ExplanationScheme Description="" conceptID="String:THING" />
+  <ExplanationScheme Description="" conceptID="ModelClsProtege:Alimento" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:carboidratos" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:proteinas" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:gorduras" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:calorias" />
+  <ExplanationScheme Description="" conceptID="ModelClsProtege:Perfil" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:idade" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:historicoObesidade" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:altura" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:imc" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:intoleranciasAlimentares" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:peso" />
+  <ExplanationScheme Description="" conceptID="ModelClsProtege:Refeicao" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:totalProteinas" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:totalCarboidratos" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:totalCalorias" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:totalGorduras" />
+</Document>
+

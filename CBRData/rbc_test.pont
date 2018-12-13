@@ -1,0 +1,175 @@
+; Mon Nov 01 08:28:43 GMT-03:00 2010
+; 
+;+ (version "3.4.4")
+;+ (build "Build 579")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot net
+		(type FLOAT)
+		(range 1400.0 2800.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot carboidratos
+		(type FLOAT)
+		(range 0.0 1.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot imc
+		(type FLOAT)
+		(range 16.0 40.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot totalCarboidratos
+		(type FLOAT)
+		(range 0.0 500.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot altura
+		(type INTEGER)
+		(range 140 210)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot totalGorduras
+		(type FLOAT)
+		(range 0.0 200.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot calorias
+		(type FLOAT)
+		(range 0.0 1.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot peso
+		(type FLOAT)
+		(range 34.0 180.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot totalCalorias
+		(type FLOAT)
+		(range 0.0 1000.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot totalProteinas
+		(type FLOAT)
+		(range 0.0 200.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot idade
+		(type INTEGER)
+		(range 15 59)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot historicoObesidade
+		(type INTEGER)
+		(range 0 3)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot intoleranciasAlimentares
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot proteinas
+		(type FLOAT)
+		(range 0.0 1.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot geb
+		(type FLOAT)
+		(range 1000.0 2000.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot gorduras
+		(type FLOAT)
+		(range 0.0 1.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Alimento
+	(is-a USER)
+	(role concrete)
+	(single-slot carboidratos
+		(type FLOAT)
+		(range 0.0 1.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot proteinas
+		(type FLOAT)
+		(range 0.0 1.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot gorduras
+		(type FLOAT)
+		(range 0.0 1.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot calorias
+		(type FLOAT)
+		(range 0.0 1.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Perfil
+	(is-a USER)
+	(role concrete)
+	(single-slot net
+		(type FLOAT)
+		(range 1400.0 2800.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot idade
+		(type INTEGER)
+		(range 15 59)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot historicoObesidade
+		(type INTEGER)
+		(range 0 3)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot altura
+		(type INTEGER)
+		(range 140 210)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot imc
+		(type FLOAT)
+		(range 16.0 40.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot peso
+		(type FLOAT)
+		(range 34.0 180.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot geb
+		(type FLOAT)
+		(range 1000.0 2000.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Refeicao
+	(is-a USER)
+	(role concrete)
+	(single-slot totalProteinas
+		(type FLOAT)
+		(range 0.0 200.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot totalCarboidratos
+		(type FLOAT)
+		(range 0.0 500.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot totalCalorias
+		(type FLOAT)
+		(range 0.0 1000.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot totalGorduras
+		(type FLOAT)
+		(range 0.0 200.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))

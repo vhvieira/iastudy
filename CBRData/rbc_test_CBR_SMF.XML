@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.6" Project_version="0.1" Project_author="unknown author">
+<SpecialValueHandler>
+  <SpecialValue Label="undefined" />
+  <InternalSMF smfname="SpecialValuesSMF" model_instname="_SPECIAL_VALUES_" type="Symbol">
+    <QuerySymbol symbol="Non-Special Value">
+      <CBSymbol sim="1.0" symbol="Non-Special Value" />
+    </QuerySymbol>
+    <QuerySymbol symbol="undefined">
+      <CBSymbol sim="1.0" symbol="undefined" />
+    </QuerySymbol>
+  </InternalSMF>
+</SpecialValueHandler>
+<Holder>
+<SMFunction smfname="default" model_instname="intoleranciasAlimentares" type="String" mode="exact_match" active="true" simMode="Standard" />
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="proteinas" type="Float" maxval="1.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="0.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="carboidratos" type="Float" maxval="1.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="0.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="rbc_test_Class1" type="String" mode="exact_match" active="true" simMode="Standard" />
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="totalCalorias" type="Float" maxval="1000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="0.5" smooth_step="500.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.5" smooth_step="500.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="idade" type="Integer" maxval="59.0" minval="15.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="24.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="24.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Alimento" type="Class" amalgamation="euclidean" active="true" simMode="Standard">
+  <Slot slotname="calorias" enabled="true" weight="3.0" comment="" />
+  <Slot slotname="carboidratos" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="gorduras" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="proteinas" enabled="true" weight="1.0" comment="" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="imc" type="Float" maxval="40.0" minval="16.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="15.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="15.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="geb" type="Float" maxval="2000.0" minval="1000.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="500.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="0.5" smooth_step="500.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="net" type="Float" maxval="2800.0" minval="1400.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="700.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="0.5" smooth_step="700.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="historicoObesidade" type="Integer" maxval="3.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="1.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="1.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="calorias" type="Float" maxval="1.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="0.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Perfil" type="Class" amalgamation="euclidean" active="true" simMode="Standard">
+  <Slot slotname="altura" enabled="true" weight="2.0" comment="" />
+  <Slot slotname="geb" enabled="true" weight="10.0" comment="" />
+  <Slot slotname="historicoObesidade" enabled="true" weight="2.0" comment="" />
+  <Slot slotname="idade" enabled="true" weight="2.0" comment="" />
+  <Slot slotname="imc" enabled="true" weight="4.0" comment="" />
+  <Slot slotname="net" enabled="true" weight="6.0" comment="" />
+  <Slot slotname="peso" enabled="true" weight="2.0" comment="" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="peso" type="Float" maxval="180.0" minval="34.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="73.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="73.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Refeicao" type="Class" amalgamation="euclidean" active="true" simMode="Standard">
+  <Slot slotname="totalCalorias" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="totalCarboidratos" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="totalGorduras" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="totalProteinas" enabled="true" weight="1.0" comment="" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="totalGorduras" type="Float" maxval="200.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="0.5" smooth_step="100.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.5" smooth_step="100.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="totalCarboidratos" type="Float" maxval="500.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="0.5" smooth_step="250.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.5" smooth_step="250.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="altura" type="Integer" maxval="210.0" minval="140.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="40.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="40.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="totalProteinas" type="Float" maxval="200.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.5" smooth_step="100.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="0.5" smooth_step="100.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="rbc_test_Class0" type="String" mode="exact_match" active="true" simMode="Standard" />
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="gorduras" type="Float" maxval="1.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="0.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<InheritanceMeasure smfname="_IMF_INTERNAL_SMF_" model_instname="_FAKESLOT_IMF_" type="Symbol" topCls="Perfil">
+  <RootSymbol symbol="Perfil" simVal="0.0" />
+  <InnerNodesConfig scope="query" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+  <InnerNodesConfig scope="case" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+</InheritanceMeasure>
+<InheritanceMeasure smfname="_IMF_INTERNAL_SMF_" model_instname="_FAKESLOT_IMF_" type="Symbol" topCls="Refeicao">
+  <RootSymbol symbol="Refeicao" simVal="0.0" />
+  <InnerNodesConfig scope="query" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+  <InnerNodesConfig scope="case" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+</InheritanceMeasure>
+<InheritanceMeasure smfname="_IMF_INTERNAL_SMF_" model_instname="_FAKESLOT_IMF_" type="Symbol" topCls="Alimento">
+  <RootSymbol symbol="Alimento" simVal="0.0" />
+  <InnerNodesConfig scope="query" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+  <InnerNodesConfig scope="case" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+</InheritanceMeasure>
+</Document>

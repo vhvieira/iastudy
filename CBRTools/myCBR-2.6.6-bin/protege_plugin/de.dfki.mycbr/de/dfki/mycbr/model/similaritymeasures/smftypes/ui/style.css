@@ -1,0 +1,25 @@
+html {
+	min-height: 100.05%;
+}
+
+body {
+     font-family: Verdana, sans-serif;
+}
+
+h1 {
+        font-size:1.4em;
+	color: #444444;
+}
+
+p {
+	font-size:0.9em;
+	color:#000;
+}
+
+table{
+	width: 90%;
+}
+
+
+
+

@@ -1,0 +1,16 @@
+<project name="myCbrWeb" default="dist" basedir=".">
+	
+  <target name="init">
+    <mkdir dir="dist"/>
+  	<tstamp/>
+  </target>
+
+  <target name="dist" depends="clean, init">
+  	<jar jarfile="./dist/myCBRWebDemo.war" basedir="./src" />
+  </target>
+
+  <target name="clean">
+    <delete dir="dist"/>
+  </target>
+
+</project>

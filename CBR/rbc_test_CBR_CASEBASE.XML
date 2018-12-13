@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.6" Project_version="0.1" Project_author="unknown author">
+<Instances_for_Class class="Refeicao">
+<Prototype>
+  <slotvalue slot="totalGorduras" value="Float" minval="0.0" maxval="10.0" />
+  <slotvalue slot="totalCarboidratos" value="Float" minval="0.0" maxval="30.0" />
+  <slotvalue slot="totalProteinas" value="Float" minval="0.0" maxval="20.0" />
+  <slotvalue slot="totalCalorias" value="Float" minval="0.0" maxval="300.0" />
+</Prototype>
+<Instance model_instname="rbc_test_Class3">
+  <slotvalue slot="totalGorduras" value="10.6" />
+  <slotvalue slot="totalCarboidratos" value="30.3" />
+  <slotvalue slot="totalProteinas" value="5.85" />
+  <slotvalue slot="totalCalorias" value="236.0" />
+</Instance>
+<Instance model_instname="rbc_test_Class4">
+  <slotvalue slot="totalGorduras" value="20.0" />
+  <slotvalue slot="totalCarboidratos" value="20.0" />
+  <slotvalue slot="totalProteinas" value="6.0" />
+  <slotvalue slot="totalCalorias" value="200.0" />
+</Instance>
+<Instance model_instname="rbc_test_Class5">
+  <slotvalue slot="totalGorduras" value="10.0" />
+  <slotvalue slot="totalCarboidratos" value="50.0" />
+  <slotvalue slot="totalProteinas" value="6.0" />
+  <slotvalue slot="totalCalorias" value="400.0" />
+</Instance>
+</Instances_for_Class>
+<Instances_for_Class class="Perfil">
+<Prototype>
+  <slotvalue slot="imc" value="Float" minval="15.0" maxval="45.0" />
+  <slotvalue slot="idade" value="Integer" minval="15" maxval="59" />
+  <slotvalue slot="altura" value="Integer" minval="140" maxval="210" />
+  <slotvalue slot="peso" value="Float" minval="34.0" maxval="180.0" />
+  <slotvalue slot="intoleranciasAlimentares" value="String" />
+  <slotvalue slot="historicoObesidade" value="Integer" minval="0" maxval="3" />
+</Prototype>
+<Instance model_instname="rbc_test_Class6">
+  <slotvalue slot="imc" value="_undefined_" />
+  <slotvalue slot="idade" value="_undefined_" />
+  <slotvalue slot="altura" value="_undefined_" />
+  <slotvalue slot="peso" value="_undefined_" />
+  <slotvalue slot="intoleranciasAlimentares" value="_undefined_" />
+  <slotvalue slot="historicoObesidade" value="_undefined_" />
+</Instance>
+</Instances_for_Class>
+<Instances_for_Class class="Alimento">
+<Prototype>
+  <slotvalue slot="proteinas" value="Float" minval="0.0" maxval="1.0" />
+  <slotvalue slot="calorias" value="Float" minval="0.0" maxval="1.0" />
+  <slotvalue slot="carboidratos" value="Float" minval="0.0" maxval="1.0" />
+  <slotvalue slot="gorduras" value="Float" minval="0.0" maxval="1.0" />
+</Prototype>
+<Instance model_instname="rbc_test_Class0">
+  <slotvalue slot="proteinas" value="0.5" />
+  <slotvalue slot="calorias" value="0.5" />
+  <slotvalue slot="carboidratos" value="0.5" />
+  <slotvalue slot="gorduras" value="0.5" />
+</Instance>
+<Instance model_instname="rbc_test_Class1">
+  <slotvalue slot="proteinas" value="0.4" />
+  <slotvalue slot="calorias" value="0.4" />
+  <slotvalue slot="carboidratos" value="0.4" />
+  <slotvalue slot="gorduras" value="0.4" />
+</Instance>
+<Instance model_instname="rbc_test_Class2">
+  <slotvalue slot="proteinas" value="0.5" />
+  <slotvalue slot="calorias" value="0.6" />
+  <slotvalue slot="carboidratos" value="0.5" />
+  <slotvalue slot="gorduras" value="0.5" />
+</Instance>
+</Instances_for_Class>
+</Document>

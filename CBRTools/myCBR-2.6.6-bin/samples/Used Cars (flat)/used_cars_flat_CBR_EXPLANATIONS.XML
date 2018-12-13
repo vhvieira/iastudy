@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.6">
+  <ExplanationScheme Description="" conceptID="String:THING" />
+  <ExplanationScheme Description="" conceptID="ModelClsProtege:Car" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Color" />
+  <ExplanationScheme Description="" conceptID="String:anthracite" />
+  <ExplanationScheme Description="" conceptID="String:black" />
+  <ExplanationScheme Description="" conceptID="String:blue" />
+  <ExplanationScheme Description="" conceptID="String:dark_blue" />
+  <ExplanationScheme Description="" conceptID="String:dark_gray" />
+  <ExplanationScheme Description="" conceptID="String:dark_green" />
+  <ExplanationScheme Description="" conceptID="String:dark_red" />
+  <ExplanationScheme Description="" conceptID="String:gray" />
+  <ExplanationScheme Description="" conceptID="String:green" />
+  <ExplanationScheme Description="" conceptID="String:light_blue" />
+  <ExplanationScheme Description="" conceptID="String:light_gray" />
+  <ExplanationScheme Description="" conceptID="String:orange" />
+  <ExplanationScheme Description="" conceptID="String:red" />
+  <ExplanationScheme Description="" conceptID="String:silver" />
+  <ExplanationScheme Description="" conceptID="String:turquoise" />
+  <ExplanationScheme Description="" conceptID="String:violet" />
+  <ExplanationScheme Description="" conceptID="String:white" />
+  <ExplanationScheme Description="" conceptID="String:yellow" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Price" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Car Code" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Body" />
+  <ExplanationScheme Description="" conceptID="String:convertible" />
+  <ExplanationScheme Description="" conceptID="String:coupe" />
+  <ExplanationScheme Description="" conceptID="String:fastback" />
+  <ExplanationScheme Description="" conceptID="String:roadster" />
+  <ExplanationScheme Description="" conceptID="String:sedan" />
+  <ExplanationScheme Description="" conceptID="String:station_wagon" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:ZIP" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:CCM" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Year" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Power" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Doors" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Manufacturer" />
+  <ExplanationScheme Description="" conceptID="String:audi" />
+  <ExplanationScheme Description="" conceptID="String:bmw" />
+  <ExplanationScheme Description="" conceptID="String:mercedes-benz" />
+  <ExplanationScheme Description="" conceptID="String:vw" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Speed" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Gas" />
+  <ExplanationScheme Description="" conceptID="String:diesel" />
+  <ExplanationScheme Description="" conceptID="String:gasoline" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Miles" />
+  <ExplanationScheme Description="" conceptID="ModelSlotProtege:Model" />
+  <ExplanationScheme Description="" conceptID="String:316i" />
+  <ExplanationScheme Description="" conceptID="String:318i" />
+  <ExplanationScheme Description="" conceptID="String:320i" />
+  <ExplanationScheme Description="" conceptID="String:323i" />
+  <ExplanationScheme Description="" conceptID="String:325td" />
+  <ExplanationScheme Description="" conceptID="String:325tds" />
+  <ExplanationScheme Description="" conceptID="String:328i" />
+  <ExplanationScheme Description="" conceptID="String:520i" />
+  <ExplanationScheme Description="" conceptID="String:523i" />
+  <ExplanationScheme Description="" conceptID="String:525tds" />
+  <ExplanationScheme Description="" conceptID="String:528i" />
+  <ExplanationScheme Description="" conceptID="String:535i" />
+  <ExplanationScheme Description="" conceptID="String:540i" />
+  <ExplanationScheme Description="" conceptID="String:a4_1.6" />
+  <ExplanationScheme Description="" conceptID="String:a4_1.8" />
+  <ExplanationScheme Description="" conceptID="String:a4_1.8_t" />
+  <ExplanationScheme Description="" conceptID="String:a4_1.9_tdi" />
+  <ExplanationScheme Description="" conceptID="String:a4_2.8" />
+  <ExplanationScheme Description="" conceptID="String:a6_1.8_t" />
+  <ExplanationScheme Description="" conceptID="String:a6_1.9_tdi" />
+  <ExplanationScheme Description="" conceptID="String:a6_2.4" />
+  <ExplanationScheme Description="" conceptID="String:a6_2.8" />
+  <ExplanationScheme Description="" conceptID="String:c_180" />
+  <ExplanationScheme Description="" conceptID="String:c_200" />
+  <ExplanationScheme Description="" conceptID="String:c_220_diesel" />
+  <ExplanationScheme Description="" conceptID="String:c_230_kompressor" />
+  <ExplanationScheme Description="" conceptID="String:c_240" />
+  <ExplanationScheme Description="" conceptID="String:c_250_diesel" />
+  <ExplanationScheme Description="" conceptID="String:c_280" />
+  <ExplanationScheme Description="" conceptID="String:e_200" />
+  <ExplanationScheme Description="" conceptID="String:e_220_diesel" />
+  <ExplanationScheme Description="" conceptID="String:e_280" />
+  <ExplanationScheme Description="" conceptID="String:e_290_diesel" />
+  <ExplanationScheme Description="" conceptID="String:e_300_diesel" />
+  <ExplanationScheme Description="" conceptID="String:e_320" />
+  <ExplanationScheme Description="" conceptID="String:e_430" />
+  <ExplanationScheme Description="" conceptID="String:golf" />
+  <ExplanationScheme Description="" conceptID="String:m3" />
+  <ExplanationScheme Description="" conceptID="String:m_roadster" />
+  <ExplanationScheme Description="" conceptID="String:passat" />
+  <ExplanationScheme Description="" conceptID="String:slk_200" />
+  <ExplanationScheme Description="" conceptID="String:slk_230_kompressor" />
+  <ExplanationScheme Description="" conceptID="String:z3_1.8" />
+  <ExplanationScheme Description="" conceptID="String:z3_1.9" />
+  <ExplanationScheme Description="" conceptID="String:z3_2.8" />
+  <ExplanationScheme Description="" conceptID="String:3_series" />
+  <ExplanationScheme Description="" conceptID="String:AUDI" />
+  <ExplanationScheme Description="" conceptID="String:c_class" />
+  <ExplanationScheme Description="" conceptID="String:e_class" />
+  <ExplanationScheme Description="" conceptID="String:z3_series" />
+  <ExplanationScheme Description="" conceptID="String:5_series" />
+  <ExplanationScheme Description="" conceptID="String:slk" />
+  <ExplanationScheme Description="" conceptID="String:VW" />
+  <ExplanationScheme Description="" conceptID="String:BMW" />
+  <ExplanationScheme Description="" conceptID="String:Mercedes" />
+  <SMExplanation model_instname="CDPlayer" smfname="default" type="Symbol" />
+  <SMExplanation model_instname="Body" smfname="BodyFunc" type="Symbol" />
+  <SMExplanation model_instname="Bass" smfname="default" type="Symbol" />
+  <SMExplanation model_instname="Gas" smfname="GasFunc" type="Symbol" />
+  <SMExplanation model_instname="Manufacturer" smfname="ManufacturerFunc" type="Symbol" />
+</Document>
+

@@ -1,0 +1,704 @@
+; Tue Oct 27 16:21:53 CET 2009
+; 
+;+ (version "3.3.1")
+;+ (build "Build 430")
+
+([autos_ProjectKB_Instance_2] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [autos_ProjectKB_Instance_3])
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesAndInstancesTab"))
+
+([autos_ProjectKB_Instance_3] of  Property_List
+)
+
+([autos_ProjectKB_Instance_34] of  String
+
+	(name "SearchTab_Query"))
+
+([autos_ProjectKB_Instance_6] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [autos_ProjectKB_Instance_7])
+	(widget_class_name "edu.stanford.smi.protege.widget.KAToolTab"))
+
+([autos_ProjectKB_Instance_7] of  Property_List
+)
+
+([BROWSER_SLOT_NAMES] of  Property_List
+
+	(properties
+		[used_cars_flat_ProjectKB_Instance_10000]
+		[used_cars_flat_ProjectKB_Instance_10001]
+		[used_cars_flat_ProjectKB_Instance_10002]))
+
+([CLSES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
+
+([FORMS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
+
+([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":INSTANCE-ANNOTATION")
+	(property_list [KB_899555_Instance_33])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([INSTANCES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
+
+([KB_534280_Instance_0] of  String
+
+	(name "factory_class_name")
+	(string_value "edu.stanford.smi.protege.storage.clips.ClipsKnowledgeBaseFactory"))
+
+([KB_534280_Instance_1] of  Options
+
+	(confirm_on_remove FALSE)
+	(display_abstract_class_icon TRUE)
+	(display_hidden_classes TRUE)
+	(display_multi_parent_class_icon TRUE)
+	(is_readonly FALSE)
+	(tabbed_instance_form_layout FALSE)
+	(undo_enabled TRUE)
+	(update_modification_slots FALSE))
+
+([KB_534280_Instance_31] of  Property_List
+
+	(properties [autos_ProjectKB_Instance_34]))
+
+([KB_534280_Instance_32] of  String
+
+	(name "classes_file_name")
+	(string_value "used_cars_flat.pont"))
+
+([KB_534280_Instance_33] of  String
+
+	(name "instances_file_name")
+	(string_value "used_cars_flat.pins"))
+
+([KB_899555_Instance_0] of  Property_List
+
+	(name "class widget properties")
+	(properties
+		[KB_899555_Instance_1]
+		[KB_899555_Instance_2]
+		[KB_899555_Instance_3]
+		[KB_899555_Instance_4]
+		[KB_899555_Instance_5]
+		[KB_899555_Instance_6]
+		[KB_899555_Instance_7]
+		[KB_899555_Instance_8]
+		[KB_899555_Instance_9]
+		[KB_899555_Instance_10]))
+
+([KB_899555_Instance_1] of  Widget
+
+	(height 120)
+	(label "Constraints")
+	(name ":SLOT-CONSTRAINTS")
+	(property_list [used_cars_flat_ProjectKB_Instance_51])
+	(widget_class_name "edu.stanford.smi.protege.widget.ConstraintsWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_899555_Instance_10] of  Property_List
+
+	(name "layout properties")
+	(properties [KB_899555_Instance_11]))
+
+([KB_899555_Instance_11] of  String
+
+	(name "vertical_stretcher")
+	(string_value ":DIRECT-TEMPLATE-SLOTS"))
+
+([KB_899555_Instance_12] of  Property_List
+
+	(name "slot widget properties")
+	(properties
+		[KB_899555_Instance_13]
+		[KB_899555_Instance_14]
+		[KB_899555_Instance_15]
+		[KB_899555_Instance_16]
+		[KB_899555_Instance_17]
+		[KB_899555_Instance_18]
+		[KB_899555_Instance_19]
+		[KB_899555_Instance_20]
+		[KB_899555_Instance_21]
+		[KB_899555_Instance_22]
+		[KB_899555_Instance_23]
+		[KB_899555_Instance_24]
+		[KB_899555_Instance_25]
+		[KB_899555_Instance_26]
+		[KB_899555_Instance_27]
+		[KB_899555_Instance_28]
+		[used_cars_flat_ProjectKB_Instance_60]))
+
+([KB_899555_Instance_13] of  Widget
+
+	(height 60)
+	(label "Cardinality")
+	(name ":SLOT-MINIMUM-CARDINALITY")
+	(property_list [used_cars_flat_ProjectKB_Instance_68])
+	(widget_class_name "edu.stanford.smi.protege.widget.MinimumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 120))
+
+([KB_899555_Instance_14] of  Widget
+
+	(height 35)
+	(name ":SLOT-MAXIMUM-CARDINALITY")
+	(property_list [used_cars_flat_ProjectKB_Instance_69])
+	(widget_class_name "edu.stanford.smi.protege.widget.MaximumCardinalityWidget")
+	(width 200)
+	(x 200)
+	(y 180))
+
+([KB_899555_Instance_15] of  Widget
+
+	(name ":SLOT-CONSTRAINTS"))
+
+([KB_899555_Instance_16] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_899555_Instance_17] of  Widget
+
+	(height 95)
+	(label "Domain")
+	(name ":DIRECT-DOMAIN")
+	(property_list [used_cars_flat_ProjectKB_Instance_61])
+	(widget_class_name "edu.stanford.smi.protege.widget.DirectDomainWidget")
+	(width 200)
+	(x 400)
+	(y 180))
+
+([KB_899555_Instance_18] of  Widget
+
+	(height 90)
+	(label "Template Values")
+	(name ":SLOT-VALUES")
+	(property_list [used_cars_flat_ProjectKB_Instance_62])
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotValuesWidget")
+	(width 200)
+	(x 400)
+	(y 0))
+
+([KB_899555_Instance_19] of  Widget
+
+	(name ":DIRECT-SUPERSLOTS"))
+
+([KB_899555_Instance_2] of  Widget
+
+	(name ":DIRECT-INSTANCES"))
+
+([KB_899555_Instance_20] of  Widget
+
+	(name ":DIRECT-SUBSLOTS"))
+
+([KB_899555_Instance_21] of  Widget
+
+	(height 90)
+	(label "Default")
+	(name ":SLOT-DEFAULTS")
+	(property_list [used_cars_flat_ProjectKB_Instance_63])
+	(widget_class_name "edu.stanford.smi.protege.widget.DefaultValuesWidget")
+	(width 200)
+	(x 400)
+	(y 90))
+
+([KB_899555_Instance_22] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [used_cars_flat_ProjectKB_Instance_64])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_899555_Instance_23] of  Widget
+
+	(height 60)
+	(label "Maximum")
+	(name ":SLOT-NUMERIC-MAXIMUM")
+	(property_list [used_cars_flat_ProjectKB_Instance_65])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMaximumWidget")
+	(width 100)
+	(x 100)
+	(y 215))
+
+([KB_899555_Instance_24] of  Widget
+
+	(height 60)
+	(label "Minimum")
+	(name ":SLOT-NUMERIC-MINIMUM")
+	(property_list [used_cars_flat_ProjectKB_Instance_66])
+	(widget_class_name "edu.stanford.smi.protege.widget.NumericMinimumWidget")
+	(width 100)
+	(x 0)
+	(y 215))
+
+([KB_899555_Instance_25] of  Widget
+
+	(name ":ASSOCIATED-FACET"))
+
+([KB_899555_Instance_26] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [used_cars_flat_ProjectKB_Instance_67])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_899555_Instance_27] of  Widget
+
+	(height 60)
+	(label "Inverse Slot")
+	(name ":SLOT-INVERSE")
+	(property_list [used_cars_flat_ProjectKB_Instance_70])
+	(widget_class_name "edu.stanford.smi.protege.widget.InverseSlotWidget")
+	(width 200)
+	(x 200)
+	(y 215))
+
+([KB_899555_Instance_28] of  Widget
+
+	(height 155)
+	(label "Value Type")
+	(name ":SLOT-VALUE-TYPE")
+	(property_list [used_cars_flat_ProjectKB_Instance_71])
+	(widget_class_name "edu.stanford.smi.protege.widget.ValueTypeWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_899555_Instance_29] of  Property_List
+
+	(name "facet widget properties")
+	(properties
+		[KB_899555_Instance_30]
+		[KB_899555_Instance_31]
+		[KB_899555_Instance_32]))
+
+([KB_899555_Instance_3] of  Widget
+
+	(name ":DIRECT-SUBCLASSES"))
+
+([KB_899555_Instance_30] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_899555_Instance_31] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_899555_Instance_32] of  Widget
+
+	(height 60)
+	(label "Associated Slot")
+	(name ":ASSOCIATED-SLOT")
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_899555_Instance_33] of  Property_List
+
+	(properties
+		[KB_899555_Instance_34]
+		[KB_899555_Instance_35]
+		[KB_899555_Instance_36]
+		[KB_899555_Instance_37]))
+
+([KB_899555_Instance_34] of  Widget
+
+	(name ":ANNOTATED-INSTANCE"))
+
+([KB_899555_Instance_35] of  Widget
+
+	(name ":CREATOR"))
+
+([KB_899555_Instance_36] of  Widget
+
+	(name ":CREATION-TIMESTAMP"))
+
+([KB_899555_Instance_37] of  Widget
+
+	(height 100)
+	(is_hidden FALSE)
+	(name ":ANNOTATION-TEXT")
+	(widget_class_name "edu.stanford.smi.protege.widget.YellowStickyWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_899555_Instance_38] of  Property_List
+
+	(properties
+		[KB_899555_Instance_39]
+		[KB_899555_Instance_40]
+		[KB_899555_Instance_41]
+		[KB_899555_Instance_42]))
+
+([KB_899555_Instance_39] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(label "Name")
+	(name ":PAL-NAME")
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 275)
+	(x 0)
+	(y 0))
+
+([KB_899555_Instance_4] of  Widget
+
+	(name ":DIRECT-SUPERCLASSES"))
+
+([KB_899555_Instance_40] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Range")
+	(name ":PAL-RANGE")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalRangeWidget")
+	(width 250)
+	(x 275)
+	(y 180))
+
+([KB_899555_Instance_41] of  Widget
+
+	(height 180)
+	(is_hidden FALSE)
+	(label "Description")
+	(name ":PAL-DESCRIPTION")
+	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(width 250)
+	(x 275)
+	(y 0))
+
+([KB_899555_Instance_42] of  Widget
+
+	(height 300)
+	(is_hidden FALSE)
+	(label "Statement")
+	(name ":PAL-STATEMENT")
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.constraint.PalConstraintWidget")
+	(width 275)
+	(x 0)
+	(y 60))
+
+([KB_899555_Instance_5] of  Widget
+
+	(height 120)
+	(label "Documentation")
+	(name ":DOCUMENTATION")
+	(property_list [used_cars_flat_ProjectKB_Instance_54])
+	(widget_class_name "edu.stanford.smi.protege.widget.DocumentationWidget")
+	(width 200)
+	(x 200)
+	(y 0))
+
+([KB_899555_Instance_6] of  Widget
+
+	(height 60)
+	(label "Name")
+	(name ":NAME")
+	(property_list [used_cars_flat_ProjectKB_Instance_55])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceNameWidget")
+	(width 200)
+	(x 0)
+	(y 0))
+
+([KB_899555_Instance_7] of  Widget
+
+	(height 60)
+	(label "Role")
+	(name ":ROLE")
+	(property_list [used_cars_flat_ProjectKB_Instance_59])
+	(widget_class_name "edu.stanford.smi.protege.widget.RoleWidget")
+	(width 200)
+	(x 0)
+	(y 60))
+
+([KB_899555_Instance_8] of  Widget
+
+	(name ":DIRECT-TYPE"))
+
+([KB_899555_Instance_9] of  Widget
+
+	(height 150)
+	(label "Template Slots")
+	(name ":DIRECT-TEMPLATE-SLOTS")
+	(property_list [used_cars_flat_ProjectKB_Instance_56])
+	(widget_class_name "edu.stanford.smi.protege.widget.TemplateSlotsWidget")
+	(width 600)
+	(x 0)
+	(y 120))
+
+([PAL_FORM_WIDGET] of  Widget
+
+	(height 476)
+	(is_hidden FALSE)
+	(name ":PAL-CONSTRAINT")
+	(property_list [KB_899555_Instance_38])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(width 603)
+	(x 0)
+	(y 0))
+
+([PROJECT] of  Project
+
+	(browser_slot_names [BROWSER_SLOT_NAMES])
+	(customized_instance_widgets
+		[STANDARD_SLOT_FORM_WIDGET]
+		[STANDARD_CLASS_FORM_WIDGET]
+		[STANDARD_FACET_FORM_WIDGET]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
+		[PAL_FORM_WIDGET])
+	(default_cls_metaclass ":STANDARD-CLASS")
+	(default_facet_metaclass ":STANDARD-FACET")
+	(default_instance_widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
+	(default_slot_metaclass ":STANDARD-SLOT")
+	(journaling_enabled FALSE)
+	(next_frame_number 0)
+	(options [KB_534280_Instance_1])
+	(property_map [used_cars_flat_ProjectKB_Instance_75])
+	(sources [SOURCES])
+	(tabs
+		[CLSES_TAB]
+		[SLOTS_TAB]
+		[FORMS_TAB]
+		[INSTANCES_TAB]
+		[QUERIES_TAB]
+		[used_cars_flat_ProjectKB_Instance_43]
+		[used_cars_flat_ProjectKB_Instance_45]
+		[autos_ProjectKB_Instance_2]
+		[autos_ProjectKB_Instance_6]
+		[used_cars_flat_ProjectKB_Instance_0]
+		[used_cars_flat_ProjectKB_Instance_49]
+		[used_cars_flat_ProjectKB_Instance_47]))
+
+([QUERIES_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [KB_534280_Instance_31])
+	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
+
+([SLOTS_TAB] of  Widget
+
+	(is_hidden FALSE)
+	(widget_class_name "edu.stanford.smi.protege.widget.SlotsTab"))
+
+([SOURCES] of  Property_List
+
+	(properties
+		[KB_534280_Instance_0]
+		[KB_534280_Instance_32]
+		[KB_534280_Instance_33]))
+
+([STANDARD_CLASS_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-CLASS")
+	(property_list [KB_899555_Instance_0])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_FACET_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-FACET")
+	(property_list [KB_899555_Instance_29])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([STANDARD_SLOT_FORM_WIDGET] of  Widget
+
+	(name ":STANDARD-SLOT")
+	(property_list [KB_899555_Instance_12])
+	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
+
+([used_cars_flat_ProjectKB_Instance_0] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [used_cars_flat_ProjectKB_Instance_1])
+	(widget_class_name "de.dfki.mycbr.modelprovider.protege.explanation.MyCbr_Explanation_Tab"))
+
+([used_cars_flat_ProjectKB_Instance_1] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_10000] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([used_cars_flat_ProjectKB_Instance_10001] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([used_cars_flat_ProjectKB_Instance_10002] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([used_cars_flat_ProjectKB_Instance_10003] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([used_cars_flat_ProjectKB_Instance_10004] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([used_cars_flat_ProjectKB_Instance_43] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [used_cars_flat_ProjectKB_Instance_44])
+	(widget_class_name "de.dfki.mycbr.modelprovider.protege.retrieval.MyCbr_Retrieval_Tab"))
+
+([used_cars_flat_ProjectKB_Instance_44] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_45] of  Widget
+
+	(is_hidden FALSE)
+	(property_list [used_cars_flat_ProjectKB_Instance_46])
+	(widget_class_name "de.dfki.mycbr.modelprovider.protege.similaritymodeling.MyCbr_Similarities_Tab"))
+
+([used_cars_flat_ProjectKB_Instance_46] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_47] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [used_cars_flat_ProjectKB_Instance_48])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([used_cars_flat_ProjectKB_Instance_48] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_49] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [used_cars_flat_ProjectKB_Instance_50])
+	(widget_class_name "de.dfki.mycbr.modelprovider.protege.queries_tab.MyCbr_Queries_Tab"))
+
+([used_cars_flat_ProjectKB_Instance_50] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_51] of  Property_List
+
+	(properties
+		[used_cars_flat_ProjectKB_Instance_52]
+		[used_cars_flat_ProjectKB_Instance_53]))
+
+([used_cars_flat_ProjectKB_Instance_52] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([used_cars_flat_ProjectKB_Instance_53] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([used_cars_flat_ProjectKB_Instance_54] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_55] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_56] of  Property_List
+
+	(properties
+		[used_cars_flat_ProjectKB_Instance_57]
+		[used_cars_flat_ProjectKB_Instance_58]))
+
+([used_cars_flat_ProjectKB_Instance_57] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move up"))
+
+([used_cars_flat_ProjectKB_Instance_58] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Move down"))
+
+([used_cars_flat_ProjectKB_Instance_59] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_60] of  Property_List
+
+	(name "layout properties"))
+
+([used_cars_flat_ProjectKB_Instance_61] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_62] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_63] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_64] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_65] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_66] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_67] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_68] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_69] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_70] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_71] of  Property_List
+)
+
+([used_cars_flat_ProjectKB_Instance_75] of  Map
+
+	(entries
+		[used_cars_flat_ProjectKB_Instance_10003]
+		[used_cars_flat_ProjectKB_Instance_10004]))

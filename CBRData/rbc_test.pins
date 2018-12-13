@@ -1,0 +1,44 @@
+; Mon Nov 01 08:28:43 GMT-03:00 2010
+; 
+;+ (version "3.4.4")
+;+ (build "Build 579")
+
+([rbc_test_Class2] of  Perfil
+
+	(altura 198)
+	(geb 2245.0)
+	(historicoObesidade 2)
+	(idade 28)
+	(imc 25.0)
+	(net 3143.0)
+	(peso 100.0))
+
+([rbc_test_Class3] of  Perfil
+
+	(altura 180)
+	(geb 2000.0)
+	(historicoObesidade 2)
+	(idade 25)
+	(imc 20.0)
+	(net 2800.0)
+	(peso 100.0))
+
+([rbc_test_Class4] of  Perfil
+
+	(altura 170)
+	(geb 1000.0)
+	(historicoObesidade 2)
+	(idade 22)
+	(imc 20.0)
+	(net 1400.0)
+	(peso 68.0))
+
+([rbc_test_Class5] of  Perfil
+
+	(altura 170)
+	(geb 1350.0)
+	(historicoObesidade 2)
+	(idade 35)
+	(imc 26.0)
+	(net 1800.0)
+	(peso 75.0))

@@ -1,0 +1,49 @@
+; Mon Oct 25 21:21:41 BRST 2010
+; 
+;+ (version "3.4.4")
+;+ (build "Build 579")
+
+([rbc_test_Class0] of  Alimento
+
+	(calorias 0.5)
+	(carboidratos 0.5)
+	(gorduras 0.5)
+	(proteinas 0.5))
+
+([rbc_test_Class1] of  Alimento
+
+	(calorias 0.4)
+	(carboidratos 0.4)
+	(gorduras 0.4)
+	(proteinas 0.4))
+
+([rbc_test_Class2] of  Alimento
+
+	(calorias 0.6)
+	(carboidratos 0.5)
+	(gorduras 0.5)
+	(proteinas 0.5))
+
+([rbc_test_Class3] of  Refeicao
+
+	(totalCalorias 236.0)
+	(totalCarboidratos 30.3)
+	(totalGorduras 10.6)
+	(totalProteinas 5.85))
+
+([rbc_test_Class4] of  Refeicao
+
+	(totalCalorias 200.0)
+	(totalCarboidratos 20.0)
+	(totalGorduras 20.0)
+	(totalProteinas 6.0))
+
+([rbc_test_Class5] of  Refeicao
+
+	(totalCalorias 400.0)
+	(totalCarboidratos 50.0)
+	(totalGorduras 10.0)
+	(totalProteinas 6.0))
+
+([rbc_test_Class6] of  Perfil
+)

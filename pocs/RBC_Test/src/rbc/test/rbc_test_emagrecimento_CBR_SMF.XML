@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.6" Project_version="0.1" Project_author="unknown author">
+<SpecialValueHandler>
+  <SpecialValue Label="undefined" />
+  <InternalSMF smfname="SpecialValuesSMF" model_instname="_SPECIAL_VALUES_" type="Symbol">
+    <QuerySymbol symbol="Non-Special Value">
+      <CBSymbol sim="1.0" symbol="Non-Special Value" />
+    </QuerySymbol>
+    <QuerySymbol symbol="undefined">
+      <CBSymbol sim="1.0" symbol="undefined" />
+    </QuerySymbol>
+  </InternalSMF>
+</SpecialValueHandler>
+<Holder>
+<SMFunction smfname="default" model_instname="calorias" type="Float" maxval="1.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="0.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="proteinas" type="Float" maxval="1.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="0.5" smooth_step="0.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="emagrecimento" model_instname="Alimento" type="Class" amalgamation="euclidean" active="true" simMode="Standard">
+  <Slot slotname="calorias" enabled="true" weight="2.0" comment="" />
+  <Slot slotname="proteinas" enabled="true" weight="1.0" comment="" />
+</SMFunction>
+<SMFunction smfname="default" model_instname="Alimento" type="Class" amalgamation="euclidean" active="false" simMode="Standard">
+  <Slot slotname="calorias" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="proteinas" enabled="true" weight="1.0" comment="" />
+</SMFunction>
+</Holder>
+<InheritanceMeasure smfname="_IMF_INTERNAL_SMF_" model_instname="_FAKESLOT_IMF_" type="Symbol" topCls="Alimento">
+  <RootSymbol symbol="Alimento" simVal="0.0" />
+  <InnerNodesConfig scope="query" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+  <InnerNodesConfig scope="case" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+</InheritanceMeasure>
+</Document>
