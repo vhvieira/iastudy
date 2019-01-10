@@ -1,0 +1,69 @@
+[ ] Artigo sobre o timming para Whatsapp (pode ser perfeito):
+https://chatbotsbrasil.take.net/chatbot-para-whatsapp-e-uma-realidade/
+
+---- TODO CHAT ----
+[ ] Evaluate ChatBot options
+https://www.entrepreneur.com/article/289788
+https://chatbotsmagazine.com/top-10-platforms-to-build-a-chatbot-for-your-business-6393ed047be7
+
+1) https://sourceforge.net/projects/chatscript/
+
+2) Microsoft: https://dev.botframework.com/
+
+3) https://www.ibm.com/watson/services/conversation/ -> Tem inteligencia além do chat, para decisões
+
+[ ] Ver planos e preços : Custo-benefícios
+
+>> INVIAVEL>> US$ 240 /MÊS : https://aivo.co/pt/precos-do-agentbot/ : Vai ter whatsapp
+
+
+>> 3 finalistas:
+https://chatbotsjournal.com/25-chatbot-platforms-a-comparative-table-aeefc932eaff
+
+Microsoft Open Source:
+https://docs.microsoft.com/en-us/bot-framework/
+
+Best option -- Free -- Muitos documentos
+https://dialogflow.com/
+
+Other option:
+https://sourceforge.net/projects/chatscript/
+
+---- TODO AI GOOGLE ----
+
+https://cloud.google.com/products/machine-learning/
+- ImageRecognization
+- VoiceRecognization
+--VideoRecognization
+--Translation
+
+https://cloud.google.com/products/machine-learning/
+
+---- TODO CRAWLERS ML E OLX ----
+
+
+
+---- Aplicações ----
+
+Personal Negociator - Procura OLX, ML e sites em geral, também em grupo de whatsapp
+Fala contigo e com o vendedor, negociando o melhor preço pra ti
+Entende de vários assuntos diversos
+
+Personal Trainner
+Te da bom dia, pergunta sobre suas atividades e sobre seu dia
+Pergunta sobre o que você comeu e te dá dicas de como comer melhor
+Reconhecimento de calorias baseado na foto
+Microservices para o projeto viver saudável
+
+Personal Xavecator
+Reconhecimento de imagens e perfil
+Procura post no Instagram
+Faz elogios, manda suas fotos
+Pede fotos, fala safadisses
+Marca os encontros pra voce ir e finalizar
+
+Personal Games Advisor
+TO be defined
+Train english
+
+Alexa integration?
