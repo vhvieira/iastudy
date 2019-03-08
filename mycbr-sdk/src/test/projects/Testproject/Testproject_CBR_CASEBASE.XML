@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.6" Project_version="0.1" Project_author="unknown author">
+<Instances_for_Class class="ConceptD">
+<Prototype super_class="ConceptC">
+  <slotvalue slot="e" value="Symbol" allowed_values="s1;s2;s3" />
+</Prototype>
+</Instances_for_Class>
+<Instances_for_Class class="ConceptA">
+<Prototype>
+  <slotvalue slot="c" value="String" />
+  <slotvalue slot="a" value="Integer" minval="-10" maxval="10" />
+  <slotvalue slot="b" value="Boolean" />
+</Prototype>
+</Instances_for_Class>
+<Instances_for_Class class="ConceptC">
+<Prototype>
+  <slotvalue slot="e" value="Symbol" allowed_values="s1;s2;s3" />
+</Prototype>
+</Instances_for_Class>
+<Instances_for_Class class="ConceptB">
+<Prototype super_class="ConceptA">
+  <slotvalue slot="c" value="String" />
+  <slotvalue slot="a" value="Integer" minval="-10" maxval="10" />
+  <slotvalue slot="b" value="Boolean" />
+  <slotvalue slot="d" value="Instance" allowed_values="ConceptC" />
+</Prototype>
+</Instances_for_Class>
+<Instances_for_Class class="ConceptE">
+<Prototype super_class="ConceptC">
+  <slotvalue slot="e" value="Symbol" allowed_values="s1;s2;s3" />
+  <slotvalue slot="f" value="Symbol" multiple="true" allowed_values="s1;s2" />
+</Prototype>
+</Instances_for_Class>
+</Document>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.6" Project_version="0.1" Project_author="unknown author">
+<SpecialValueHandler>
+  <SpecialValue Label="sv1" />
+  <SpecialValue Label="undefined" />
+  <SpecialValue Label="sv2" />
+  <InternalSMF smfname="SpecialValuesSMF" model_instname="_SPECIAL_VALUES_" type="Symbol">
+    <QuerySymbol symbol="Non-Special Value">
+      <CBSymbol sim="1.0" symbol="Non-Special Value" />
+    </QuerySymbol>
+    <QuerySymbol symbol="undefined">
+      <CBSymbol sim="1.0" symbol="undefined" />
+    </QuerySymbol>
+    <QuerySymbol symbol="sv1">
+      <CBSymbol sim="1.0" symbol="sv1" />
+      <CBSymbol sim="0.5" symbol="sv2" />
+    </QuerySymbol>
+    <QuerySymbol symbol="sv2">
+      <CBSymbol sim="0.5" symbol="sv1" />
+      <CBSymbol sim="1.0" symbol="sv2" />
+    </QuerySymbol>
+  </InternalSMF>
+</SpecialValueHandler>
+<Holder>
+<SMFunction smfname="default" model_instname="ConceptA" type="Class" amalgamation="weighted_sum" active="true" simMode="Standard">
+  <Slot slotname="a" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="b" enabled="true" weight="5.0" comment="" />
+  <Slot slotname="c" enabled="false" weight="7.0" comment="" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="ConceptD" type="Class" amalgamation="maximum" active="true" simMode="Standard">
+  <Slot slotname="e" enabled="true" weight="1.0" comment="" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="ConceptC" type="Class" amalgamation="minimum" active="true" simMode="Standard">
+  <Slot slotname="e" enabled="true" weight="1.0" comment="" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="sim4" model_instname="a" type="Integer" maxval="10.0" minval="-10.0" modeDiffOrQuotient="0" active="false" simMode="Advanced">
+  <SamplingPoint xValue="-20.0" yValue="0.3" />
+  <SamplingPoint xValue="-5.0" yValue="0.5" />
+  <SamplingPoint xValue="-0.0" yValue="0.75" />
+  <SamplingPoint xValue="0.0" yValue="0.75" />
+  <SamplingPoint xValue="20.0" yValue="0.4" />
+</SMFunction>
+<SMFunction smfname="sim2" model_instname="a" type="Integer" maxval="10.0" minval="-10.0" modeDiffOrQuotient="0" active="false" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="10.0" const="1.0" fctMode="smooth_step" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="10.0" const="1.0" fctMode="const" />
+</SMFunction>
+<SMFunction smfname="default" model_instname="a" type="Integer" Language="jython" Script="# Scripting system: Jython&#xA;# the local similarity measure has to be called 'sim'&#xA;&#xA;def sim(q, c):&#xA;  return 1.0 - q / (c+1)&#xA;&#xA;" active="true" simMode="Script" />
+<SMFunction smfname="sim3" model_instname="a" type="Integer" isBinary="false" useCommandLineArgs="true" command="python D:\\workspace\\myCBR2\\projects\\Testproject\\sim2.py" workingDir="" active="false" simMode="External" />
+<SMFunction smfname="sim1" model_instname="a" type="Integer" maxval="10.0" minval="-10.0" modeDiffOrQuotient="0" active="false" simMode="Standard">
+  <LeftSide step="5.0" polinomial="1.0" smooth_step="10.0" const="1.0" fctMode="step" />
+  <RightSide step="0.0" polinomial="1.5" smooth_step="10.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="sim4" model_instname="c" type="String" mode="ngram" dir="query_is_substring" case_sensitive="false" ngram_value="3" count="relative" active="false" simMode="Character-Based" />
+<SMFunction smfname="sim2" model_instname="c" type="String" mode="trigram" active="false" simMode="Standard" />
+<SMFunction smfname="default" model_instname="c" type="String" mode="exact_match" active="true" simMode="Standard" />
+<SMFunction smfname="sim5" model_instname="c" type="String" mode="partial_match" dir="query_is_substring" case_sensitive="false" ngram_value="3" count="relative" active="false" simMode="Character-Based" />
+<SMFunction smfname="sim3" model_instname="c" type="String" sep_regex="\W+" dir="query_is_substring" count="relative" mode="exact_match" case_sensitive="true" active="false" simMode="Word-Based" />
+<SMFunction smfname="sim1" model_instname="c" type="String" mode="partial_match" active="false" simMode="Standard" />
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="f" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="s1">
+    <CBSymbol sim="1.0" symbol="s1" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s2">
+    <CBSymbol sim="1.0" symbol="s2" />
+  </QuerySymbol>
+</SMFunction>
+<MultiMeasure>
+  <SMFunction smfname="default" model_instname="f" type="NoType" multiSelection="20" oneOrMulti="11" noMatch="45" reuse="41" singleSim="30" totalFct="50" />
+</MultiMeasure>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="ConceptB" type="Class" amalgamation="euclidean" active="true" simMode="Standard">
+  <Slot slotname="a" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="b" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="c" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="d" enabled="true" weight="1.0" comment="" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="b" type="Boolean" active="true" simMode="Boolean">
+  <QuerySymbol boolean="false">
+    <CBSymbol sim="1.0" boolean="false" />
+    <CBSymbol sim="0.0" boolean="true" />
+  </QuerySymbol>
+  <QuerySymbol boolean="true">
+    <CBSymbol sim="1.0" boolean="true" />
+    <CBSymbol sim="0.0" boolean="false" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="sim2" model_instname="e" type="Symbol" active="false" simMode="Taxonomy">
+  <RootSymbol symbol="s1" simVal="1.0" />
+  <RootSymbol symbol="s2" simVal="1.0" />
+  <RootSymbol symbol="s3" simVal="1.0" />
+  <InnerNodesConfig scope="query" has_inner_values="yes" inner_semantic="uncertain" uncertain="average" />
+  <InnerNodesConfig scope="case" has_inner_values="yes" inner_semantic="uncertain" uncertain="average" />
+</SMFunction>
+<SMFunction smfname="default" model_instname="e" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="s1">
+    <CBSymbol sim="1.0" symbol="s1" />
+    <CBSymbol sim="0.3" symbol="s2" />
+    <CBSymbol sim="0.4" symbol="s3" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s2">
+    <CBSymbol sim="0.3" symbol="s1" />
+    <CBSymbol sim="1.0" symbol="s2" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s3">
+    <CBSymbol sim="0.4" symbol="s1" />
+    <CBSymbol sim="1.0" symbol="s3" />
+  </QuerySymbol>
+</SMFunction>
+<SMFunction smfname="sim1" model_instname="e" type="Symbol" isCyclic="true" distLastFirst="10" active="false" simMode="Ordered">
+  <MAP symbol="s2" integer="20" />
+  <MAP symbol="s1" integer="10" />
+  <MAP symbol="s3" integer="30" />
+  <InternalSMF smfname="sim1_INTEGER" model_instname="e_FAKE" type="Integer" maxval="30.0" minval="10.0" modeDiffOrQuotient="0">
+    <LeftSide step="0.0" polinomial="2.0" smooth_step="10.0" const="1.0" fctMode="polinomial" />
+    <RightSide step="0.0" polinomial="0.3" smooth_step="10.0" const="1.0" fctMode="polinomial" />
+  </InternalSMF>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="ConceptE" type="Class" amalgamation="euclidean" active="true" simMode="Standard">
+  <Slot slotname="e" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="f" enabled="true" weight="1.0" comment="" />
+</SMFunction>
+</Holder>
+<InheritanceMeasure smfname="_IMF_INTERNAL_SMF_" model_instname="_FAKESLOT_IMF_" type="Symbol" topCls="ConceptA">
+  <RootSymbol symbol="ConceptA" simVal="0.0">
+    <ChildSymbol symbol="ConceptB" simVal="0.5" />
+  </RootSymbol>
+  <InnerNodesConfig scope="query" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+  <InnerNodesConfig scope="case" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+</InheritanceMeasure>
+<InheritanceMeasure smfname="_IMF_INTERNAL_SMF_" model_instname="_FAKESLOT_IMF_" type="Symbol" topCls="ConceptC">
+  <RootSymbol symbol="ConceptC" simVal="0.3">
+    <ChildSymbol symbol="ConceptD" simVal="0.5" />
+    <ChildSymbol symbol="ConceptE" simVal="0.5" />
+  </RootSymbol>
+  <InnerNodesConfig scope="query" has_inner_values="yes" inner_semantic="any_value" uncertain="pessimistic" />
+  <InnerNodesConfig scope="case" has_inner_values="yes" inner_semantic="any_value" uncertain="pessimistic" />
+</InheritanceMeasure>
+</Document>

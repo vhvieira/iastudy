@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.5" Project_version="0.1" Project_author="trb">
+<SpecialValueHandler>
+  <SpecialValue Label="undefined" />
+  <SpecialValue Label="unknown" />
+  <InternalSMF smfname="SpecialValuesSMF" model_instname="_SPECIAL_VALUES_" type="Symbol">
+    <QuerySymbol symbol="Non-Special Value">
+      <CBSymbol sim="1.0" symbol="Non-Special Value" />
+    </QuerySymbol>
+    <QuerySymbol symbol="undefined">
+      <CBSymbol sim="1.0" symbol="undefined" />
+    </QuerySymbol>
+    <QuerySymbol symbol="unknown">
+      <CBSymbol sim="1.0" symbol="unknown" />
+    </QuerySymbol>
+  </InternalSMF>
+</SpecialValueHandler>
+<Holder>
+<SMFunction smfname="BodyFunc" model_instname="Body" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="convertible">
+    <CBSymbol sim="1.0" symbol="convertible" />
+    <CBSymbol sim="0.2" symbol="fastback" />
+    <CBSymbol sim="0.7" symbol="roadster" />
+  </QuerySymbol>
+  <QuerySymbol symbol="coupe">
+    <CBSymbol sim="1.0" symbol="coupe" />
+    <CBSymbol sim="0.2" symbol="fastback" />
+    <CBSymbol sim="0.7" symbol="sedan" />
+    <CBSymbol sim="0.5" symbol="station_wagon" />
+  </QuerySymbol>
+  <QuerySymbol symbol="fastback">
+    <CBSymbol sim="0.2" symbol="convertible" />
+    <CBSymbol sim="0.2" symbol="coupe" />
+    <CBSymbol sim="1.0" symbol="fastback" />
+    <CBSymbol sim="0.5" symbol="roadster" />
+  </QuerySymbol>
+  <QuerySymbol symbol="roadster">
+    <CBSymbol sim="0.7" symbol="convertible" />
+    <CBSymbol sim="0.5" symbol="fastback" />
+    <CBSymbol sim="1.0" symbol="roadster" />
+  </QuerySymbol>
+  <QuerySymbol symbol="sedan">
+    <CBSymbol sim="0.7" symbol="coupe" />
+    <CBSymbol sim="1.0" symbol="sedan" />
+    <CBSymbol sim="0.8" symbol="station_wagon" />
+  </QuerySymbol>
+  <QuerySymbol symbol="station_wagon">
+    <CBSymbol sim="0.5" symbol="coupe" />
+    <CBSymbol sim="0.8" symbol="sedan" />
+    <CBSymbol sim="1.0" symbol="station_wagon" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="ModelFunc" model_instname="Model" type="Symbol" active="true" simMode="Taxonomy">
+  <RootSymbol symbol="AUDI" simVal="0.5">
+    <ChildSymbol symbol="a4_1.6" simVal="1.0" />
+    <ChildSymbol symbol="a4_1.8" simVal="1.0" />
+    <ChildSymbol symbol="a4_1.8_t" simVal="1.0" />
+    <ChildSymbol symbol="a4_1.9_tdi" simVal="1.0" />
+    <ChildSymbol symbol="a4_2.8" simVal="1.0" />
+    <ChildSymbol symbol="a6_1.8_t" simVal="1.0" />
+    <ChildSymbol symbol="a6_1.9_tdi" simVal="1.0" />
+    <ChildSymbol symbol="a6_2.4" simVal="1.0" />
+    <ChildSymbol symbol="a6_2.8" simVal="1.0" />
+  </RootSymbol>
+  <RootSymbol symbol="BMW" simVal="0.5">
+    <ChildSymbol symbol="m3" simVal="1.0" />
+    <ChildSymbol symbol="m_roadster" simVal="1.0" />
+    <ChildSymbol symbol="3_series" simVal="0.5">
+      <ChildSymbol symbol="320i" simVal="1.0" />
+      <ChildSymbol symbol="323i" simVal="1.0" />
+      <ChildSymbol symbol="325td" simVal="1.0" />
+      <ChildSymbol symbol="325tds" simVal="1.0" />
+      <ChildSymbol symbol="328i" simVal="1.0" />
+      <ChildSymbol symbol="318i" simVal="1.0" />
+      <ChildSymbol symbol="316i" simVal="1.0" />
+    </ChildSymbol>
+    <ChildSymbol symbol="5_series" simVal="0.5">
+      <ChildSymbol symbol="520i" simVal="1.0" />
+      <ChildSymbol symbol="523i" simVal="1.0" />
+      <ChildSymbol symbol="525tds" simVal="1.0" />
+      <ChildSymbol symbol="528i" simVal="1.0" />
+      <ChildSymbol symbol="535i" simVal="1.0" />
+      <ChildSymbol symbol="540i" simVal="1.0" />
+    </ChildSymbol>
+    <ChildSymbol symbol="z3_series" simVal="0.5">
+      <ChildSymbol symbol="z3_1.8" simVal="1.0" />
+      <ChildSymbol symbol="z3_1.9" simVal="1.0" />
+      <ChildSymbol symbol="z3_2.8" simVal="1.0" />
+    </ChildSymbol>
+  </RootSymbol>
+  <RootSymbol symbol="Mercedes" simVal="0.25">
+    <ChildSymbol symbol="c_class" simVal="0.5">
+      <ChildSymbol symbol="c_180" simVal="1.0" />
+      <ChildSymbol symbol="c_200" simVal="1.0" />
+      <ChildSymbol symbol="c_220_diesel" simVal="1.0" />
+      <ChildSymbol symbol="c_230_kompressor" simVal="1.0" />
+      <ChildSymbol symbol="c_240" simVal="1.0" />
+      <ChildSymbol symbol="c_250_diesel" simVal="1.0" />
+      <ChildSymbol symbol="c_280" simVal="1.0" />
+    </ChildSymbol>
+    <ChildSymbol symbol="e_class" simVal="0.5">
+      <ChildSymbol symbol="e_200" simVal="1.0" />
+      <ChildSymbol symbol="e_220_diesel" simVal="1.0" />
+      <ChildSymbol symbol="e_280" simVal="1.0" />
+      <ChildSymbol symbol="e_290_diesel" simVal="1.0" />
+      <ChildSymbol symbol="e_300_diesel" simVal="1.0" />
+      <ChildSymbol symbol="e_320" simVal="1.0" />
+      <ChildSymbol symbol="e_430" simVal="1.0" />
+    </ChildSymbol>
+    <ChildSymbol symbol="slk" simVal="0.5">
+      <ChildSymbol symbol="slk_200" simVal="1.0" />
+      <ChildSymbol symbol="slk_230_kompressor" simVal="1.0" />
+    </ChildSymbol>
+  </RootSymbol>
+  <RootSymbol symbol="VW" simVal="0.25">
+    <ChildSymbol symbol="golf" simVal="0.5" />
+    <ChildSymbol symbol="passat" simVal="1.0" />
+  </RootSymbol>
+  <InnerNodesConfig scope="query" has_inner_values="yes" inner_semantic="any_value" uncertain="pessimistic" />
+  <InnerNodesConfig scope="case" has_inner_values="yes" inner_semantic="any_value" uncertain="pessimistic" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="CCMFunc" model_instname="CCM" type="Integer" maxval="6000.0" minval="1000.0" modeDiffOrQuotient="0" active="true" simMode="Advanced">
+  <SamplingPoint xValue="-5000.0" yValue="0.0" />
+  <SamplingPoint xValue="0.0" yValue="1.0" />
+  <SamplingPoint xValue="5000.0" yValue="0.8" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="PowerFunc" model_instname="Power" type="Integer" maxval="1000.0" minval="10.0" modeDiffOrQuotient="0" active="true" simMode="Advanced">
+  <SamplingPoint xValue="-990.0" yValue="0.0" />
+  <SamplingPoint xValue="-91.0" yValue="0.27" />
+  <SamplingPoint xValue="0.0" yValue="1.0" />
+  <SamplingPoint xValue="990.0" yValue="0.9" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="MilesFunc" model_instname="Miles" type="Integer" maxval="1000000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Advanced">
+  <SamplingPoint xValue="-1000000.0" yValue="0.9" />
+  <SamplingPoint xValue="0.0" yValue="1.0" />
+  <SamplingPoint xValue="2500.0" yValue="0.25" />
+  <SamplingPoint xValue="1000000.0" yValue="0.0" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="GasFunc" model_instname="Gas" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="diesel">
+    <CBSymbol sim="1.0" symbol="diesel" />
+  </QuerySymbol>
+  <QuerySymbol symbol="gasoline">
+    <CBSymbol sim="1.0" symbol="gasoline" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="tax" model_instname="Color" type="Symbol" active="true" simMode="Taxonomy">
+  <RootSymbol symbol="black" simVal="1.0" />
+  <RootSymbol symbol="blue" simVal="0.5">
+    <ChildSymbol symbol="dark_blue" simVal="1.0" />
+    <ChildSymbol symbol="light_blue" simVal="1.0" />
+  </RootSymbol>
+  <RootSymbol symbol="gray" simVal="0.5">
+    <ChildSymbol symbol="light_gray" simVal="1.0" />
+    <ChildSymbol symbol="dark_gray" simVal="1.0" />
+  </RootSymbol>
+  <RootSymbol symbol="green" simVal="0.5">
+    <ChildSymbol symbol="dark_green" simVal="1.0" />
+  </RootSymbol>
+  <RootSymbol symbol="red" simVal="0.5">
+    <ChildSymbol symbol="dark_red" simVal="1.0" />
+    <ChildSymbol symbol="orange" simVal="1.0" />
+  </RootSymbol>
+  <RootSymbol symbol="silver" simVal="1.0" />
+  <RootSymbol symbol="turquoise" simVal="1.0" />
+  <RootSymbol symbol="violet" simVal="1.0" />
+  <RootSymbol symbol="white" simVal="1.0" />
+  <RootSymbol symbol="yellow" simVal="1.0" />
+  <RootSymbol symbol="anthracite" simVal="1.0" />
+  <InnerNodesConfig scope="query" has_inner_values="yes" inner_semantic="any_value" uncertain="pessimistic" />
+  <InnerNodesConfig scope="case" has_inner_values="yes" inner_semantic="any_value" uncertain="pessimistic" />
+  <InternalTable smfname="tax_internal_table" model_instname="Color" type="Symbol">
+    <QuerySymbol symbol="black">
+      <CBSymbol sim="1.0" symbol="black" />
+      <CBSymbol sim="0.2" symbol="dark_blue" />
+      <CBSymbol sim="0.3" symbol="gray" />
+      <CBSymbol sim="0.1" symbol="light_gray" />
+      <CBSymbol sim="0.1" symbol="anthracite" />
+      <CBSymbol sim="0.5" symbol="dark_gray" />
+    </QuerySymbol>
+    <QuerySymbol symbol="blue">
+      <CBSymbol sim="1.0" symbol="blue" />
+      <CBSymbol sim="1.0" symbol="dark_blue" />
+      <CBSymbol sim="1.0" symbol="light_blue" />
+      <CBSymbol sim="0.3" symbol="turquoise" />
+      <CBSymbol sim="0.5" symbol="violet" />
+    </QuerySymbol>
+    <QuerySymbol symbol="dark_blue">
+      <CBSymbol sim="0.2" symbol="black" />
+      <CBSymbol sim="1.0" symbol="blue" />
+      <CBSymbol sim="1.0" symbol="dark_blue" />
+      <CBSymbol sim="0.2" symbol="dark_green" />
+      <CBSymbol sim="0.2" symbol="dark_red" />
+      <CBSymbol sim="0.5" symbol="light_blue" />
+      <CBSymbol sim="0.5" symbol="violet" />
+      <CBSymbol sim="0.3" symbol="dark_gray" />
+    </QuerySymbol>
+    <QuerySymbol symbol="dark_green">
+      <CBSymbol sim="0.2" symbol="dark_blue" />
+      <CBSymbol sim="1.0" symbol="dark_green" />
+      <CBSymbol sim="0.2" symbol="dark_red" />
+      <CBSymbol sim="1.0" symbol="green" />
+      <CBSymbol sim="0.5" symbol="anthracite" />
+      <CBSymbol sim="0.2" symbol="dark_gray" />
+    </QuerySymbol>
+    <QuerySymbol symbol="dark_red">
+      <CBSymbol sim="0.2" symbol="dark_blue" />
+      <CBSymbol sim="0.2" symbol="dark_green" />
+      <CBSymbol sim="1.0" symbol="dark_red" />
+      <CBSymbol sim="0.5" symbol="orange" />
+      <CBSymbol sim="1.0" symbol="red" />
+    </QuerySymbol>
+    <QuerySymbol symbol="gray">
+      <CBSymbol sim="0.3" symbol="black" />
+      <CBSymbol sim="1.0" symbol="gray" />
+      <CBSymbol sim="1.0" symbol="light_gray" />
+      <CBSymbol sim="1.0" symbol="dark_gray" />
+    </QuerySymbol>
+    <QuerySymbol symbol="green">
+      <CBSymbol sim="1.0" symbol="dark_green" />
+      <CBSymbol sim="1.0" symbol="green" />
+      <CBSymbol sim="0.3" symbol="turquoise" />
+      <CBSymbol sim="0.3" symbol="anthracite" />
+    </QuerySymbol>
+    <QuerySymbol symbol="light_blue">
+      <CBSymbol sim="1.0" symbol="blue" />
+      <CBSymbol sim="0.5" symbol="dark_blue" />
+      <CBSymbol sim="1.0" symbol="light_blue" />
+      <CBSymbol sim="0.3" symbol="turquoise" />
+      <CBSymbol sim="0.4" symbol="violet" />
+    </QuerySymbol>
+    <QuerySymbol symbol="light_gray">
+      <CBSymbol sim="0.1" symbol="black" />
+      <CBSymbol sim="1.0" symbol="gray" />
+      <CBSymbol sim="1.0" symbol="light_gray" />
+      <CBSymbol sim="0.4" symbol="silver" />
+      <CBSymbol sim="0.2" symbol="white" />
+      <CBSymbol sim="0.5" symbol="dark_gray" />
+    </QuerySymbol>
+    <QuerySymbol symbol="orange">
+      <CBSymbol sim="0.5" symbol="dark_red" />
+      <CBSymbol sim="1.0" symbol="orange" />
+      <CBSymbol sim="1.0" symbol="red" />
+      <CBSymbol sim="0.1" symbol="yellow" />
+    </QuerySymbol>
+    <QuerySymbol symbol="red">
+      <CBSymbol sim="1.0" symbol="dark_red" />
+      <CBSymbol sim="1.0" symbol="orange" />
+      <CBSymbol sim="1.0" symbol="red" />
+      <CBSymbol sim="0.5" symbol="violet" />
+    </QuerySymbol>
+    <QuerySymbol symbol="silver">
+      <CBSymbol sim="0.4" symbol="light_gray" />
+      <CBSymbol sim="1.0" symbol="silver" />
+    </QuerySymbol>
+    <QuerySymbol symbol="turquoise">
+      <CBSymbol sim="0.3" symbol="blue" />
+      <CBSymbol sim="0.3" symbol="green" />
+      <CBSymbol sim="0.3" symbol="light_blue" />
+      <CBSymbol sim="1.0" symbol="turquoise" />
+    </QuerySymbol>
+    <QuerySymbol symbol="violet">
+      <CBSymbol sim="0.5" symbol="blue" />
+      <CBSymbol sim="0.5" symbol="dark_blue" />
+      <CBSymbol sim="0.4" symbol="light_blue" />
+      <CBSymbol sim="0.5" symbol="red" />
+      <CBSymbol sim="1.0" symbol="violet" />
+    </QuerySymbol>
+    <QuerySymbol symbol="white">
+      <CBSymbol sim="0.2" symbol="light_gray" />
+      <CBSymbol sim="1.0" symbol="white" />
+    </QuerySymbol>
+    <QuerySymbol symbol="yellow">
+      <CBSymbol sim="0.1" symbol="orange" />
+      <CBSymbol sim="1.0" symbol="yellow" />
+    </QuerySymbol>
+    <QuerySymbol symbol="anthracite">
+      <CBSymbol sim="0.1" symbol="black" />
+      <CBSymbol sim="0.5" symbol="dark_green" />
+      <CBSymbol sim="0.3" symbol="green" />
+      <CBSymbol sim="1.0" symbol="anthracite" />
+      <CBSymbol sim="0.5" symbol="dark_gray" />
+    </QuerySymbol>
+    <QuerySymbol symbol="dark_gray">
+      <CBSymbol sim="0.5" symbol="black" />
+      <CBSymbol sim="0.3" symbol="dark_blue" />
+      <CBSymbol sim="0.2" symbol="dark_green" />
+      <CBSymbol sim="1.0" symbol="gray" />
+      <CBSymbol sim="0.5" symbol="light_gray" />
+      <CBSymbol sim="0.5" symbol="anthracite" />
+      <CBSymbol sim="1.0" symbol="dark_gray" />
+    </QuerySymbol>
+  </InternalTable>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="YearFunc" model_instname="Year" type="Integer" maxval="2007.0" minval="1950.0" modeDiffOrQuotient="0" active="true" simMode="Advanced">
+  <SamplingPoint xValue="-57.0" yValue="0.0" />
+  <SamplingPoint xValue="0.0" yValue="1.0" />
+  <SamplingPoint xValue="57.0" yValue="1.0" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="DoorsFunc" model_instname="Doors" type="Integer" maxval="7.0" minval="2.0" modeDiffOrQuotient="0" active="true" simMode="Advanced">
+  <SamplingPoint xValue="-5.0" yValue="0.0" />
+  <SamplingPoint xValue="0.0" yValue="1.0" />
+  <SamplingPoint xValue="5.0" yValue="0.0" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="CarFunc" model_instname="Car" type="Class" amalgamation="weighted_sum" active="true" simMode="Standard">
+  <Slot slotname="Body" enabled="true" target="false" weight="5.0" comment="Car body" />
+  <Slot slotname="CCM" enabled="true" target="false" weight="1.0" comment="Cylinder capacity" />
+  <Slot slotname="Car Code" enabled="false" target="false" weight="1.0" comment="Identifier; not used for retrieval" />
+  <Slot slotname="Color" enabled="true" target="false" weight="5.0" comment="Car color" />
+  <Slot slotname="Doors" enabled="true" target="false" weight="2.0" comment="Number of doors" />
+  <Slot slotname="Gas" enabled="true" target="false" weight="1.0" comment="Type of fuel" />
+  <Slot slotname="Manufacturer" enabled="true" target="false" weight="7.0" comment="Car manufacturer" />
+  <Slot slotname="Miles" enabled="true" target="false" weight="3.0" comment="Mileage" />
+  <Slot slotname="Model" enabled="true" target="false" weight="5.0" comment="Car model" />
+  <Slot slotname="Power" enabled="true" target="false" weight="3.0" comment="Horse power" />
+  <Slot slotname="Price" enabled="true" target="false" weight="7.0" comment="Basis for negotiation" />
+  <Slot slotname="Speed" enabled="true" target="false" weight="1.0" comment="Top speed" />
+  <Slot slotname="Year" enabled="true" target="false" weight="1.0" comment="Year of production" />
+  <Slot slotname="ZIP" enabled="false" target="false" weight="1.0" comment="Area of seller (first digit; Germany); not used for retrieval" />
+  <Slot slotname="used_cars_flat_Class0" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="used_cars_flat_Class1" enabled="true" target="false" weight="1.0" comment="" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="ManufacturerFunc" model_instname="Manufacturer" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="audi">
+    <CBSymbol sim="1.0" symbol="audi" />
+    <CBSymbol sim="0.3" symbol="bmw" />
+    <CBSymbol sim="0.5" symbol="mercedes-benz" />
+    <CBSymbol sim="0.3" symbol="vw" />
+  </QuerySymbol>
+  <QuerySymbol symbol="bmw">
+    <CBSymbol sim="0.3" symbol="audi" />
+    <CBSymbol sim="1.0" symbol="bmw" />
+    <CBSymbol sim="0.3" symbol="mercedes-benz" />
+  </QuerySymbol>
+  <QuerySymbol symbol="mercedes-benz">
+    <CBSymbol sim="0.5" symbol="audi" />
+    <CBSymbol sim="0.3" symbol="bmw" />
+    <CBSymbol sim="1.0" symbol="mercedes-benz" />
+  </QuerySymbol>
+  <QuerySymbol symbol="vw">
+    <CBSymbol sim="0.3" symbol="audi" />
+    <CBSymbol sim="1.0" symbol="vw" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="SpeedFunc" model_instname="Speed" type="Integer" maxval="300.0" minval="100.0" modeDiffOrQuotient="0" active="true" simMode="Advanced">
+  <SamplingPoint xValue="-200.0" yValue="0.0" />
+  <SamplingPoint xValue="0.0" yValue="1.0" />
+  <SamplingPoint xValue="200.0" yValue="0.9" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Car Code" type="Integer" maxval="1.0E7" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="5000000.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="5000000.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="PriceFunc" model_instname="Price" type="Float" maxval="100000.0" minval="1.0" modeDiffOrQuotient="0" active="true" simMode="Advanced">
+  <SamplingPoint xValue="-99999.0" yValue="0.8" />
+  <SamplingPoint xValue="0.0" yValue="1.0" />
+  <SamplingPoint xValue="99999.0" yValue="0.0" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="used_cars_flat_Class0" type="String" mode="trigram" active="true" simMode="Standard" />
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="used_cars_flat_Class1" type="String" mode="ngram" dir="query_is_substring" case_sensitive="false" ngram_value="5" count="relative" active="true" simMode="Character-Based" />
+</Holder>
+<InheritanceMeasure smfname="_IMF_INTERNAL_SMF_" model_instname="_FAKESLOT_IMF_" type="Symbol" topCls="Car">
+  <RootSymbol symbol="Car" simVal="0.5" />
+  <InnerNodesConfig scope="query" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+  <InnerNodesConfig scope="case" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+</InheritanceMeasure>
+</Document>

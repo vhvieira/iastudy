@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.4" Project_version="0.1" Project_author="zilles">
+<Instances_for_Class class="Car">
+<Prototype>
+  <slotvalue slot="Manufacturer" value="Symbol" allowed_values="BMW;Audi;VW;Ford;Mercedes;SEAT;FIAT" />
+  <slotvalue slot="Color" value="Symbol" allowed_values="green;black;blue;white;yellow;red;pink;brown" />
+</Prototype>
+<Instance model_instname="MyCBRImportTest_Class0">
+  <slotvalue slot="Manufacturer" value="BMW" weight="1.0" />
+  <slotvalue slot="Color" value="green" weight="1.0" />
+</Instance>
+<Instance model_instname="MyCBRImportTest_Class1">
+  <slotvalue slot="Manufacturer" value="BMW" weight="1.0" />
+  <slotvalue slot="Color" value="_undefined_" weight="1.0" />
+</Instance>
+<Instance model_instname="MyCBRImportTest_Class2">
+  <slotvalue slot="Manufacturer" value="Audi" weight="1.0" />
+  <slotvalue slot="Color" value="green" weight="1.0" />
+</Instance>
+<Instance model_instname="MyCBRImportTest_Class3">
+  <slotvalue slot="Manufacturer" value="_undefined_" weight="1.0" />
+  <slotvalue slot="Color" value="_undefined_" weight="1.0" />
+</Instance>
+</Instances_for_Class>
+</Document>

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.5" Project_version="0.1" Project_author="unknown author">
+<SpecialValueHandler>
+  <SpecialValue Label="undefined" />
+  <InternalSMF smfname="SpecialValuesSMF" model_instname="_SPECIAL_VALUES_" type="Symbol">
+    <QuerySymbol symbol="Non-Special Value">
+      <CBSymbol sim="1.0" symbol="Non-Special Value" />
+    </QuerySymbol>
+    <QuerySymbol symbol="undefined">
+      <CBSymbol sim="1.0" symbol="undefined" />
+    </QuerySymbol>
+  </InternalSMF>
+</SpecialValueHandler>
+<Holder>
+<SMFunction smfname="default" model_instname="att23" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="s1">
+    <CBSymbol sim="1.0" symbol="s1" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s2">
+    <CBSymbol sim="1.0" symbol="s2" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s3">
+    <CBSymbol sim="1.0" symbol="s3" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s4">
+    <CBSymbol sim="1.0" symbol="s4" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s5">
+    <CBSymbol sim="1.0" symbol="s5" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s6">
+    <CBSymbol sim="1.0" symbol="s6" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s7">
+    <CBSymbol sim="1.0" symbol="s7" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s8">
+    <CBSymbol sim="1.0" symbol="s8" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s9">
+    <CBSymbol sim="1.0" symbol="s9" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s10">
+    <CBSymbol sim="1.0" symbol="s10" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att1" type="Float" maxval="100.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="50.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="50.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att2" type="Integer" maxval="10000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="5000.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="5000.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att16" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="s1">
+    <CBSymbol sim="1.0" symbol="s1" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s2">
+    <CBSymbol sim="1.0" symbol="s2" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s3">
+    <CBSymbol sim="1.0" symbol="s3" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s4">
+    <CBSymbol sim="1.0" symbol="s4" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s5">
+    <CBSymbol sim="1.0" symbol="s5" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s6">
+    <CBSymbol sim="1.0" symbol="s6" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s7">
+    <CBSymbol sim="1.0" symbol="s7" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s8">
+    <CBSymbol sim="1.0" symbol="s8" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s9">
+    <CBSymbol sim="1.0" symbol="s9" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s10">
+    <CBSymbol sim="1.0" symbol="s10" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s11">
+    <CBSymbol sim="1.0" symbol="s11" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s12">
+    <CBSymbol sim="1.0" symbol="s12" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s13">
+    <CBSymbol sim="1.0" symbol="s13" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s14">
+    <CBSymbol sim="1.0" symbol="s14" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s15">
+    <CBSymbol sim="1.0" symbol="s15" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s16">
+    <CBSymbol sim="1.0" symbol="s16" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s17">
+    <CBSymbol sim="1.0" symbol="s17" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s18">
+    <CBSymbol sim="1.0" symbol="s18" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s19">
+    <CBSymbol sim="1.0" symbol="s19" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s20">
+    <CBSymbol sim="1.0" symbol="s20" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att13" type="Integer" maxval="1000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="500.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="500.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att24" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="s1">
+    <CBSymbol sim="1.0" symbol="s1" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s2">
+    <CBSymbol sim="1.0" symbol="s2" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s3">
+    <CBSymbol sim="1.0" symbol="s3" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s4">
+    <CBSymbol sim="1.0" symbol="s4" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s5">
+    <CBSymbol sim="1.0" symbol="s5" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att21" type="Integer" maxval="100.0" minval="1.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="49.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="49.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att18" type="Integer" maxval="5000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="2500.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="2500.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att29" type="Integer" maxval="1000000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="500000.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="500000.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att7" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="s1">
+    <CBSymbol sim="1.0" symbol="s1" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s2">
+    <CBSymbol sim="1.0" symbol="s2" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s3">
+    <CBSymbol sim="1.0" symbol="s3" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s4">
+    <CBSymbol sim="1.0" symbol="s4" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s5">
+    <CBSymbol sim="1.0" symbol="s5" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s6">
+    <CBSymbol sim="1.0" symbol="s6" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s7">
+    <CBSymbol sim="1.0" symbol="s7" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s8">
+    <CBSymbol sim="1.0" symbol="s8" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s9">
+    <CBSymbol sim="1.0" symbol="s9" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s10">
+    <CBSymbol sim="1.0" symbol="s10" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s11">
+    <CBSymbol sim="1.0" symbol="s11" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s12">
+    <CBSymbol sim="1.0" symbol="s12" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s13">
+    <CBSymbol sim="1.0" symbol="s13" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s14">
+    <CBSymbol sim="1.0" symbol="s14" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s15">
+    <CBSymbol sim="1.0" symbol="s15" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s16">
+    <CBSymbol sim="1.0" symbol="s16" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s17">
+    <CBSymbol sim="1.0" symbol="s17" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s18">
+    <CBSymbol sim="1.0" symbol="s18" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s19">
+    <CBSymbol sim="1.0" symbol="s19" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s20">
+    <CBSymbol sim="1.0" symbol="s20" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att20" type="Float" maxval="5000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="2500.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="2500.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att8" type="Integer" maxval="50.0" minval="-50.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="50.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="50.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att11" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="s1">
+    <CBSymbol sim="1.0" symbol="s1" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s2">
+    <CBSymbol sim="1.0" symbol="s2" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s3">
+    <CBSymbol sim="1.0" symbol="s3" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s4">
+    <CBSymbol sim="1.0" symbol="s4" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s5">
+    <CBSymbol sim="1.0" symbol="s5" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s6">
+    <CBSymbol sim="1.0" symbol="s6" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s7">
+    <CBSymbol sim="1.0" symbol="s7" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s8">
+    <CBSymbol sim="1.0" symbol="s8" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s9">
+    <CBSymbol sim="1.0" symbol="s9" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s10">
+    <CBSymbol sim="1.0" symbol="s10" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att26" type="Integer" maxval="25000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="12500.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="12500.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att9" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="0">
+    <CBSymbol sim="1.0" symbol="0" />
+  </QuerySymbol>
+  <QuerySymbol symbol="1">
+    <CBSymbol sim="1.0" symbol="1" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att12" type="Float" maxval="100000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="50000.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="50000.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att27" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="s1">
+    <CBSymbol sim="1.0" symbol="s1" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s2">
+    <CBSymbol sim="1.0" symbol="s2" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s3">
+    <CBSymbol sim="1.0" symbol="s3" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s4">
+    <CBSymbol sim="1.0" symbol="s4" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s5">
+    <CBSymbol sim="1.0" symbol="s5" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s6">
+    <CBSymbol sim="1.0" symbol="s6" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s7">
+    <CBSymbol sim="1.0" symbol="s7" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s8">
+    <CBSymbol sim="1.0" symbol="s8" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s9">
+    <CBSymbol sim="1.0" symbol="s9" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s10">
+    <CBSymbol sim="1.0" symbol="s10" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s11">
+    <CBSymbol sim="1.0" symbol="s11" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s12">
+    <CBSymbol sim="1.0" symbol="s12" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s13">
+    <CBSymbol sim="1.0" symbol="s13" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s14">
+    <CBSymbol sim="1.0" symbol="s14" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s15">
+    <CBSymbol sim="1.0" symbol="s15" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="class" type="Class" amalgamation="euclidean" active="true" simMode="Standard">
+  <Slot slotname="att1" enabled="false" target="false" weight="1.0" comment="" />
+  <Slot slotname="att10" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att11" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att12" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att13" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att14" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att15" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att16" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att17" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att18" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att19" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att2" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att20" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att21" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att22" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att23" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att24" enabled="false" target="false" weight="1.0" comment="" />
+  <Slot slotname="att25" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att26" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att27" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att28" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att29" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att3" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att30" enabled="false" target="false" weight="1.0" comment="" />
+  <Slot slotname="att4" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att5" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att6" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att7" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att8" enabled="true" target="false" weight="1.0" comment="" />
+  <Slot slotname="att9" enabled="true" target="false" weight="1.0" comment="" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att28" type="Integer" maxval="5000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="2500.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="2500.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att17" type="Integer" maxval="25.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="12.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="12.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att19" type="Integer" maxval="50000.0" minval="1.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="24999.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="24999.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att10" type="Float" maxval="100000.0" minval="-100000.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="100000.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="100000.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att6" type="Float" maxval="1.0E8" minval="-1.1E7" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="5.55E7" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="5.55E7" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att3" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="s1">
+    <CBSymbol sim="1.0" symbol="s1" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s2">
+    <CBSymbol sim="1.0" symbol="s2" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s3">
+    <CBSymbol sim="1.0" symbol="s3" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s4">
+    <CBSymbol sim="1.0" symbol="s4" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s5">
+    <CBSymbol sim="1.0" symbol="s5" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s6">
+    <CBSymbol sim="1.0" symbol="s6" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s7">
+    <CBSymbol sim="1.0" symbol="s7" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s8">
+    <CBSymbol sim="1.0" symbol="s8" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s9">
+    <CBSymbol sim="1.0" symbol="s9" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s10">
+    <CBSymbol sim="1.0" symbol="s10" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s11">
+    <CBSymbol sim="1.0" symbol="s11" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s12">
+    <CBSymbol sim="1.0" symbol="s12" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s13">
+    <CBSymbol sim="1.0" symbol="s13" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s14">
+    <CBSymbol sim="1.0" symbol="s14" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s15">
+    <CBSymbol sim="1.0" symbol="s15" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att30" type="String" mode="exact_match" active="true" simMode="Standard" />
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att14" type="Integer" maxval="1000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="500.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="500.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att25" type="Integer" maxval="5000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="2500.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="2500.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att4" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="s1">
+    <CBSymbol sim="1.0" symbol="s1" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s2">
+    <CBSymbol sim="1.0" symbol="s2" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s3">
+    <CBSymbol sim="1.0" symbol="s3" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s4">
+    <CBSymbol sim="1.0" symbol="s4" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s5">
+    <CBSymbol sim="1.0" symbol="s5" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s6">
+    <CBSymbol sim="1.0" symbol="s6" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s7">
+    <CBSymbol sim="1.0" symbol="s7" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s8">
+    <CBSymbol sim="1.0" symbol="s8" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s9">
+    <CBSymbol sim="1.0" symbol="s9" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s10">
+    <CBSymbol sim="1.0" symbol="s10" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s11">
+    <CBSymbol sim="1.0" symbol="s11" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s12">
+    <CBSymbol sim="1.0" symbol="s12" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s13">
+    <CBSymbol sim="1.0" symbol="s13" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s14">
+    <CBSymbol sim="1.0" symbol="s14" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s15">
+    <CBSymbol sim="1.0" symbol="s15" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att22" type="Integer" maxval="2.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="1.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="1.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att5" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="s1">
+    <CBSymbol sim="1.0" symbol="s1" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s2">
+    <CBSymbol sim="1.0" symbol="s2" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s3">
+    <CBSymbol sim="1.0" symbol="s3" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s4">
+    <CBSymbol sim="1.0" symbol="s4" />
+  </QuerySymbol>
+  <QuerySymbol symbol="s5">
+    <CBSymbol sim="1.0" symbol="s5" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="att15" type="Float" maxval="1000000.0" minval="200.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="499900.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="499900.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<InheritanceMeasure smfname="_IMF_INTERNAL_SMF_" model_instname="_FAKESLOT_IMF_" type="Symbol" topCls="class">
+  <RootSymbol symbol="class" simVal="0.5" />
+  <InnerNodesConfig scope="query" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+  <InnerNodesConfig scope="case" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+</InheritanceMeasure>
+</Document>

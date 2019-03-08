@@ -1,0 +1,2223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.5" Project_version="0.1" Project_author="trb">
+<Instances_for_Class class="Car">
+<Prototype>
+  <slotvalue slot="Miles" value="Integer" minval="0" maxval="1000000" />
+  <slotvalue slot="Speed" value="Integer" minval="100" maxval="300" />
+  <slotvalue slot="Color" value="Symbol" allowed_values="anthracite;black;blue;dark_blue;dark_gray;dark_green;dark_red;gray;green;light_blue;light_gray;orange;red;silver;turquoise;violet;white;yellow" />
+  <slotvalue slot="Year" value="Integer" minval="1950" maxval="2007" />
+  <slotvalue slot="Price" value="Float" minval="1.0" maxval="100000.0" />
+  <slotvalue slot="Body" value="Symbol" allowed_values="convertible;coupe;fastback;roadster;sedan;station_wagon" />
+  <slotvalue slot="CCM" value="Integer" minval="1000" maxval="6000" />
+  <slotvalue slot="Gas" value="Symbol" allowed_values="diesel;gasoline" />
+  <slotvalue slot="Car Code" value="Integer" minval="0" maxval="10000000" />
+  <slotvalue slot="Power" value="Integer" minval="10" maxval="1000" />
+  <slotvalue slot="used_cars_flat_Class0" value="String" />
+  <slotvalue slot="Doors" value="Integer" minval="2" maxval="7" />
+  <slotvalue slot="used_cars_flat_Class1" value="String" />
+  <slotvalue slot="Manufacturer" value="Symbol" allowed_values="audi;bmw;mercedes-benz;vw" />
+  <slotvalue slot="Model" value="Symbol" allowed_values="316i;318i;320i;323i;325td;325tds;328i;520i;523i;525tds;528i;535i;540i;a4_1.6;a4_1.8;a4_1.8_t;a4_1.9_tdi;a4_2.8;a6_1.8_t;a6_1.9_tdi;a6_2.4;a6_2.8;c_180;c_200;c_220_diesel;c_230_kompressor;c_240;c_250_diesel;c_280;e_200;e_220_diesel;e_280;e_290_diesel;e_300_diesel;e_320;e_430;golf;m3;m_roadster;passat;slk_200;slk_230_kompressor;z3_1.8;z3_1.9;z3_2.8;3_series;AUDI;c_class;e_class;z3_series;5_series;slk;VW;BMW;Mercedes" />
+  <slotvalue slot="ZIP" value="Integer" minval="0" maxval="9" />
+</Prototype>
+<Instance model_instname="100_mercedes-benz">
+  <slotvalue slot="Miles" value="18146" />
+  <slotvalue slot="Speed" value="224" />
+  <slotvalue slot="Color" value="yellow" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="58499.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="3000" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="100" />
+  <slotvalue slot="Power" value="176" />
+  <slotvalue slot="Doors" value="4" />
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_300_diesel" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="RECEIVER" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<!--
+<Instance model_instname="101_vw">
+  <slotvalue slot="Miles" value="9911" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="violet" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="30399.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="101" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="9" />
+  <slotvalue slot="used_cars_flat_Class0" value="RECEIVER" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="102_vw">
+  <slotvalue slot="Miles" value="59802" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="yellow" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="28599.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="102" />
+  <slotvalue slot="Power" value="190" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="103_vw">
+  <slotvalue slot="Miles" value="104732" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="gray" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="13799.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="103" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="6" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="104_mercedes-benz">
+  <slotvalue slot="Miles" value="19033" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="silver" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="56199.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="104" />
+  <slotvalue slot="Power" value="204" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_280" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="105_bmw">
+  <slotvalue slot="Miles" value="23479" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="dark_green" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="47699.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="105" />
+  <slotvalue slot="Power" value="193" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="328i" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="106_bmw">
+  <slotvalue slot="Miles" value="182884" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="black" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="12599.0" />
+  <slotvalue slot="Body" value="convertible" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="106" />
+  <slotvalue slot="Power" value="193" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="328i" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="107_vw">
+  <slotvalue slot="Miles" value="11090" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="black" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="25499.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="107" />
+  <slotvalue slot="Power" value="90" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="108_audi">
+  <slotvalue slot="Miles" value="43858" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="turquoise" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="24699.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1600" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="108" />
+  <slotvalue slot="Power" value="101" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.6" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="109_mercedes-benz">
+  <slotvalue slot="Miles" value="30452" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="green" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="38799.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2000" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="109" />
+  <slotvalue slot="Power" value="136" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="c_200" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="10_bmw">
+  <slotvalue slot="Miles" value="120039" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="light_gray" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="16499.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="10" />
+  <slotvalue slot="Power" value="115" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="318i" />
+  <slotvalue slot="ZIP" value="6" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="110_audi">
+  <slotvalue slot="Miles" value="42535" />
+  <slotvalue slot="Speed" value="173" />
+  <slotvalue slot="Color" value="light_gray" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="31099.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="110" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.9_tdi" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="111_vw">
+  <slotvalue slot="Miles" value="119033" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="light_gray" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="10399.0" />
+  <slotvalue slot="Body" value="convertible" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="111" />
+  <slotvalue slot="Power" value="75" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="112_vw">
+  <slotvalue slot="Miles" value="35196" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_gray" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="21799.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="112" />
+  <slotvalue slot="Power" value="90" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="7" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="113_bmw">
+  <slotvalue slot="Miles" value="7599" />
+  <slotvalue slot="Speed" value="252" />
+  <slotvalue slot="Color" value="light_gray" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="88599.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="4000" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="113" />
+  <slotvalue slot="Power" value="285" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="540i" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="114_mercedes-benz">
+  <slotvalue slot="Miles" value="98939" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="blue" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="24999.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2000" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="114" />
+  <slotvalue slot="Power" value="136" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_200" />
+  <slotvalue slot="ZIP" value="9" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="115_bmw">
+  <slotvalue slot="Miles" value="2798" />
+  <slotvalue slot="Speed" value="241" />
+  <slotvalue slot="Color" value="silver" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="47999.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="3200" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="115" />
+  <slotvalue slot="Power" value="150" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="320i" />
+  <slotvalue slot="ZIP" value="7" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="116_audi">
+  <slotvalue slot="Miles" value="6962" />
+  <slotvalue slot="Speed" value="173" />
+  <slotvalue slot="Color" value="silver" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="41499.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="116" />
+  <slotvalue slot="Power" value="90" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.9_tdi" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="117_mercedes-benz">
+  <slotvalue slot="Miles" value="168219" />
+  <slotvalue slot="Speed" value="187" />
+  <slotvalue slot="Color" value="green" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="11599.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2200" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="117" />
+  <slotvalue slot="Power" value="95" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="c_220_diesel" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="118_vw">
+  <slotvalue slot="Miles" value="14174" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="blue" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="22199.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="118" />
+  <slotvalue slot="Power" value="60" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="119_vw">
+  <slotvalue slot="Miles" value="97907" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_red" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="12399.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="119" />
+  <slotvalue slot="Power" value="64" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="7" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="11_mercedes-benz">
+  <slotvalue slot="Miles" value="17742" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="yellow" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="58699.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="11" />
+  <slotvalue slot="Power" value="204" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_280" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="120_vw">
+  <slotvalue slot="Miles" value="91379" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="gray" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="13499.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="120" />
+  <slotvalue slot="Power" value="100" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="121_bmw">
+  <slotvalue slot="Miles" value="118883" />
+  <slotvalue slot="Speed" value="197" />
+  <slotvalue slot="Color" value="turquoise" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="19699.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2300" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="121" />
+  <slotvalue slot="Power" value="170" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="323i" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="122_mercedes-benz">
+  <slotvalue slot="Miles" value="10250" />
+  <slotvalue slot="Speed" value="224" />
+  <slotvalue slot="Color" value="dark_gray" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="55999.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="122" />
+  <slotvalue slot="Power" value="130" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_290_diesel" />
+  <slotvalue slot="ZIP" value="9" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="123_bmw">
+  <slotvalue slot="Miles" value="130378" />
+  <slotvalue slot="Speed" value="197" />
+  <slotvalue slot="Color" value="anthracite" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="20599.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2300" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="123" />
+  <slotvalue slot="Power" value="170" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="523i" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="124_bmw">
+  <slotvalue slot="Miles" value="11479" />
+  <slotvalue slot="Speed" value="241" />
+  <slotvalue slot="Color" value="dark_gray" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="82699.0" />
+  <slotvalue slot="Body" value="roadster" />
+  <slotvalue slot="CCM" value="3200" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="124" />
+  <slotvalue slot="Power" value="320" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="m_roadster" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="125_vw">
+  <slotvalue slot="Miles" value="21629" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_green" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="23399.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="125" />
+  <slotvalue slot="Power" value="64" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="9" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="126_bmw">
+  <slotvalue slot="Miles" value="90795" />
+  <slotvalue slot="Speed" value="197" />
+  <slotvalue slot="Color" value="yellow" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="28599.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2300" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="126" />
+  <slotvalue slot="Power" value="170" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="523i" />
+  <slotvalue slot="ZIP" value="6" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="127_bmw">
+  <slotvalue slot="Miles" value="93950" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="turquoise" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="26499.0" />
+  <slotvalue slot="Body" value="coupe" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="127" />
+  <slotvalue slot="Power" value="193" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="328i" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="128_bmw">
+  <slotvalue slot="Miles" value="2100" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="gray" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="56099.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="128" />
+  <slotvalue slot="Power" value="193" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="328i" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="129_mercedes-benz">
+  <slotvalue slot="Miles" value="7185" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="dark_blue" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="51799.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2400" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="129" />
+  <slotvalue slot="Power" value="170" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="c_240" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="12_audi">
+  <slotvalue slot="Miles" value="36304" />
+  <slotvalue slot="Speed" value="173" />
+  <slotvalue slot="Color" value="dark_green" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="31899.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="12" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.9_tdi" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="130_audi">
+  <slotvalue slot="Miles" value="6889" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="dark_gray" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="49699.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="130" />
+  <slotvalue slot="Power" value="193" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_2.8" />
+  <slotvalue slot="ZIP" value="7" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="131_bmw">
+  <slotvalue slot="Miles" value="50415" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="dark_blue" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="37899.0" />
+  <slotvalue slot="Body" value="coupe" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="131" />
+  <slotvalue slot="Power" value="193" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="328i" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="132_mercedes-benz">
+  <slotvalue slot="Miles" value="58002" />
+  <slotvalue slot="Speed" value="252" />
+  <slotvalue slot="Color" value="green" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="61699.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="4300" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="132" />
+  <slotvalue slot="Power" value="278" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_430" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="133_bmw">
+  <slotvalue slot="Miles" value="70747" />
+  <slotvalue slot="Speed" value="203" />
+  <slotvalue slot="Color" value="yellow" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="33299.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2500" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="133" />
+  <slotvalue slot="Power" value="142" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="525tds" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="134_vw">
+  <slotvalue slot="Miles" value="69137" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="orange" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="19699.0" />
+  <slotvalue slot="Body" value="convertible" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="134" />
+  <slotvalue slot="Power" value="115" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="135_audi">
+  <slotvalue slot="Miles" value="116143" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="red" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="15199.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1600" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="135" />
+  <slotvalue slot="Power" value="101" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.6" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="136_bmw">
+  <slotvalue slot="Miles" value="60893" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_gray" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="34299.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2000" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="136" />
+  <slotvalue slot="Power" value="150" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="520i" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="137_bmw">
+  <slotvalue slot="Miles" value="46073" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="light_gray" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="46299.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="137" />
+  <slotvalue slot="Power" value="193" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="528i" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="138_vw">
+  <slotvalue slot="Miles" value="85505" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="anthracite" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="13699.0" />
+  <slotvalue slot="Body" value="convertible" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="138" />
+  <slotvalue slot="Power" value="75" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="139_vw">
+  <slotvalue slot="Miles" value="89053" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_gray" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="11899.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="139" />
+  <slotvalue slot="Power" value="60" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="0" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="13_bmw">
+  <slotvalue slot="Miles" value="65071" />
+  <slotvalue slot="Speed" value="203" />
+  <slotvalue slot="Color" value="white" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="34899.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2500" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="13" />
+  <slotvalue slot="Power" value="142" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="525tds" />
+  <slotvalue slot="ZIP" value="0" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="140_mercedes-benz">
+  <slotvalue slot="Miles" value="22737" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="dark_green" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="56099.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="140" />
+  <slotvalue slot="Power" value="204" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_280" />
+  <slotvalue slot="ZIP" value="6" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="141_bmw">
+  <slotvalue slot="Miles" value="72996" />
+  <slotvalue slot="Speed" value="252" />
+  <slotvalue slot="Color" value="white" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="51699.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="4000" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="141" />
+  <slotvalue slot="Power" value="285" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="540i" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="142_mercedes-benz">
+  <slotvalue slot="Miles" value="47764" />
+  <slotvalue slot="Speed" value="241" />
+  <slotvalue slot="Color" value="black" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="53699.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="3200" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="142" />
+  <slotvalue slot="Power" value="224" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_320" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="143_mercedes-benz">
+  <slotvalue slot="Miles" value="99078" />
+  <slotvalue slot="Speed" value="224" />
+  <slotvalue slot="Color" value="black" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="29799.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="3000" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="143" />
+  <slotvalue slot="Power" value="176" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_300_diesel" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="144_vw">
+  <slotvalue slot="Miles" value="76755" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_gray" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="14799.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="144" />
+  <slotvalue slot="Power" value="64" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="145_audi">
+  <slotvalue slot="Miles" value="155998" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="blue" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="10899.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1600" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="145" />
+  <slotvalue slot="Power" value="101" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.6" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="146_mercedes-benz">
+  <slotvalue slot="Miles" value="50275" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="green" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="44699.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="146" />
+  <slotvalue slot="Power" value="204" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_280" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="147_mercedes-benz">
+  <slotvalue slot="Miles" value="16373" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_blue" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="43599.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2000" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="147" />
+  <slotvalue slot="Power" value="136" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="c_200" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="148_vw">
+  <slotvalue slot="Miles" value="129801" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="light_blue" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="13599.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="148" />
+  <slotvalue slot="Power" value="90" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="passat" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="149_vw">
+  <slotvalue slot="Miles" value="50194" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_blue" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="16499.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="149" />
+  <slotvalue slot="Power" value="60" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="14_mercedes-benz">
+  <slotvalue slot="Miles" value="148011" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="violet" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="14599.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2000" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="14" />
+  <slotvalue slot="Power" value="136" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="c_200" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="150_vw">
+  <slotvalue slot="Miles" value="38652" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="gray" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="23899.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="150" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="6" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="151_bmw">
+  <slotvalue slot="Miles" value="4296" />
+  <slotvalue slot="Speed" value="197" />
+  <slotvalue slot="Color" value="dark_blue" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="51099.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="2300" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="151" />
+  <slotvalue slot="Power" value="170" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="323i" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="152_vw">
+  <slotvalue slot="Miles" value="16766" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="violet" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="27999.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="152" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="153_vw">
+  <slotvalue slot="Miles" value="133085" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="gray" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="10899.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="153" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="154_mercedes-benz">
+  <slotvalue slot="Miles" value="16339" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="gray" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="52399.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="154" />
+  <slotvalue slot="Power" value="197" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="c_280" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="155_bmw">
+  <slotvalue slot="Miles" value="15741" />
+  <slotvalue slot="Speed" value="241" />
+  <slotvalue slot="Color" value="orange" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="43899.0" />
+  <slotvalue slot="Body" value="coupe" />
+  <slotvalue slot="CCM" value="3200" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="155" />
+  <slotvalue slot="Power" value="150" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="320i" />
+  <slotvalue slot="ZIP" value="6" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="156_vw">
+  <slotvalue slot="Miles" value="100542" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_green" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="11699.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="156" />
+  <slotvalue slot="Power" value="75" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="157_vw">
+  <slotvalue slot="Miles" value="141859" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="orange" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="12299.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="157" />
+  <slotvalue slot="Power" value="90" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="passat" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="158_vw">
+  <slotvalue slot="Miles" value="22215" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="blue" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="23099.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="158" />
+  <slotvalue slot="Power" value="115" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="159_audi">
+  <slotvalue slot="Miles" value="30656" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="anthracite" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="32799.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="159" />
+  <slotvalue slot="Power" value="125" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.8" />
+  <slotvalue slot="ZIP" value="7" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="15_mercedes-benz">
+  <slotvalue slot="Miles" value="105427" />
+  <slotvalue slot="Speed" value="252" />
+  <slotvalue slot="Color" value="blue" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="41499.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="4300" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="15" />
+  <slotvalue slot="Power" value="278" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_430" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="160_bmw">
+  <slotvalue slot="Miles" value="30929" />
+  <slotvalue slot="Speed" value="203" />
+  <slotvalue slot="Color" value="black" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="38599.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2500" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="160" />
+  <slotvalue slot="Power" value="115" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="325td" />
+  <slotvalue slot="ZIP" value="0" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="161_bmw">
+  <slotvalue slot="Miles" value="64899" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="turquoise" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="23299.0" />
+  <slotvalue slot="Body" value="coupe" />
+  <slotvalue slot="CCM" value="1600" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="161" />
+  <slotvalue slot="Power" value="102" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="316i" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="162_audi">
+  <slotvalue slot="Miles" value="105446" />
+  <slotvalue slot="Speed" value="173" />
+  <slotvalue slot="Color" value="dark_green" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="20399.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="162" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.9_tdi" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="163_audi">
+  <slotvalue slot="Miles" value="24463" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="silver" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="47299.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2400" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="163" />
+  <slotvalue slot="Power" value="165" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a6_2.4" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="164_bmw">
+  <slotvalue slot="Miles" value="63616" />
+  <slotvalue slot="Speed" value="241" />
+  <slotvalue slot="Color" value="blue" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="52999.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="3500" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="164" />
+  <slotvalue slot="Power" value="320" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="m3" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="165_vw">
+  <slotvalue slot="Miles" value="51403" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_blue" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="21499.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="165" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="166_audi">
+  <slotvalue slot="Miles" value="31774" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="orange" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="42999.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="166" />
+  <slotvalue slot="Power" value="193" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_2.8" />
+  <slotvalue slot="ZIP" value="9" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="167_vw">
+  <slotvalue slot="Miles" value="31763" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_green" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="19599.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="167" />
+  <slotvalue slot="Power" value="75" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="168_audi">
+  <slotvalue slot="Miles" value="79617" />
+  <slotvalue slot="Speed" value="173" />
+  <slotvalue slot="Color" value="orange" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="25199.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="168" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.9_tdi" />
+  <slotvalue slot="ZIP" value="6" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="169_mercedes-benz">
+  <slotvalue slot="Miles" value="43998" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="violet" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="38099.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2400" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="169" />
+  <slotvalue slot="Power" value="170" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="c_240" />
+  <slotvalue slot="ZIP" value="6" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="16_bmw">
+  <slotvalue slot="Miles" value="25976" />
+  <slotvalue slot="Speed" value="203" />
+  <slotvalue slot="Color" value="turquoise" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="41899.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2500" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="16" />
+  <slotvalue slot="Power" value="142" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="325tds" />
+  <slotvalue slot="ZIP" value="7" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="170_vw">
+  <slotvalue slot="Miles" value="34058" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_green" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="20599.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="170" />
+  <slotvalue slot="Power" value="90" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="9" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="171_mercedes-benz">
+  <slotvalue slot="Miles" value="7579" />
+  <slotvalue slot="Speed" value="252" />
+  <slotvalue slot="Color" value="violet" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="92399.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="4300" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="171" />
+  <slotvalue slot="Power" value="278" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_430" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="172_vw">
+  <slotvalue slot="Miles" value="62049" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="orange" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="14899.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="172" />
+  <slotvalue slot="Power" value="60" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="9" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="173_vw">
+  <slotvalue slot="Miles" value="64113" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="red" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="24599.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="173" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="passat" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="174_audi">
+  <slotvalue slot="Miles" value="45540" />
+  <slotvalue slot="Speed" value="173" />
+  <slotvalue slot="Color" value="dark_green" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="36899.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="174" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a6_1.9_tdi" />
+  <slotvalue slot="ZIP" value="7" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="175_mercedes-benz">
+  <slotvalue slot="Miles" value="51534" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_blue" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="29299.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="175" />
+  <slotvalue slot="Power" value="122" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="c_180" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="176_bmw">
+  <slotvalue slot="Miles" value="127850" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="light_gray" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="19999.0" />
+  <slotvalue slot="Body" value="coupe" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="176" />
+  <slotvalue slot="Power" value="193" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="328i" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="177_bmw">
+  <slotvalue slot="Miles" value="130639" />
+  <slotvalue slot="Speed" value="203" />
+  <slotvalue slot="Color" value="turquoise" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="17499.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2500" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="177" />
+  <slotvalue slot="Power" value="142" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="325tds" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="178_vw">
+  <slotvalue slot="Miles" value="22951" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="blue" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="28899.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="178" />
+  <slotvalue slot="Power" value="115" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="9" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="179_bmw">
+  <slotvalue slot="Miles" value="50043" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="orange" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="26399.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1600" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="179" />
+  <slotvalue slot="Power" value="102" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="316i" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="17_vw">
+  <slotvalue slot="Miles" value="71433" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_blue" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="22099.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="17" />
+  <slotvalue slot="Power" value="90" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="passat" />
+  <slotvalue slot="ZIP" value="6" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="180_bmw">
+  <slotvalue slot="Miles" value="97396" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="turquoise" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="27099.0" />
+  <slotvalue slot="Body" value="roadster" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="180" />
+  <slotvalue slot="Power" value="191" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="z3_2.8" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="181_audi">
+  <slotvalue slot="Miles" value="34679" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="black" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="35999.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="181" />
+  <slotvalue slot="Power" value="150" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.8_t" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="182_vw">
+  <slotvalue slot="Miles" value="72794" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="red" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="14699.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="182" />
+  <slotvalue slot="Power" value="64" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="183_bmw">
+  <slotvalue slot="Miles" value="3233" />
+  <slotvalue slot="Speed" value="241" />
+  <slotvalue slot="Color" value="dark_red" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="46699.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="3200" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="183" />
+  <slotvalue slot="Power" value="150" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="320i" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="184_mercedes-benz">
+  <slotvalue slot="Miles" value="51735" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="turquoise" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="35699.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2400" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="184" />
+  <slotvalue slot="Power" value="170" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="c_240" />
+  <slotvalue slot="ZIP" value="9" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="185_bmw">
+  <slotvalue slot="Miles" value="52910" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_blue" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="36699.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2000" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="185" />
+  <slotvalue slot="Power" value="150" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="520i" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="186_bmw">
+  <slotvalue slot="Miles" value="103836" />
+  <slotvalue slot="Speed" value="197" />
+  <slotvalue slot="Color" value="orange" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="22299.0" />
+  <slotvalue slot="Body" value="fastback" />
+  <slotvalue slot="CCM" value="2300" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="186" />
+  <slotvalue slot="Power" value="170" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="323i" />
+  <slotvalue slot="ZIP" value="0" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="187_bmw">
+  <slotvalue slot="Miles" value="60484" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="white" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="34999.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="187" />
+  <slotvalue slot="Power" value="193" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="328i" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="188_vw">
+  <slotvalue slot="Miles" value="87273" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="orange" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="12099.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="188" />
+  <slotvalue slot="Power" value="60" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="189_vw">
+  <slotvalue slot="Miles" value="2922" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_gray" />
+  <slotvalue slot="Year" value="1997" />
+  <slotvalue slot="Price" value="25999.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="189" />
+  <slotvalue slot="Power" value="64" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="18_mercedes-benz">
+  <slotvalue slot="Miles" value="44746" />
+  <slotvalue slot="Speed" value="224" />
+  <slotvalue slot="Color" value="light_gray" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="46799.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="3000" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="18" />
+  <slotvalue slot="Power" value="176" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_300_diesel" />
+  <slotvalue slot="ZIP" value="1" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="190_audi">
+  <slotvalue slot="Miles" value="10865" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="blue" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="35799.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1600" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="190" />
+  <slotvalue slot="Power" value="101" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.6" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="191_bmw">
+  <slotvalue slot="Miles" value="28663" />
+  <slotvalue slot="Speed" value="197" />
+  <slotvalue slot="Color" value="dark_green" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="47999.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2300" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="191" />
+  <slotvalue slot="Power" value="170" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="523i" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="192_bmw">
+  <slotvalue slot="Miles" value="66469" />
+  <slotvalue slot="Speed" value="197" />
+  <slotvalue slot="Color" value="black" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="35099.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2300" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="192" />
+  <slotvalue slot="Power" value="170" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="523i" />
+  <slotvalue slot="ZIP" value="2" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="193_mercedes-benz">
+  <slotvalue slot="Miles" value="38566" />
+  <slotvalue slot="Speed" value="187" />
+  <slotvalue slot="Color" value="dark_red" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="39899.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="2200" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="193" />
+  <slotvalue slot="Power" value="95" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="e_220_diesel" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="194_bmw">
+  <slotvalue slot="Miles" value="27984" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="dark_red" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="39599.0" />
+  <slotvalue slot="Body" value="roadster" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="194" />
+  <slotvalue slot="Power" value="140" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="z3_1.9" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="195_mercedes-benz">
+  <slotvalue slot="Miles" value="9388" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="red" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="44299.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2000" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="195" />
+  <slotvalue slot="Power" value="136" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="mercedes-benz" />
+  <slotvalue slot="Model" value="c_200" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="196_bmw">
+  <slotvalue slot="Miles" value="22901" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="gray" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="30699.0" />
+  <slotvalue slot="Body" value="coupe" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="196" />
+  <slotvalue slot="Power" value="115" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="bmw" />
+  <slotvalue slot="Model" value="318i" />
+  <slotvalue slot="ZIP" value="4" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example" />
+</Instance>
+<Instance model_instname="197_audi">
+  <slotvalue slot="Miles" value="145863" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="blue" />
+  <slotvalue slot="Year" value="1995" />
+  <slotvalue slot="Price" value="12999.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="197" />
+  <slotvalue slot="Power" value="125" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_1.8" />
+  <slotvalue slot="ZIP" value="5" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Exxaample" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Exxaample" />
+</Instance>
+<Instance model_instname="198_audi">
+  <slotvalue slot="Miles" value="76575" />
+  <slotvalue slot="Speed" value="213" />
+  <slotvalue slot="Color" value="red" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="29599.0" />
+  <slotvalue slot="Body" value="sedan" />
+  <slotvalue slot="CCM" value="2800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="198" />
+  <slotvalue slot="Power" value="193" />
+
+  <slotvalue slot="Doors" value="4" />
+
+  <slotvalue slot="Manufacturer" value="audi" />
+  <slotvalue slot="Model" value="a4_2.8" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Exxample" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Exxample" />
+</Instance>
+<Instance model_instname="199_vw">
+  <slotvalue slot="Miles" value="46016" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="turquoise" />
+  <slotvalue slot="Year" value="1996" />
+  <slotvalue slot="Price" value="28599.0" />
+  <slotvalue slot="Body" value="station_wagon" />
+  <slotvalue slot="CCM" value="1900" />
+  <slotvalue slot="Gas" value="diesel" />
+  <slotvalue slot="Car Code" value="199" />
+  <slotvalue slot="Power" value="110" />
+
+  <slotvalue slot="Doors" value="5" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="passat" />
+  <slotvalue slot="ZIP" value="3" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example3" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example4" />
+</Instance>
+<Instance model_instname="19_vw">
+  <slotvalue slot="Miles" value="41044" />
+  <slotvalue slot="Speed" value="183" />
+  <slotvalue slot="Color" value="red" />
+  <slotvalue slot="Year" value="1994" />
+  <slotvalue slot="Price" value="18099.0" />
+  <slotvalue slot="Body" value="convertible" />
+  <slotvalue slot="CCM" value="1800" />
+  <slotvalue slot="Gas" value="gasoline" />
+  <slotvalue slot="Car Code" value="19" />
+  <slotvalue slot="Power" value="100" />
+
+  <slotvalue slot="Doors" value="2" />
+
+  <slotvalue slot="Manufacturer" value="vw" />
+  <slotvalue slot="Model" value="golf" />
+  <slotvalue slot="ZIP" value="8" />
+  <slotvalue slot="used_cars_flat_Class0" value="This is an Example1" />
+  <slotvalue slot="used_cars_flat_Class1" value="This is an Example2" />
+</Instance>
+ -->
+</Instances_for_Class>
+</Document>

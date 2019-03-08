@@ -1,0 +1,55 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<project name = "myCBR jar" default = "build" basedir = ".">
+
+	
+	<property name = "mycbr_bin"          	value = "${user.dir}/bin"/>
+	<property name = "mycbr_src"          	value = "${user.dir}/src"/>
+	<property name = "mycbr_dist"          	value = "${user.dir}/dist"/>
+	<property name = "mycbr_doc"          	value = "${user.dir}/doc"/>
+	<property name = "targetVM"             value = "1.5"/>
+	<property name = "version"          	value = "3.0.0BETA"/>	
+	<property name = "jarName"          	value = "myCBR${version}.jar"/>
+	<property name = "zipName"          	value = "myCBR${version}.zip"/>
+	<!-- generates a jar file -->
+	
+	<!-- =================================================================== -->
+	<target name = "generate_jar">
+		<mkdir dir="${mycbr_bin}"/>
+		<delete file="../de.dfki.mycbr.gui/lib/mycbr.jar" />
+		<jar destfile="../de.dfki.mycbr.gui/lib/mycbr.jar" >
+			<fileset dir="${mycbr_bin}"> 
+				<exclude name="**/junittest/**" />
+			</fileset>
+		</jar>
+		<mkdir dir="${mycbr_dist}"/>
+		<delete file="${mycbr_dist}/${jarName}" />
+		<jar destfile="${mycbr_dist}/${jarName}" >
+			<fileset dir="${mycbr_bin}"> 
+				<exclude name="**/junittest/**" />
+			</fileset>
+		</jar>
+
+		
+	</target>
+	<!-- =================================================================== -->
+
+	<target name = "zip_sources">
+		<delete file="${mycbr_dist}/${zipName}" />
+		<zip destfile="${mycbr_dist}/${zipName}">
+			<fileset dir="${mycbr_src}"> 
+				<exclude name="**/junittest/**" />
+			</fileset>
+		</zip>
+	</target>
+	
+	<target name="javadoc">
+		<mkdir dir="${mycbr_doc}"/>
+		<javadoc destdir="${mycbr_doc}" access="public">
+			<fileset dir="${mycbr_src}"> 
+				<exclude name="**/junittest/**" />
+			</fileset>
+		</javadoc>
+	</target>
+	
+	<target name = "build" depends = "generate_jar,zip_sources" /> 
+</project>

@@ -1,0 +1,12 @@
+.idea/
+bin/**/*
+*.iml
+*.pins
+*.pont
+*_CBR_OPTIONS.XML
+*_CBR_EXPLANATIONS.XML
+*.myCB
+*.myCBR
+*.myExp
+*.config
+/bin

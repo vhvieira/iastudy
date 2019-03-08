@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+<id>1</id>
+<connection>
+	<host>localhost</host>
+	<port>5432</port>
+	<user>mycbr</user>
+	<pass>mysecret</pass>
+	<driver>org.postgresql.Driver</driver>
+	<dbtype>postgresql</dbtype>
+	<dbname>UsedCars</dbname>
+</connection>
+<table>
+	<name>cars</name>
+	<column>
+		<source>carcode</source>
+		<target>Car Code</target>
+	</column>
+	<column>
+		<source>manufacturer</source>
+		<target>Manufacturer</target>
+	</column>
+	<column>
+		<source>model</source>
+		<target>Model</target>
+	</column>
+	<column>
+		<source>body</source>
+		<target>Body</target>
+	</column>
+	<column>
+		<source>price</source>
+		<target>Price</target>
+	</column>
+	<column>
+		<source>color</source>
+		<target>Color</target>
+	</column>
+	<column>
+		<source>year</source>
+		<target>Year</target>
+	</column>
+	<column>
+		<source>miles</source>
+		<target>Miles</target>
+	</column>
+	<column>
+		<source>doors</source>
+		<target>Doors</target>
+	</column>
+	<column>
+		<source>power</source>
+		<target>Power</target>
+	</column>
+	<column>
+		<source>gas</source>
+		<target>Gas</target>
+	</column>
+	<column>
+		<source>speed</source>
+		<target>Speed</target>
+	</column>
+	<column>
+		<source>ccm</source>
+		<target>CCM</target>
+	</column>
+	<column>
+		<source>zip</source>
+		<target>ZIP</target>
+	</column>
+</table>
+</database>
