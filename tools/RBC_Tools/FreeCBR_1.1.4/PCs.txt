@@ -1,0 +1,9 @@
+Brand	CPU speed (MHz)	Storage (GB)	DVD	Peripherals
+String	Int	Float	Bool	MultiString
+Compag	2200	120.0	true	TFT;Scanner
+JBM	1800	250.0	false	Printer
+BELL	2400	100.0	true	Modem;Printer
+AgeP	3000	200.0	false	TFT;Printer
+Gatewave	3200	100.0	true	
+Fuyitsu	1800	120	true	Modem
+ASUSS	2600	500	true	TFT

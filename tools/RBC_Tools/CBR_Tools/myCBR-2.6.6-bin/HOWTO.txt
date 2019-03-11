@@ -1,0 +1,18 @@
+There are two ways to use MyCBR:
+you can use it as a plugin for Protege:
+ * just copy the protege plugin directory into the plugins folder of protege. 
+   This plugin directory (name is de.dfki.mycbr) is to be found under './distribution/protege_plugin'
+   NOTE: Once you've started Protege you can enable this plugin under Project -> Configure...
+   
+and you can use it as a standalone application
+ * just start the runnable jar file under './distribution/standalone/'
+   In this case you should be aware that you cannot build up your model. You can only use it. (only retrieval right now)
+   
+So, to build up your model and load your casebase from a csv file, you have to use protege (http://protege.stanford.edu/)
+
+
+Please report bugs, suggestions, etc. to:  bahls [at] dfki.uni-kl.de
+
+
+Have fun,
+Daniel Bahls (DFKI)

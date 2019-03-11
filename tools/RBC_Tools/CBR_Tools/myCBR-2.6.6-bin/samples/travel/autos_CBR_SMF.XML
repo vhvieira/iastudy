@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document MyCBR_version="2.6.6" Project_version="0.1" Project_author="unknown author">
+<SpecialValueHandler>
+  <SpecialValue Label="undefined" />
+  <InternalSMF smfname="SpecialValuesSMF" model_instname="_SPECIAL_VALUES_" type="Symbol">
+    <QuerySymbol symbol="Non-Special Value">
+      <CBSymbol sim="1.0" symbol="Non-Special Value" />
+    </QuerySymbol>
+    <QuerySymbol symbol="undefined">
+      <CBSymbol sim="1.0" symbol="undefined" />
+    </QuerySymbol>
+  </InternalSMF>
+</SpecialValueHandler>
+<Holder>
+<SMFunction smfname="default" model_instname="Body" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="convertible">
+    <CBSymbol sim="1.0" symbol="convertible" />
+  </QuerySymbol>
+  <QuerySymbol symbol="coupe">
+    <CBSymbol sim="1.0" symbol="coupe" />
+  </QuerySymbol>
+  <QuerySymbol symbol="fastback">
+    <CBSymbol sim="1.0" symbol="fastback" />
+  </QuerySymbol>
+  <QuerySymbol symbol="roadster">
+    <CBSymbol sim="1.0" symbol="roadster" />
+  </QuerySymbol>
+  <QuerySymbol symbol="sedan">
+    <CBSymbol sim="1.0" symbol="sedan" />
+  </QuerySymbol>
+  <QuerySymbol symbol="station_wagon">
+    <CBSymbol sim="1.0" symbol="station_wagon" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Model" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="316i">
+    <CBSymbol sim="1.0" symbol="316i" />
+  </QuerySymbol>
+  <QuerySymbol symbol="318i">
+    <CBSymbol sim="1.0" symbol="318i" />
+  </QuerySymbol>
+  <QuerySymbol symbol="320i">
+    <CBSymbol sim="1.0" symbol="320i" />
+  </QuerySymbol>
+  <QuerySymbol symbol="323i">
+    <CBSymbol sim="1.0" symbol="323i" />
+  </QuerySymbol>
+  <QuerySymbol symbol="325td">
+    <CBSymbol sim="1.0" symbol="325td" />
+  </QuerySymbol>
+  <QuerySymbol symbol="325tds">
+    <CBSymbol sim="1.0" symbol="325tds" />
+  </QuerySymbol>
+  <QuerySymbol symbol="328i">
+    <CBSymbol sim="1.0" symbol="328i" />
+  </QuerySymbol>
+  <QuerySymbol symbol="520i">
+    <CBSymbol sim="1.0" symbol="520i" />
+  </QuerySymbol>
+  <QuerySymbol symbol="523i">
+    <CBSymbol sim="1.0" symbol="523i" />
+  </QuerySymbol>
+  <QuerySymbol symbol="525tds">
+    <CBSymbol sim="1.0" symbol="525tds" />
+  </QuerySymbol>
+  <QuerySymbol symbol="528i">
+    <CBSymbol sim="1.0" symbol="528i" />
+  </QuerySymbol>
+  <QuerySymbol symbol="535i">
+    <CBSymbol sim="1.0" symbol="535i" />
+  </QuerySymbol>
+  <QuerySymbol symbol="540i">
+    <CBSymbol sim="1.0" symbol="540i" />
+  </QuerySymbol>
+  <QuerySymbol symbol="a4_1.6">
+    <CBSymbol sim="1.0" symbol="a4_1.6" />
+  </QuerySymbol>
+  <QuerySymbol symbol="a4_1.8">
+    <CBSymbol sim="1.0" symbol="a4_1.8" />
+  </QuerySymbol>
+  <QuerySymbol symbol="a4_1.8_t">
+    <CBSymbol sim="1.0" symbol="a4_1.8_t" />
+  </QuerySymbol>
+  <QuerySymbol symbol="a4_1.9_tdi">
+    <CBSymbol sim="1.0" symbol="a4_1.9_tdi" />
+  </QuerySymbol>
+  <QuerySymbol symbol="a4_2.8">
+    <CBSymbol sim="1.0" symbol="a4_2.8" />
+  </QuerySymbol>
+  <QuerySymbol symbol="a6_1.8_t">
+    <CBSymbol sim="1.0" symbol="a6_1.8_t" />
+  </QuerySymbol>
+  <QuerySymbol symbol="a6_1.9_tdi">
+    <CBSymbol sim="1.0" symbol="a6_1.9_tdi" />
+  </QuerySymbol>
+  <QuerySymbol symbol="a6_2.4">
+    <CBSymbol sim="1.0" symbol="a6_2.4" />
+  </QuerySymbol>
+  <QuerySymbol symbol="a6_2.8">
+    <CBSymbol sim="1.0" symbol="a6_2.8" />
+  </QuerySymbol>
+  <QuerySymbol symbol="c_180">
+    <CBSymbol sim="1.0" symbol="c_180" />
+  </QuerySymbol>
+  <QuerySymbol symbol="c_200">
+    <CBSymbol sim="1.0" symbol="c_200" />
+  </QuerySymbol>
+  <QuerySymbol symbol="c_220_diesel">
+    <CBSymbol sim="1.0" symbol="c_220_diesel" />
+  </QuerySymbol>
+  <QuerySymbol symbol="c_230_kompressor">
+    <CBSymbol sim="1.0" symbol="c_230_kompressor" />
+  </QuerySymbol>
+  <QuerySymbol symbol="c_240">
+    <CBSymbol sim="1.0" symbol="c_240" />
+  </QuerySymbol>
+  <QuerySymbol symbol="c_250_diesel">
+    <CBSymbol sim="1.0" symbol="c_250_diesel" />
+  </QuerySymbol>
+  <QuerySymbol symbol="c_280">
+    <CBSymbol sim="1.0" symbol="c_280" />
+  </QuerySymbol>
+  <QuerySymbol symbol="e_200">
+    <CBSymbol sim="1.0" symbol="e_200" />
+  </QuerySymbol>
+  <QuerySymbol symbol="e_220_diesel">
+    <CBSymbol sim="1.0" symbol="e_220_diesel" />
+  </QuerySymbol>
+  <QuerySymbol symbol="e_280">
+    <CBSymbol sim="1.0" symbol="e_280" />
+  </QuerySymbol>
+  <QuerySymbol symbol="e_290_diesel">
+    <CBSymbol sim="1.0" symbol="e_290_diesel" />
+  </QuerySymbol>
+  <QuerySymbol symbol="e_300_diesel">
+    <CBSymbol sim="1.0" symbol="e_300_diesel" />
+  </QuerySymbol>
+  <QuerySymbol symbol="e_320">
+    <CBSymbol sim="1.0" symbol="e_320" />
+  </QuerySymbol>
+  <QuerySymbol symbol="e_430">
+    <CBSymbol sim="1.0" symbol="e_430" />
+  </QuerySymbol>
+  <QuerySymbol symbol="golf">
+    <CBSymbol sim="1.0" symbol="golf" />
+  </QuerySymbol>
+  <QuerySymbol symbol="m3">
+    <CBSymbol sim="1.0" symbol="m3" />
+  </QuerySymbol>
+  <QuerySymbol symbol="m_roadster">
+    <CBSymbol sim="1.0" symbol="m_roadster" />
+  </QuerySymbol>
+  <QuerySymbol symbol="passat">
+    <CBSymbol sim="1.0" symbol="passat" />
+  </QuerySymbol>
+  <QuerySymbol symbol="slk_200">
+    <CBSymbol sim="1.0" symbol="slk_200" />
+  </QuerySymbol>
+  <QuerySymbol symbol="slk_230_kompressor">
+    <CBSymbol sim="1.0" symbol="slk_230_kompressor" />
+  </QuerySymbol>
+  <QuerySymbol symbol="z3_1.8">
+    <CBSymbol sim="1.0" symbol="z3_1.8" />
+  </QuerySymbol>
+  <QuerySymbol symbol="z3_1.9">
+    <CBSymbol sim="1.0" symbol="z3_1.9" />
+  </QuerySymbol>
+  <QuerySymbol symbol="z3_2.8">
+    <CBSymbol sim="1.0" symbol="z3_2.8" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="CCM" type="Integer" maxval="6000.0" minval="1000.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="2500.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="2500.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Power" type="Integer" maxval="1000.0" minval="10.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="495.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="495.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Miles" type="Integer" maxval="1000000.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="500000.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="500000.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Color" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="black">
+    <CBSymbol sim="1.0" symbol="black" />
+  </QuerySymbol>
+  <QuerySymbol symbol="blue">
+    <CBSymbol sim="1.0" symbol="blue" />
+  </QuerySymbol>
+  <QuerySymbol symbol="dark_blue">
+    <CBSymbol sim="1.0" symbol="dark_blue" />
+  </QuerySymbol>
+  <QuerySymbol symbol="dark_green">
+    <CBSymbol sim="1.0" symbol="dark_green" />
+  </QuerySymbol>
+  <QuerySymbol symbol="dark_red">
+    <CBSymbol sim="1.0" symbol="dark_red" />
+  </QuerySymbol>
+  <QuerySymbol symbol="gray">
+    <CBSymbol sim="1.0" symbol="gray" />
+  </QuerySymbol>
+  <QuerySymbol symbol="green">
+    <CBSymbol sim="1.0" symbol="green" />
+  </QuerySymbol>
+  <QuerySymbol symbol="light_blue">
+    <CBSymbol sim="1.0" symbol="light_blue" />
+  </QuerySymbol>
+  <QuerySymbol symbol="light_gray">
+    <CBSymbol sim="1.0" symbol="light_gray" />
+  </QuerySymbol>
+  <QuerySymbol symbol="orange">
+    <CBSymbol sim="1.0" symbol="orange" />
+  </QuerySymbol>
+  <QuerySymbol symbol="red">
+    <CBSymbol sim="1.0" symbol="red" />
+  </QuerySymbol>
+  <QuerySymbol symbol="silver">
+    <CBSymbol sim="1.0" symbol="silver" />
+  </QuerySymbol>
+  <QuerySymbol symbol="turquoise">
+    <CBSymbol sim="1.0" symbol="turquoise" />
+  </QuerySymbol>
+  <QuerySymbol symbol="violet">
+    <CBSymbol sim="1.0" symbol="violet" />
+  </QuerySymbol>
+  <QuerySymbol symbol="white">
+    <CBSymbol sim="1.0" symbol="white" />
+  </QuerySymbol>
+  <QuerySymbol symbol="yellow">
+    <CBSymbol sim="1.0" symbol="yellow" />
+  </QuerySymbol>
+  <QuerySymbol symbol="anthracite">
+    <CBSymbol sim="1.0" symbol="anthracite" />
+  </QuerySymbol>
+  <QuerySymbol symbol="dark_gray">
+    <CBSymbol sim="1.0" symbol="dark_gray" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Gas" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="diesel">
+    <CBSymbol sim="1.0" symbol="diesel" />
+  </QuerySymbol>
+  <QuerySymbol symbol="gasoline">
+    <CBSymbol sim="1.0" symbol="gasoline" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Car" type="Class" amalgamation="euclidean" active="true" simMode="Standard">
+  <Slot slotname="Body" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="CCM" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="Car Code" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="Color" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="Doors" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="Gas" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="Manufacturer" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="Miles" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="Model" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="Power" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="Price" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="Speed" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="Year" enabled="true" weight="1.0" comment="" />
+  <Slot slotname="ZIP" enabled="true" weight="1.0" comment="" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Doors" type="Integer" maxval="7.0" minval="2.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="2.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="2.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Year" type="Float" maxval="2007.0" minval="1950.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="28.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="28.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Manufacturer" type="Symbol" active="true" simMode="Table">
+  <QuerySymbol symbol="audi">
+    <CBSymbol sim="1.0" symbol="audi" />
+  </QuerySymbol>
+  <QuerySymbol symbol="bmw">
+    <CBSymbol sim="1.0" symbol="bmw" />
+  </QuerySymbol>
+  <QuerySymbol symbol="mercedes-benz">
+    <CBSymbol sim="1.0" symbol="mercedes-benz" />
+  </QuerySymbol>
+  <QuerySymbol symbol="vw">
+    <CBSymbol sim="1.0" symbol="vw" />
+  </QuerySymbol>
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Speed" type="Integer" maxval="300.0" minval="100.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="100.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="100.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="ZIP" type="Integer" maxval="9.0" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="4.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="4.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Car Code" type="Integer" maxval="1.0E7" minval="0.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="5000000.0" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="5000000.0" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<Holder>
+<SMFunction smfname="default" model_instname="Price" type="Integer" maxval="1000000.0" minval="1.0" modeDiffOrQuotient="0" active="true" simMode="Standard">
+  <LeftSide step="0.0" polinomial="1.0" smooth_step="499999.5" const="1.0" fctMode="polinomial" />
+  <RightSide step="0.0" polinomial="1.0" smooth_step="499999.5" const="1.0" fctMode="polinomial" />
+</SMFunction>
+</Holder>
+<InheritanceMeasure smfname="_IMF_INTERNAL_SMF_" model_instname="_FAKESLOT_IMF_" type="Symbol" topCls="Car">
+  <RootSymbol symbol="Car" simVal="0.0" />
+  <InnerNodesConfig scope="query" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+  <InnerNodesConfig scope="case" has_inner_values="no" inner_semantic="any_value" uncertain="pessimistic" />
+</InheritanceMeasure>
+</Document>

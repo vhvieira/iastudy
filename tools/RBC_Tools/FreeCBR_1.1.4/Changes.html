@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+	<head>
+	</head>
+	<body>
+		<h2>Version FreeCBR 1.1.4</h2>
+		<ul>
+			<li>Updated the documentation regarding how the hit percentage is calculated</li>
+		</ul>
+		<h2>Version FreeCBR 1.1.3</h2>
+		<ul>
+			<li>Made it possible to read files saved in Excel as "tab separated text". This means it is now allowed to enclose MultiString values with quotation marks, and Float values may use comma as decimal separator</li>
+		</ul>
+		<h2>Version FreeCBR 1.1.2</h2>
+		<ul>
+			<li>Added native ActiveX support by changing the code to Java 1.1 and compiling in J++ environment</li>
+		</ul>
+		<h2>Version FreeCBR 1.1.1</h2>
+		<ul>
+		  <li>Added a small MS Excel integration example file that calls FreeCBR from within Excel</li>
+		  <li>Fixed fuzzy "&gt;" and "&lt;" searches for type Int. Example: "&gt;4" returns the same as "&gt;=5" and "&lt;10" returns the same as "&lt;=9"</li>
+		  <li>Fixed a bug in searchAX, weight was actually a Short but is now an Integer (32 bits) which is was meant to be. See also next item</li>
+		  <li>Made the searchAX method more "forgiving", now virtually any kind of number is allowed as input, even numbers in strings (such as "123.4").</li>
+		</ul>
+		<h2>Version FreeCBR 1.1.0</h2>
+		<ul>
+		  <li>Added JSmooth .exe wrapper</li>
+		  <li>Added ActiveX wrapper</li>
+		  <li>Changed so that the GUI is NOT default in read-only mode</li>
+		</ul>
+		<h2>Version FreeCBR 1.0.1</h2>
+		<ul>
+		  <li>Fixed some code in search window</li>
+		  <li>Fixed a bug that prevented the application to be used as a JavaBean</li>
+		  <li>Fixed a bug regarding log file in GUI mode</li>
+		  <li>Added output to stderr and possibility to disable the output</li>
+		  <li>Changed the output log format somewhat</li>
+		  <li>Fixed a couple of bugs related to loading case sets</li>
+		  <li>Fixed a couple of bugs in the JSP-pages</li>
+		</ul>
+		<h2>Version FreeCBR 1.0.0</h2>
+		<ul>
+		  <li>Changed UNIX name to FreeCBR</li>
+		  <li>Added test data file (to web application)</li>
+		</ul>
+		<h2>Version 1.0.1</h2>
+		<ul>
+		  <li>Enhanced the javadoc API documentation</li>
+		  <li>Added the FreeCBR icon to the GUI application</li>
+		</ul>
+		<h2>Version 1.0</h2>
+		<ul>
+		  <li>Changed messages after saving in command line mode</li>
+		  <li>Fixed a bug that prevented the GUI utility to remember when a new case set was saved</li>
+		  <li>Fixed a bug regarding saving a new case set</li>
+		  <li>Fixed a couple of errors in the readme.html file</li>
+		  <li>Fixed a bug regarding using the default empty case set</li>
+		  <li>Added release file creation to the build file</li>
+		</ul>
+		<h2>Version 0.9.1</h2>
+		<ul>
+		  <li>Changed the search options (sorry...)</li>
+		  <ul>
+		  	<li>Changed naming from SEARCH_TYPE_xx to SEARCH_TERM_xx, from SEARCH_DISTANCE_FAR to boolean SEARCH_INVERTED and from SEARCH_SCALE_xx to SEARCH_TYPE_xx</li>
+			<li>Added SEARCH_TYPE_STRICT, SEARCH_TYPE_FUZZY_LINEAR and SEARCH_TYPE_FUZZY_LOGARITHMIC</li>
+			<li>Removed SEARCH_TERM_CLOSE. Use SEARCH_TERM_EQUAL and SEARCH_TYPE_FUZZY_LINEAR instead.</li>
+		  </ul>
+		</ul>
+	</body>
+</html>

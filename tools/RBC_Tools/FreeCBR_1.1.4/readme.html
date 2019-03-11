@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+	<head>
+	</head>
+	<body bgcolor="white">
+		<h1>FreeCBR</h1>
+		<p>
+			This is a <A href="#GUI">GUI application</a>, a <A href="#CommandLine">command line utility</a>, 
+			a <A href="#JavaBean">Java bean</a>, a native <A href="#ActiveX">ActiveX object</a>, 
+			a <A href="#WebApp">web application</a> and a general Java&nbsp; <A href="#API">API</a> for Case Based Reasoning.
+		</p>
+		<p>
+			The current homepage is <a href="http://freecbr.sourceforge.net/">http://freecbr.sourceforge.net/</a>
+		</p>
+		<a name="GUI" >
+		<h2>GUI application</h2>
+		<p>
+			In MS Windows environment, if Java runtime is installed and set up correctly, it is possible to 
+			run <a href="FreeCBR.exe"><b><code>FreeCBR.exe</code></b></a>.
+		</p>
+		<p>
+			Otherwise, to run the package with a graphical user interface, please run 
+			"<code>java -jar {path to the file}FreeCBR.jar</code>" or "<code>java -cp {path to the file}FreeCBR.jar FreeCBR.GUI</code>".
+			If the environment is set up correctly it is also possible to start the application by clicking <A href="FreeCBR.jar">here</a>.
+		</p>
+		<a name="CommandLine" >
+		<h2>Command line utility</h2>
+		To run the package as a command line utility, please run "<code>java -cp {path to the file}FreeCBR.jar FreeCBR.Console</code>".
+		<a name="JavaBean" >
+		<h2>Java bean</h2>
+		To use the package for example in a JSP-solution, the suggested method is to use<br >
+		<code>
+			&lt;jsp:useBean id="CBRBean" scope="application" class="FreeCBR.CBR"/&gt;<br >
+			&lt;%<br >
+			&nbsp;&nbsp;CBRBean.setDatafile("xxxx");<br >
+			&nbsp;&nbsp;CBRBean.readData();<br >
+			%&gt;<br >
+		</code>
+		and in the result page use<br >
+		<code>
+			&lt;jsp:useBean id="CBRBean" scope="application" class="FreeCBR.CBR"/&gt;<br >
+			&lt;%<br >
+			&nbsp;&nbsp;CBRBean.search(request);<br >
+			%&gt;<br >
+		</code>
+		See also the example jsp pages in the FreeCBR.war file, more information in the <A href="#WebApp">Web application</a> section.
+		<a name="ActiveX" >
+		<h2>ActiveX object</h2>
+		<p>
+			ActiveX is now supported natively, no need for any Java at all. To install the ActiveX component, just run <a href="ActiveX/install.bat"><code>ActiveX/install.bat</code></a>.
+		</p>
+		<p>
+			To use the component, run for example
+			<code>
+			  <br >
+			  &nbsp;&nbsp;dim obj<br >
+			  &nbsp;&nbsp;set obj=createobject("FreeCBR.CBR")<br >
+			  &nbsp;&nbsp;obj.setINFINITY_CONSTANT 3<br >
+			  &nbsp;&nbsp;set obj = nothing<br >
+			</code>
+		</p>
+		<p>
+			There is a small test script at <a href="ActiveX/test.vbs"><code>ActiveX/test.vbs</code></a>.
+		</p>
+		<p>
+			There is also an example <A href="ActiveX/example1.xls">Excel file</a> that very briefly shows how FreeCBR 
+			can be integrated in a VBA environment.
+		</p>
+		<p>
+			Please note that the "normal" Java API (as described in the <A href="api/FreeCBR/CBR.html">API documentation</a>) 
+			can be used when using the ActiveX component, but it might be easier to use:
+			<ul>
+				<li><code>getFeatureValueAX</code> instead of <code>getFeatureValue</code>
+				<li><code>getUsedStringValuesAX</code> instead of <code>getUsedStringValues</code>
+				<li><code>searchAX</code> instead of <code>search</code></li>
+			</ul>
+<P></P>
+		<a name="WebApp" >
+		<h2>Web application</h2>
+		<p>
+			There are three .jsp pages within the war-package. They are named "test.jsp", "page1.jsp" and "page2.jsp". 
+			test.jsp displays information about the case set, page1.jsp allows searches in the case set and 
+			test2.jsp will display the result of the search.
+			The easiest way to test the web application is to put FreeCBR.war in the JSP root directory, wait 
+			for it to be unpacked, and then open 
+			<a href="http://localhost/FreeCBR/index.html">http://localhost/FreeCBR/index.html</a>.
+		</p>
+		<p>
+			Note that if another port is used it must be specified. If for example port 8080 is used by the 
+			web server the URL:s should look like 
+			<a href="http://localhost:8080/FreeCBR/index.html">http://localhost:8080/FreeCBR/index.html</a>
+		</p>
+		<p>
+			If no JSP engines are available, I would recommend to install for example the freely available
+			<a href="http://jakarta.apache.org/tomcat/">Apache Tomcat</a>. If that is not an option, it is 
+			possible to open the FreeCBR.war using for example <a href="http://www.winzip.com/">Winzip</a> 
+			or another zip compatible application, perhaps by first renaming the FreeCBR.war file to FreeCBR.zip.
+		</p>
+		<a name="API" >
+		<h2>API</h2>
+		The Java API documentation can normally be found at <A href="api/index.html">api/index.html</a>.
+	</body>
+</html>

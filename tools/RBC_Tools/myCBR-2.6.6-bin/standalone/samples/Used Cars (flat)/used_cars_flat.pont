@@ -1,0 +1,177 @@
+; Tue Oct 27 16:21:52 CET 2009
+; 
+;+ (version "3.3.1")
+;+ (build "Build 430")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot Car+Code
+;+		(comment "Primary key.")
+		(type INTEGER)
+		(range 0 10000000)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot CCM
+		(type INTEGER)
+		(range 1000 6000)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Doors
+		(type INTEGER)
+		(range 2 7)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Color
+		(type SYMBOL)
+		(allowed-values anthracite black blue dark_blue dark_gray dark_green dark_red gray green light_blue light_gray orange red silver turquoise violet white yellow)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Price
+		(type FLOAT)
+		(range 1.0 100000.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Body
+		(type SYMBOL)
+		(allowed-values convertible coupe fastback roadster sedan station_wagon)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Manufacturer
+		(type SYMBOL)
+		(allowed-values audi bmw mercedes-benz vw)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Gas
+		(type SYMBOL)
+		(allowed-values diesel gasoline)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Box_Brand
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Bass
+		(type SYMBOL)
+		(allowed-values NONE Tube Subwoofer)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Receiver_Brand
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot CDPlayer
+		(type SYMBOL)
+		(allowed-values NONE AudioCD Mp3CD Changer)
+		(create-accessor read-write))
+	(single-slot Box_amount
+		(type INTEGER)
+		(range 0 10)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Speed
+		(type INTEGER)
+		(range 100 300)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Model
+		(type SYMBOL)
+		(allowed-values 316i 318i 320i 323i 325td 325tds 328i 520i 523i 525tds 528i 535i 540i a4_1.6 a4_1.8 a4_1.8_t a4_1.9_tdi a4_2.8 a6_1.8_t a6_1.9_tdi a6_2.4 a6_2.8 c_180 c_200 c_220_diesel c_230_kompressor c_240 c_250_diesel c_280 e_200 e_220_diesel e_280 e_290_diesel e_300_diesel e_320 e_430 golf m3 m_roadster passat slk_200 slk_230_kompressor z3_1.8 z3_1.9 z3_2.8 3_series AUDI c_class e_class z3_series 5_series slk VW BMW Mercedes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ZIP
+		(type INTEGER)
+		(range 0 9)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Year
+		(type INTEGER)
+		(range 1950 2007)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Power
+		(type INTEGER)
+		(range 10 1000)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Miles
+		(type INTEGER)
+		(range 0 1000000)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Car
+	(is-a USER)
+	(role concrete)
+	(single-slot Color
+		(type SYMBOL)
+		(allowed-values anthracite black blue dark_blue dark_gray dark_green dark_red gray green light_blue light_gray orange red silver turquoise violet white yellow)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Price
+		(type FLOAT)
+		(range 1.0 100000.0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Car+Code
+;+		(comment "Primary key.")
+		(type INTEGER)
+		(range 0 10000000)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Body
+		(type SYMBOL)
+		(allowed-values convertible coupe fastback roadster sedan station_wagon)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ZIP
+		(type INTEGER)
+		(range 0 9)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot CCM
+		(type INTEGER)
+		(range 1000 6000)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Year
+		(type INTEGER)
+		(range 1950 2007)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Power
+		(type INTEGER)
+		(range 10 1000)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Doors
+		(type INTEGER)
+		(range 2 7)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Manufacturer
+		(type SYMBOL)
+		(allowed-values audi bmw mercedes-benz vw)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Speed
+		(type INTEGER)
+		(range 100 300)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Miles
+		(type INTEGER)
+		(range 0 1000000)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Gas
+		(type SYMBOL)
+		(allowed-values diesel gasoline)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Model
+		(type SYMBOL)
+		(allowed-values 316i 318i 320i 323i 325td 325tds 328i 520i 523i 525tds 528i 535i 540i a4_1.6 a4_1.8 a4_1.8_t a4_1.9_tdi a4_2.8 a6_1.8_t a6_1.9_tdi a6_2.4 a6_2.8 c_180 c_200 c_220_diesel c_230_kompressor c_240 c_250_diesel c_280 e_200 e_220_diesel e_280 e_290_diesel e_300_diesel e_320 e_430 golf m3 m_roadster passat slk_200 slk_230_kompressor z3_1.8 z3_1.9 z3_2.8 3_series AUDI c_class e_class z3_series 5_series slk VW BMW Mercedes)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
