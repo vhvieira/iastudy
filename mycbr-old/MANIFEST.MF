@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Main-Class: de.dfki.mycbr.modelprovider.standalone.Standalone
+Class-Path: lib/protege.jar lib/jdom.jar lib/jython.jar
+
+Name: de/dfki/mycbr/modelprovider/protege/similaritymodeling/MyCbr_Similarities_Tab.class
+Tab-Widget: True
+
+Name: de/dfki/mycbr/modelprovider/protege/explanation/MyCbr_Explanation_Tab.class
+Tab-Widget: True
+
+Name: de/dfki/mycbr/modelprovider/protege/retrieval/MyCbr_Retrieval_Tab.class
+Tab-Widget: True
+
