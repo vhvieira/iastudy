@@ -8,6 +8,7 @@
 target/
 test-output/
 node_modules/**
+**/temp/**
 .orig
 
 # Compiled class file

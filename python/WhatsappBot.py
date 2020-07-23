@@ -1,4 +1,5 @@
 from selenium import webdriver
+from pathlib import Path
 import time
 
 """
@@ -6,8 +7,13 @@ This class defines a whatsapp bot to be used in Phyton
 """
 class WhatsappBot:
     def __init__(self):
-        self.message = " Boa noite, essa é uma messagem automatica! De novo!"
-        self.to = ["Vanessa", "Paulo Nunes"]
+        messageFile = Path('config/message.txt')
+        self.message = str(messageFile.read_text())
+        print( 'Messagem a ser enviada: ' + self.message )
+        listFile = Path('config/list.txt')
+        self.message = str(messageFile.read_text())
+        self.to = list(str(listFile.read_text()).split(';'))
+        print( 'Lista de destinatarios: ' + str(listFile.read_text()) )
         self.options = webdriver.ChromeOptions()
         self.options.add_argument("lang=pt-br")
         self.options.add_argument("user-data-dir=temp");
@@ -21,7 +27,7 @@ class WhatsappBot:
     def SendMessages(self):
         print('Iniciando whatsapp robot')
         self.driver.get("https://web.whatsapp.com")
-        time.sleep(10)
+        time.sleep(15)
         #If we want to keep reading message, we can create a infinity loop here
         #Conversations are class div class="_210SC"
         for dest in self.to:
