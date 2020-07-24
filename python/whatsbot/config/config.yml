@@ -1,0 +1,22 @@
+#message configuration files
+configMessage: config/message.txt
+configList: config/list.txt
+testList: config/test.txt
+testMessage: config/testMessage.txt
+#sleep configuration in seconds
+loadSleep: 30
+shortSleep: 2
+longSleep: 5
+
+#whatsapp web configuration
+lang: pt-br
+data_dir: temp
+whatsapp_url: https://web.whatsapp.com
+#class name of the whatsappweb input fields (filter + message)
+inputChatClass: _3FRCZ
+#xpath to find main participant list object (left side)
+xPathForMainDiv: //div[@class='_1qDvT _3R02z']
+#Xpath used to find the right conversation (. is used for sub-element)
+xPathForChat: .//span[@title='{name}']
+#xpath to fin the button
+xPathForSendBtn: //span[@data-icon='send']
