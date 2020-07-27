@@ -2,6 +2,7 @@ from selenium import webdriver
 from pathlib import Path
 from classes.Configuration import Configuration
 import time
+import html2text
 
 """
 This class defines a whatsapp bot to be used in Phyton
@@ -21,7 +22,10 @@ class WhatsappBot:
         self.inputClass=config.getConfigValue("inputChatClass")
         self.xPathForChat=config.getConfigValue("xPathForChat")
         self.xPathForSendBtn=config.getConfigValue("xPathForSendBtn")
-        self.xPathForMainDiv=config.getConfigValue("xPathForMainDiv")
+        self.xPathForLefPane=config.getConfigValue("xPathForLefPane")
+        self.xPathForNonRead=config.getConfigValue("xPathForNonRead")
+        self.xPathForConversation=config.getConfigValue("xPathForConversation")
+        self.xPathForListener=config.getConfigValue("xPathForListener")
         
     #Load configuration
     def LoadConfiguration(self):
@@ -45,32 +49,38 @@ class WhatsappBot:
         #Conversations are class div class="_210SC"
         for dest in self.to:
             print('Enviando mensagem para:' + dest)
-            #[0] is search in the conversation, [1] is chatbox
-            chatboxes = self.driver.find_elements_by_class_name(self.inputClass)
-            time.sleep(self.smallInterval)
-            print('Chatboxs encontrados: ' + str(len(chatboxes)))
-            chatboxes[0].click()
-            chatboxes[0].send_keys(dest)
-            time.sleep(self.longInterval)
-            participantList = self.driver.find_element_by_xpath(self.xPathForMainDiv)
-            print('Lista de conversas encontrada')
-            time.sleep(self.smallInterval)
-            conversation = participantList.find_element_by_xpath(self.xPathForChat.replace("{name}", dest))
-            time.sleep(self.smallInterval)
-            print('Conversa encontrada')
-            conversation.click()
-            #[0] is search in the conversation, [1] is chatbox
-            chatboxes = self.driver.find_elements_by_class_name(self.inputClass)
-            time.sleep(self.smallInterval)
-            print('Chatboxs encontrados: ' + str(len(chatboxes)))
-            chatboxes[1].click()
-            chatboxes[1].send_keys(self.message)
-            send_icon= self.driver.find_element_by_xpath(self.xPathForSendBtn)
-            time.sleep(self.smallInterval)
-            print('Send icon encontrado')
-            send_icon.click()
-            print('Mensagem enviada para:' + dest)
-            time.sleep(self.longInterval)
+            try:
+                #[0] is search in the conversation, [1] is chatbox
+                chatboxes = self.driver.find_elements_by_class_name(self.inputClass)
+                time.sleep(self.smallInterval)
+                print('Chatboxs encontrados: ' + str(len(chatboxes)))
+                chatboxes[0].click()
+                chatboxes[0].clear()
+                chatboxes[0].send_keys(dest)
+                time.sleep(self.longInterval)
+                participantList = self.driver.find_element_by_xpath(self.xPathForLefPane)
+                print('Lista de conversas encontrada')
+                time.sleep(self.smallInterval)
+                ##TODO Refactor to extract method here and add elements and a new for --> Functional call
+                conversation = participantList.find_element_by_xpath(self.xPathForChat.replace("{name}", dest))
+                time.sleep(self.smallInterval)
+                print('Conversa encontrada')
+                conversation.click()
+                #[0] is search in the conversation, [1] is chatbox
+                chatboxes = self.driver.find_elements_by_class_name(self.inputClass)
+                time.sleep(self.smallInterval)
+                print('Chatboxs encontrados: ' + str(len(chatboxes)))
+                chatboxes[1].click()
+                chatboxes[1].clear()
+                chatboxes[1].send_keys(self.message)
+                send_icon= self.driver.find_element_by_xpath(self.xPathForSendBtn)
+                time.sleep(self.smallInterval)
+                print('Send icon encontrado')
+                send_icon.click()
+                print('Mensagem enviada para:' + dest)
+                time.sleep(self.longInterval)
+            except Exception as ex:
+                print('Erro enviando mensage para: '  + dest, ex)
 
     def Setup(self):
         print('Setup whatsapp robot')
@@ -82,3 +92,51 @@ class WhatsappBot:
         self.configList=config.getConfigValue("testList")
         self.configMessage=config.getConfigValue("testMessage")
         self.SendMessages()
+
+          #Method to send message
+    def ReadMessages(self):
+        print('Iniciando read messages')
+        self.LoadConfiguration()
+        self.driver.get(self.url)
+        time.sleep(self.loadSleep)
+        leftPane = self.driver.find_element_by_xpath(self.xPathForLefPane)
+        participantList = leftPane.find_element_by_xpath(self.xPathForConversation)
+        print('Lista de conversas encontrada')
+        #Infinity loop for reading new messages
+        while True:
+            print('Loop para leitura de mensagens...')
+            #Finding for the listening phone list
+            for dest in self.to:
+                try:
+                    print('Reading novas conversas para:' + dest)
+                    conversations = participantList.find_elements_by_xpath(self.xPathForListener.replace("{name}", dest))
+                    print('Conversas encontradas: ' + str(len(conversations)))
+                    time.sleep(self.smallInterval)
+                    for conversation in conversations:
+                        print('Conversa encontrada --> ' + conversation.text)
+                        ##TODO: Starts from new message them try to find the title or do ../../ click
+                        newConversation = conversation.find_element_by_xpath(self.xPathForNonRead.replace("{name}", dest))
+                        print('Nova conversa: ' + str(newConversation) + ' - txt: ' + newConversation.text)
+                        conversation.click()
+                        time.sleep(self.smallInterval)
+                        conversationDiv = self.driver.find_element_by_xpath("//div[@id='main']")
+                        print('Conversa encontrada, buscando textos')
+                        time.sleep(self.smallInterval)
+                        #TODO This should be a functional call (reading texts)
+                        texts = conversationDiv.find_elements_by_xpath(".//*[contains(@data-pre-plain-text,'27/07/2020')]")
+                        for text in texts:
+                            print( html2text.html2text(text.get_attribute("data-pre-plain-text")) + html2text.html2text(text.text) )
+                            #TODO Dialogflow and no more echo service
+                             #[0] is search in the conversation, [1] is chatbox
+                            chatboxes = self.driver.find_elements_by_class_name(self.inputClass)
+                            time.sleep(self.smallInterval)
+                            print('Chatboxs encontrados: ' + str(len(chatboxes)))
+                            chatboxes[1].click()
+                            chatboxes[1].clear()
+                            chatboxes[1].send_keys(html2text.html2text(text.text) + "!Te amo!")
+                            time.sleep(self.smallInterval)
+                        time.sleep(self.longInterval)
+                except Exception as ex:
+                    print('Não foram encontradas novas mensagens', ex)
+                time.sleep(self.longInterval)
+                

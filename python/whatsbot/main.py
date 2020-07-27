@@ -19,9 +19,12 @@ if (len(sys.argv) > 1):
     #setup whatsapp web
     if command.__eq__("setup"):
         bot.Setup()
-    #setup whatsapp web
+    #test whatsapp web
     if command.__eq__("test"):
         bot.TestMessage()
+    #read whatsapp web
+    if command.__eq__("read"):
+        bot.ReadMessages()
 		
 else:
     print("This program requires an argument")
