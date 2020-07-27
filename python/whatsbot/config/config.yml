@@ -4,7 +4,7 @@ configList: config/list.txt
 testList: config/test.txt
 testMessage: config/testMessage.txt
 #sleep configuration in seconds
-loadSleep: 12
+loadSleep: 30
 shortSleep: 2
 longSleep: 3
 
