@@ -1,9 +1,8 @@
-from classes.WhatsappBot import WhatsappBot
 import sys
+from classes.WhatsappBot import WhatsappBot
+from classes.HttpServer import SimpleHTTPRequestHandler
 
 #TODO: Read new messages method
-#TODO: V1: How to read a file in Phyton (Java Endpoint will override the message files in the dir, phyton will read and send)
-#TODO: V2: Endpoint in Python then it directs modify the objects and not need for IO operations
 #main method (main execution)
 print ('Number of arguments:', len(sys.argv), 'arguments.')
 print ('Argument List:', str(sys.argv))
@@ -25,6 +24,10 @@ if (len(sys.argv) > 1):
     #read whatsapp web
     if command.__eq__("read"):
         bot.ReadMessages()
+    if command.__eq__("server"):
+        run(handler_class=SimpleHTTPRequestHandler)
 		
 else:
     print("This program requires an argument")
+
+

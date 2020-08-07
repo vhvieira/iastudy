@@ -4,13 +4,13 @@ configList: config/list.txt
 testList: config/test.txt
 testMessage: config/testMessage.txt
 #sleep configuration in seconds
-loadSleep: 30
-shortSleep: 2
-longSleep: 3
+loadSleep: 15
+shortSleep: 1
+longSleep: 2
 
 #whatsapp web configuration
 lang: pt-br
-data_dir: temp/victor
+data_dir: temp/paulo
 whatsapp_url: https://web.whatsapp.com
 #class name of the whatsappweb input fields (filter + message)
 inputChatClass: _3FRCZ
