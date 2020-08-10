@@ -32,3 +32,7 @@ def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
     httpd = server_class(server_address, handler_class)
     print('Starting Server in the port 8000')
     httpd.serve_forever()
+
+#start http server now
+print('Starting http server now')
+run(handler_class=SimpleHTTPRequestHandler)

@@ -10,7 +10,7 @@ longSleep: 2
 
 #whatsapp web configuration
 lang: pt-br
-data_dir: temp/paulo
+data_dir: temp/
 whatsapp_url: https://web.whatsapp.com
 #class name of the whatsappweb input fields (filter + message)
 inputChatClass: _3FRCZ

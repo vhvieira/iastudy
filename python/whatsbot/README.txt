@@ -7,6 +7,9 @@ Download and install Python 3.8 or high
 Install Python packages with the commands:
 pip install selenium
 pip install PyYAML
+pip install html2text
+
+
 
 Using:
 1) In config folder edit the file list.txt for adding the name of people you want to sent the  message, it must be the name as in your phone's agenda. Use ';' to separate the names.

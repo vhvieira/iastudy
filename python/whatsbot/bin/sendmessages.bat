@@ -1,3 +1,3 @@
 cd ..
-python main.py send
-taskkill /F /IM chrome.exe /T
+taskkill /F /IM chromedriver.exe /T
+python main.py send %1 %2
