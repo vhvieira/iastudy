@@ -9,6 +9,7 @@ target/
 test-output/
 node_modules/**
 **/temp/**
+**/pycache/**
 .orig
 
 # Compiled class file
