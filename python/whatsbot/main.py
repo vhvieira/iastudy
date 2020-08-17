@@ -1,5 +1,6 @@
 import sys
 from classes.WhatsappBot import WhatsappBot
+from classes.ConversationClient import ConversationClient
 
 #main method (main execution)
 print ('Number of arguments:', len(sys.argv), 'arguments.')
@@ -19,5 +20,14 @@ if (len(sys.argv) > 3):
     #setup whatsapp web
     if command.__eq__("setup"):
         bot.Setup(sys.argv[2], sys.argv[3], sys.argv[4])
+    #test send api (integration with google)
+    if command.__eq__("test"):
+        client = ConversationClient()
+        response = client.sendSimpleMessage(sys.argv[3])
+        print("Response: " + response)
+    if command.__eq__("testEvt"):
+        client = ConversationClient()
+        response = client.sendSimpleEvent(sys.argv[3])
+        print("Response: " + response)
 else:
     print("This program requires at least three argument. See documentation!")

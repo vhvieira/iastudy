@@ -8,6 +8,20 @@ loadSleep: 15
 shortSleep: 1
 longSleep: 2
 
+#conversation-api configuration
+baseURL: http://localhost:8080
+apiVersion: v1
+apiUser: api
+apiPass: api123
+defaultLanguage: en-US
+httpHeaders: "{'Content-type': 'application/json', 'Accept': 'application/json'}"
+sendMessageURL: '{baseURL}/conversation-api/api/{version}/conversation/talk'
+sendEventURL: '{baseURL}/conversation-api/api/{version}/conversation/event'
+simpleMessageTemplate: '{"language": "{language}", "text": "{text}"}'
+continuousMessageTemplate: '{"conversationId": "{conversationId}", "language": "{language}", "text": "{text}"}'
+simpleEventTemplate: '{"language": "{language}", "event": "{event}"}'
+continuousEventTemplate: '{"conversationId": "{conversationId}", "language": "{language}", "event": "{event}"}'
+
 #whatsapp web configuration
 lang: pt-br
 data_dir: temp/
@@ -20,18 +34,22 @@ nonReadChatClass: _31gEB
 xPathForLefPane: //div[@id='side']
 xPathForConversation: .//*[contains(@aria-label,'Lista de conversas.')]
 #Xpath used to find the right conversation (. is used for sub-element)
-#xPathForNonRead: .//*[contains(@aria-label,'mensagens não lidas')]//preceding::.span[@class='_3ko75 _5h6Y_ _3Whw5']
-#xPathForNonRead: //*[contains(@title,'{name}')]//following::*[contains(@aria-label,'mensagens não lidas')]
 xPathForNonRead: ./../../../..//span[contains(@aria-label,'lida')]
 xPathForChat: .//span[@title='{name}']
 #bug finding any other chat if uses for xPathForChat
 xPathForListener: .//span[contains(@title,'{name}')]
 #XPATH to find chat, improved to use partial name and not full name (not working)
 #xPathForChat: .//span[contains(@title,'{name}')]//parent::div[@class='_210SC']
-
 #xpath to fin the button
 xPathForSendBtn: //span[@data-icon='send']
+xPathForMessagesDiv: //div[@class='z_tTQ' and contains(@aria-label,'Lista de mensagens')]
+#copyable-text before footer <footer tabindex="-1" class="_2vJ01">
+xPathForLastestMessages: //footer[@class='_2vJ01]//preceding::div[@class='copyable-text']
+#<div class="copyable-text" data-pre-plain-text="[07:32, 27/07/2020] Irmao Ramiro: "> ##TODO remove hardcode data
+xPathForMessages: .//div[@class='copyable-text' and (@data-pre-plain-text,'27/07/2020')]]
 
+
+##Notes -- xpath expressions examples
 ##CHAINGED DECLARATION (https://www.swtestacademy.com/xpath-selenium/)
 #//div[@class=’form-group’]//input[@id=’user-message’]
 ##OR AND AND FOR CLASS PATH
@@ -45,8 +63,3 @@ xPathForSendBtn: //span[@data-icon='send']
 ##Message box (after click the name ==> Title)
 #<div tabindex="-1" class="z_tTQ" data-tab="2" role="region" aria-label="Lista de mensagens. Pressione a seta para direita em uma mensagem para abrir o menu da mensagem."><div class="_2hqOq _2qhWD focusable-list-item" tabindex="-1">
 ##inside this there is the text
-xPathForMessagesDiv: //div[@class='z_tTQ' and contains(@aria-label,'Lista de mensagens')]
-#copyable-text before footer <footer tabindex="-1" class="_2vJ01">
-xPathForLastestMessages: //footer[@class='_2vJ01]//preceding::div[@class='copyable-text']
-#<div class="copyable-text" data-pre-plain-text="[07:32, 27/07/2020] Irmao Ramiro: "> ##TODO remove hardcode data
-xPathForMessages: .//div[@class='copyable-text' and (@data-pre-plain-text,'27/07/2020')

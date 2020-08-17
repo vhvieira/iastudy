@@ -1,6 +1,7 @@
 from selenium import webdriver
 from pathlib import Path
 from classes.Configuration import Configuration
+from classes.ConversationClient import ConversationClient
 import time
 import html2text
 
@@ -112,16 +113,17 @@ class WhatsappBot:
                     conversationDiv = self.driver.find_element_by_xpath("//div[@id='main']")
                     print('Conversa encontrada, buscando textos')
                     time.sleep(self.smallInterval)
-                    #TODO This should be a functional call (reading texts)
+                    #TODO This should be a functional call (reading texts) - saving latest one the number
                     texts = conversationDiv.find_elements_by_xpath(".//*[contains(@data-pre-plain-text,'27/07/2020')]")
                     for text in texts:
                         print( html2text.html2text(text.get_attribute("data-pre-plain-text")) + html2text.html2text(text.text) )
-                        #TODO Dialogflow and no more echo service
-                            #[0] is search in the conversation, [1] is chatbox
+                        client = ConversationClient()
+                        print( "Sending to dialogflow: " + text.text)
+                        response = client.sendSimpleMessage(text.text)
                         chatboxes = self.driver.find_elements_by_class_name(self.inputClass)
                         print('Chatboxs encontrados: ' + str(len(chatboxes)))
                         chatboxes[1].clear()
-                        chatboxes[1].send_keys(html2text.html2text(text.text))
+                        chatboxes[1].send_keys(response)
                         chatboxes[1].click()
             except Exception as ex:
                 print('Não foram encontradas novas mensagens', ex)
