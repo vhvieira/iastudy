@@ -8,8 +8,11 @@
 target/
 test-output/
 node_modules/**
-**/temp/**
 .orig
+
+#temp folders and python cache
+**/temp/**
+**/__pycache__/**
 
 # Compiled class file
 *.class
