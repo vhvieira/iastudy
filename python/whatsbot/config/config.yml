@@ -8,6 +8,11 @@ loadSleep: 15
 shortSleep: 1
 longSleep: 2
 
+#some messages
+welcomeEvent: WELCOME
+errorMessage: HI! I HAVE PROBLEMNS TO REPLY NOW! PLEASE TRY LATER
+stopContact: Stop
+
 #conversation-api configuration
 baseURL: http://localhost:8080
 apiVersion: v1

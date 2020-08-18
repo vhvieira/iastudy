@@ -27,10 +27,11 @@ class WhatsappWebExecutor:
         self.xPathForConversation=config.getConfigValue("xPathForConversation")
         self.xPathForListener=config.getConfigValue("xPathForListener")
         self.xPathForMessages=config.getConfigValue("xPathForMessages")
-        self.driverFactory = DriverFactory()
-        self.date_formated = datetime.datetime.now().strftime("%d/%m/%Y")
-        self.latestMessage={'default' : '001'}
-        self.nextIsNew={'default' : True}
+        self.driverFactory=DriverFactory()
+        self.date_formated=datetime.datetime.now().strftime("%d/%m/%Y")
+        self.errorMessage=config.getConfigValue("errorMessage")
+        self.welcomeEvent=config.getConfigValue("welcomeEvent")
+        self.stopContact=config.getConfigValue("stopContact")
 
     #Method to find the conversation
     def findConversation(self, dest, myNumber):
@@ -60,6 +61,17 @@ class WhatsappWebExecutor:
         send_icon= driver.find_element_by_xpath(self.xPathForSendBtn)
         send_icon.click()
         time.sleep(self.smallInterval)
+        #call go to stop conversation
+        self.goToStopContact(myNumber)
+    
+    def goToStopContact(self, myNumber):
+        print('going to stop contact:' + self.stopContact) 
+        driver = self.driverFactory.getDriver(myNumber, self.loadSleep)
+        leftPane = driver.find_element_by_xpath(self.xPathForLefPane)
+        participantList = leftPane.find_element_by_xpath(self.xPathForConversation)
+        stopConversation = participantList.find_element_by_xpath(self.xPathForListener.replace("{name}", self.stopContact))
+        stopConversation.click()
+        time.sleep(self.smallInterval)
 
     #TODO: Refactor --> Reuse conversation ids per 20 mins, create method
     def ReadMessages(self, myNumber, dest):
@@ -80,10 +92,8 @@ class WhatsappWebExecutor:
                     conversationDiv = driver.find_element_by_xpath("//div[@id='main']")
                     print('Conversation found, getting texts')
                     texts = conversationDiv.find_elements_by_xpath(self.xPathForMessages.replace("{today}", self.date_formated))
-                    #TODO: REMOVE THIS HARDCODE MESSAGES AND EVENT AND STP
-                    text = 'WELCOME'
-                    response = 'HI! I HAVE PROBLEMNS TO REPLY NOW! PLEASE TRY LATER'
-                    stop = 'Stop'
+                    text = self.welcomeEvent
+                    response = self.errorMessage
                     client = ConversationClient()
                     if(len(texts) > 0):
                         text = html2text.html2text(texts[-1].text).strip()                     
@@ -94,11 +104,7 @@ class WhatsappWebExecutor:
                         response = client.sendSimpleMessage(text)
                     print( "Dialogflow response: " + str(response)); 
                     self.writeMessage(conversation, myNumber, response)
-                    print('New conversation: ' + str(newConversation))
-                    #click out (STOP) --> TODO: Refactor
-                    stopConversation = participantList.find_element_by_xpath(self.xPathForListener.replace("{name}", stop))
-                    stopConversation.click()
-                    time.sleep(self.smallInterval)
-
+                    #call go to stop conversation
+                    self.goToStopContact(myNumber)                 
         except Exception as ex:
-            print('Error to get new messages', ex)
+            print('Error getting new messages', ex)
