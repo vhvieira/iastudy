@@ -7,7 +7,7 @@ class Configuration:
             self.cfg = yaml.load(ymlfile)
 
     def getConfigValue(self, key):
-        return self.cfg[key]
+        return str(self.cfg[key])
 
 #print test for configuration
 conf = Configuration()

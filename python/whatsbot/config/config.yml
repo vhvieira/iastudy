@@ -46,7 +46,7 @@ xPathForMessagesDiv: //div[@class='z_tTQ' and contains(@aria-label,'Lista de men
 #copyable-text before footer <footer tabindex="-1" class="_2vJ01">
 xPathForLastestMessages: //footer[@class='_2vJ01]//preceding::div[@class='copyable-text']
 #<div class="copyable-text" data-pre-plain-text="[07:32, 27/07/2020] Irmao Ramiro: "> ##TODO remove hardcode data
-xPathForMessages: .//div[@class='copyable-text' and (@data-pre-plain-text,'27/07/2020')]]
+xPathForMessages: ".//*[contains(@data-pre-plain-text, '{today}')]"
 
 
 ##Notes -- xpath expressions examples

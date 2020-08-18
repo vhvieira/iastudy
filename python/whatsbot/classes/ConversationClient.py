@@ -26,12 +26,15 @@ class ConversationClient:
     def sendSimpleMessage(self, messageContent):
         requestJson = self.simpleMessageTemplate.replace("{text}", messageContent).replace("{language}", self.defaultLanguage)
         return self.processPostRequest(self.sendMessageURL, requestJson)
+        
     def sendSimpleMessageWithLang(self, messageContent, language):
         requestJson = self.simpleMessageTemplate.replace("{text}", messageContent).replace("{language}", language)
         return self.processPostRequest(self.sendMessageURL, requestJson)
+
     def sendContinuousMessage(self, conversationId, messageContent):
         requestJson = self.continuousMessageTemplate.replace("{conversationId}", conversationId).replace("{text}", messageContent).replace("{language}", self.defaultLanguage)
         return self.processPostRequest(self.sendMessageURL, requestJson)
+
     def sendContinuousMessageWithLang(self, conversationId, messageContent, language):
         requestJson = self.continuousMessageTemplate.replace("{conversationId}", conversationId).replace("{text}", messageContent).replace("{language}", language)
         return self.processPostRequest(self.sendMessageURL, requestJson)
@@ -58,7 +61,7 @@ class ConversationClient:
     def processPostRequest(self, endpointURL, requestJson):
         print("Will send the request: " + str(requestJson))
         print("URL used is: " + str(endpointURL))
-        resp = requests.post(endpointURL, auth=HTTPBasicAuth(self.apiUser, self.apiPass), json= eval(requestJson), headers=eval(self.httpHeaders))
+        resp = requests.post(endpointURL, auth=HTTPBasicAuth(self.apiUser, self.apiPass), json= eval(requestJson.strip()), headers=eval(self.httpHeaders))
         print("Got the response: " + str(resp))
         if resp.status_code != 200:
           print('ERROR on calling method {}'.format(resp.status_code))

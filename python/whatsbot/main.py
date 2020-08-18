@@ -10,24 +10,26 @@ print ('Argument List:', str(sys.argv))
 #sys.argv[1] -> Action
 #sys.argv[2] -> Wait time in seconds
 #sys.argv[3] -> The number/profile_id
-if (len(sys.argv) > 3):
+if (len(sys.argv) > 2):
     command = str(sys.argv[1])
     print('Iniciando whatsapp robot')
     bot = WhatsappBot()
 	#send message
     if command.__eq__("send"):
-        bot.SendMessages(sys.argv[2], sys.argv[3])
+        bot.SendBatchMessages(sys.argv[2])
     #setup whatsapp web
     if command.__eq__("setup"):
         bot.Setup(sys.argv[2], sys.argv[3], sys.argv[4])
     #test send api (integration with google)
     if command.__eq__("test"):
         client = ConversationClient()
-        response = client.sendSimpleMessage(sys.argv[3])
+        response = client.sendSimpleMessage(sys.argv[2])
         print("Response: " + response)
     if command.__eq__("testEvt"):
         client = ConversationClient()
-        response = client.sendSimpleEvent(sys.argv[3])
+        response = client.sendSimpleEvent(sys.argv[2])
         print("Response: " + response)
+    if command.__eq__("read"):
+       bot.ReadNewMessages(sys.argv[2])
 else:
     print("This program requires at least three argument. See documentation!")
