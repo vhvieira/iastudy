@@ -2,6 +2,7 @@ from selenium import webdriver
 from classes.Configuration import Configuration
 from classes.DriverFactory import DriverFactory
 from classes.ConversationClient import ConversationClient
+from classes.ConversationFactory import ConversationFactory
 import time
 import datetime
 import html2text
@@ -73,7 +74,23 @@ class WhatsappWebExecutor:
         stopConversation.click()
         time.sleep(self.smallInterval)
 
-    #TODO: Refactor --> Reuse conversation ids per 20 mins, create method
+    def sendMessage(self, myNumber, message):
+        try: 
+            client = ConversationClient()  
+            conversation = ConversationFactory()          
+            print('Text to be sent to dialogflow api is: ' + message)
+            if message is None:
+                conversation.createNew(myNumber)
+                response = client.sendSimpleEvent(self.welcomeEvent)
+            else: 
+                conversationID = conversation.getConversationID(myNumber)
+                response = client.sendContinuousMessage(conversationID, message)
+            print( "Dialogflow response: " + str(response)); 
+        except Exception as ex:
+            print('Error sending payload to conversation-api', ex)
+            return self.errorMessage
+
+    #TODO: Implement preferences for lang, in the listener and configuration
     def ReadMessages(self, myNumber, dest):
         print('Starting read messages')
         driver = self.driverFactory.getDriver(myNumber, self.loadSleep)
@@ -92,17 +109,10 @@ class WhatsappWebExecutor:
                     conversationDiv = driver.find_element_by_xpath("//div[@id='main']")
                     print('Conversation found, getting texts')
                     texts = conversationDiv.find_elements_by_xpath(self.xPathForMessages.replace("{today}", self.date_formated))
-                    text = self.welcomeEvent
-                    response = self.errorMessage
-                    client = ConversationClient()
                     if(len(texts) > 0):
-                        text = html2text.html2text(texts[-1].text).strip()                     
-                    print('LAST text of the day is: ' + text)
-                    if(text == 'WELCOME'):
-                        response = client.sendSimpleEvent(text)
-                    else: 
-                        response = client.sendSimpleMessage(text)
-                    print( "Dialogflow response: " + str(response)); 
+                        text = html2text.html2text(texts[-1].text).strip()    
+                    #call conversation-api
+                    response = sendMessage(myNumber, text)    
                     self.writeMessage(conversation, myNumber, response)
                     #call go to stop conversation
                     self.goToStopContact(myNumber)                 

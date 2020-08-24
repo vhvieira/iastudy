@@ -31,5 +31,7 @@ if (len(sys.argv) > 2):
         print("Response: " + response)
     if command.__eq__("read"):
        bot.ReadNewMessages(sys.argv[2])
+    if command.__eq__("hi"):
+       bot.Test(sys.argv[2])
 else:
     print("This program requires at least three argument. See documentation!")

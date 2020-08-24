@@ -13,12 +13,19 @@ welcomeEvent: WELCOME
 errorMessage: HI! I HAVE PROBLEMNS TO REPLY NOW! PLEASE TRY LATER
 stopContact: Stop
 
+#conversation id generation config
+conversationDateFormat: '%d%m%Y_%H%M%S'
+conversationIdPrefix: c
+conversationIdSeparator: _
+#interval in minutes
+conversationInterval: 20
+
 #conversation-api configuration
 baseURL: http://localhost:8080
 apiVersion: v1
 apiUser: api
 apiPass: api123
-defaultLanguage: en-US
+defaultLanguage: pt-BR
 httpHeaders: "{'Content-type': 'application/json', 'Accept': 'application/json'}"
 sendMessageURL: '{baseURL}/conversation-api/api/{version}/conversation/talk'
 sendEventURL: '{baseURL}/conversation-api/api/{version}/conversation/event'

@@ -3,8 +3,13 @@
 import datetime
 from dateutil.relativedelta import relativedelta
 
-#TODO: use this for 20 mins conversation id
-one_year_from_now = datetime.datetime.now() + relativedelta(years=1)
-date_formated = datetime.datetime.now().strftime("%d/%m/%Y")
-print(date_formated)
+myNumber='041920006463'
+conversationIds={'default' : {'1'}}
+twentyminsfromnow = datetime.datetime.now() + relativedelta(minutes=20)
+conversationIds[myNumber]=twentyminsfromnow
+date_now = datetime.datetime.now()
+print(date_now > conversationIds[myNumber])
+print(date_now < conversationIds[myNumber])
+conversationId = myNumber + '_' + str(conversationIds[myNumber].strftime("%d%m%Y_%H%M%S"))
+print(conversationId)
 # %% (End of interative code)

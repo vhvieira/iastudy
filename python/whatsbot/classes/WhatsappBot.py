@@ -69,3 +69,8 @@ class WhatsappBot:
         self.driver = self.driverFactory.getDriver(myNumber, int(waitTime))
         time.sleep(int(waitTime))
         self.driver.get_screenshot_as_file(str(directory) + "\\" + str(myNumber) +  ".png")
+
+    #Test method
+    def Test(self, myNumber):
+        text = "Hi"
+        self.executor.sendMessage(myNumber, text)
