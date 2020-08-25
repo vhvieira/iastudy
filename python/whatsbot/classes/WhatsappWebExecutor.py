@@ -76,16 +76,16 @@ class WhatsappWebExecutor:
         stopConversation.click()
         time.sleep(self.smallInterval)
 
-    def sendMessage(self, myNumber, message):
+    def sendMessage(self, destNumber, message):
         try: 
             client = ConversationClient()  
             conversation = ConversationFactory()          
             print('Text to be sent to dialogflow api is: ' + message)
             if message is None:
-                conversation.createNew(myNumber)
+                conversation.createNew(destNumber)
                 response = client.sendSimpleEvent(self.welcomeEvent)
             else: 
-                conversationID = conversation.getConversationID(myNumber)
+                conversationID = conversation.getConversationID(destNumber)
                 response = html2text.html2text(client.sendContinuousMessage(conversationID, message)).strip()
             print( "Dialogflow response: " + str(response))
             return response
@@ -115,7 +115,7 @@ class WhatsappWebExecutor:
                     if(len(texts) > 0):
                         text = html2text.html2text(texts[-1].text).strip()    
                     #call conversation-api
-                    response = self.sendMessage(myNumber, text)    
+                    response = self.sendMessage(dest, text)    
                     self.writeMessage(conversation, myNumber, response)
                     #call go to stop conversation
                     self.goToStopContact(myNumber)                 

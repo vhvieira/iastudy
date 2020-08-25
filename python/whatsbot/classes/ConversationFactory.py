@@ -14,23 +14,23 @@ class ConversationFactory:
         self.conversationIdPrefix=config.getConfigValue("conversationIdPrefix")
         self.conversationDateFormat=config.getConfigValue("conversationDateFormat")
 
-    def createNew(self, myNumber):
+    def createNew(self, destNumber):
         twentyminsfromnow = datetime.datetime.now() + relativedelta(minutes=20)
-        self.my_conversations[myNumber]=twentyminsfromnow
-        return self.my_conversations.get(myNumber)
+        self.my_conversations[destNumber]=twentyminsfromnow
+        return self.my_conversations.get(destNumber)
 
-    def getConversationTime(self, myNumber):
+    def getConversationTime(self, destNumber):
         date_now = datetime.datetime.now()
-        if self.my_conversations.get(myNumber) is not None:
-            if(date_now < self.my_conversations[myNumber]):
-                return self.my_conversations.get(myNumber)
+        if self.my_conversations.get(destNumber) is not None:
+            if(date_now < self.my_conversations[destNumber]):
+                return self.my_conversations.get(destNumber)
             else:
-                return self.createNew(myNumber)
+                return self.createNew(destNumber)
         else:
-            return self.createNew(myNumber)
+            return self.createNew(destNumber)
 
-    def getConversationID(self, myNumber):
-        date_id = self.getConversationTime(myNumber)
-        conversationId = self.conversationIdPrefix + myNumber + self.conversationIdSeparator + str(date_id.strftime(self.conversationDateFormat))
+    def getConversationID(self, destNumber):
+        date_id = self.getConversationTime(destNumber)
+        conversationId = self.conversationIdPrefix + destNumber + self.conversationIdSeparator + str(date_id.strftime(self.conversationDateFormat))
         print('Conversation ID created: ' + conversationId)
         return conversationId
