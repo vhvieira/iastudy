@@ -28,11 +28,14 @@ class WhatsappWebExecutor:
         self.xPathForConversation=config.getConfigValue("xPathForConversation")
         self.xPathForListener=config.getConfigValue("xPathForListener")
         self.xPathForMessages=config.getConfigValue("xPathForMessages")
-        self.driverFactory=DriverFactory()
         self.date_formated=datetime.datetime.now().strftime("%d/%m/%Y")
         self.errorMessage=config.getConfigValue("errorMessage")
         self.welcomeEvent=config.getConfigValue("welcomeEvent")
         self.stopContact=config.getConfigValue("stopContact")
+        #local instances
+        self.driverFactory=DriverFactory()
+        self.client = ConversationClient()  
+        self.conversation = ConversationFactory() 
 
     #Method to find the conversation
     def findConversation(self, dest, myNumber):
@@ -77,16 +80,14 @@ class WhatsappWebExecutor:
         time.sleep(self.smallInterval)
 
     def sendMessage(self, destNumber, message):
-        try: 
-            client = ConversationClient()  
-            conversation = ConversationFactory()          
+        try:          
             print('Text to be sent to dialogflow api is: ' + message)
             if message is None:
-                conversation.createNew(destNumber)
-                response = client.sendSimpleEvent(self.welcomeEvent)
+                self.conversation.createNew(destNumber)
+                response = self.client.sendSimpleEvent(self.welcomeEvent)
             else: 
-                conversationID = conversation.getConversationID(destNumber)
-                response = html2text.html2text(client.sendContinuousMessage(conversationID, message)).strip()
+                conversationID = self.conversation.getConversationID(destNumber)
+                response = html2text.html2text(self.client.sendContinuousMessage(conversationID, message)).strip()
             print( "Dialogflow response: " + str(response))
             return response
         except Exception as ex:

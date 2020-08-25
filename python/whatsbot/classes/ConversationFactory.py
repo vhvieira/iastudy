@@ -21,10 +21,14 @@ class ConversationFactory:
 
     def getConversationTime(self, destNumber):
         date_now = datetime.datetime.now()
+        print('Current date: ' + str(date_now))
+        print('Found conversationID: ' + str(self.my_conversations.get(destNumber)))
         if self.my_conversations.get(destNumber) is not None:
-            if(date_now < self.my_conversations[destNumber]):
+            if(date_now < self.my_conversations.get(destNumber)):
+                print('Reusing same conversationID')
                 return self.my_conversations.get(destNumber)
             else:
+                print('Expired, creating new conversationID')
                 return self.createNew(destNumber)
         else:
             return self.createNew(destNumber)

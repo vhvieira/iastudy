@@ -1,6 +1,7 @@
 import sys
 from classes.WhatsappBot import WhatsappBot
 from classes.ConversationClient import ConversationClient
+import time
 
 #main method (main execution)
 print ('Number of arguments:', len(sys.argv), 'arguments.')
@@ -30,6 +31,8 @@ if (len(sys.argv) > 2):
         response = client.sendSimpleEvent(sys.argv[2])
         print("Response: " + response)
     if command.__eq__("read"):
+       bot.ReadNewMessages(sys.argv[2])
+       time.sleep(10)
        bot.ReadNewMessages(sys.argv[2])
     if command.__eq__("hi"):
        bot.Test(sys.argv[2])
