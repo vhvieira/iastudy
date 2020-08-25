@@ -56,9 +56,11 @@ class WhatsappWebExecutor:
         time.sleep(self.smallInterval)
         #[0] is search in the conversation, [1] is chatbox
         chatboxes = driver.find_elements_by_class_name(self.inputClass)
+        print('Chatbox found:' + str(chatboxes[1])) 
         chatboxes[1].click()
         chatboxes[1].clear()
         chatboxes[1].send_keys(message)
+        print('Message sent:' + message) 
         send_icon= driver.find_element_by_xpath(self.xPathForSendBtn)
         send_icon.click()
         time.sleep(self.smallInterval)
@@ -84,13 +86,14 @@ class WhatsappWebExecutor:
                 response = client.sendSimpleEvent(self.welcomeEvent)
             else: 
                 conversationID = conversation.getConversationID(myNumber)
-                response = client.sendContinuousMessage(conversationID, message)
-            print( "Dialogflow response: " + str(response)); 
+                response = html2text.html2text(client.sendContinuousMessage(conversationID, message)).strip()
+            print( "Dialogflow response: " + str(response))
+            return response
         except Exception as ex:
             print('Error sending payload to conversation-api', ex)
             return self.errorMessage
 
-    #TODO: Implement preferences for lang, in the listener and configuration
+    #TODO: Implement preferences for lang configuration based on myNumber param
     def ReadMessages(self, myNumber, dest):
         print('Starting read messages')
         driver = self.driverFactory.getDriver(myNumber, self.loadSleep)
@@ -112,7 +115,7 @@ class WhatsappWebExecutor:
                     if(len(texts) > 0):
                         text = html2text.html2text(texts[-1].text).strip()    
                     #call conversation-api
-                    response = sendMessage(myNumber, text)    
+                    response = self.sendMessage(myNumber, text)    
                     self.writeMessage(conversation, myNumber, response)
                     #call go to stop conversation
                     self.goToStopContact(myNumber)                 
