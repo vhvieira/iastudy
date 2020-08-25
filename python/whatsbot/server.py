@@ -5,6 +5,9 @@ from classes.ConversationClient import ConversationClient
 import time
 import threading
 
+#TODO Implement logging
+#https://docs.python-guide.org/writing/logging/
+#https://www.loggly.com/use-cases/6-python-logging-best-practices-you-should-be-aware-of/
 app = flask.Flask("Whatsapp API")
 bot = WhatsappBot()
 listenersActive={'default' : True}
