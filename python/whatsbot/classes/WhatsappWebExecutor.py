@@ -3,6 +3,7 @@ from classes.Configuration import Configuration
 from classes.DriverFactory import DriverFactory
 from classes.ConversationClient import ConversationClient
 from classes.ConversationFactory import ConversationFactory
+from classes.LoggerFactory import LoggerFactory
 import time
 import datetime
 import html2text
@@ -12,7 +13,6 @@ This class defines is a mapping using Selinium Web Driver for the whatsapp web p
 """
 class WhatsappWebExecutor:
     def __init__(self):
-        print("Loading whatsapp web mapping")
         config = Configuration()
         self.configMessage=config.getConfigValue("configMessage")
         self.configList=config.getConfigValue("configList")
@@ -36,11 +36,13 @@ class WhatsappWebExecutor:
         self.driverFactory=DriverFactory()
         self.client = ConversationClient()  
         self.conversation = ConversationFactory() 
+        self.loggerFactory = LoggerFactory()
 
     #Method to find the conversation
     def findConversation(self, dest, myNumber):
+        log = self.loggerFactory.getLogger(myNumber)
         driver = self.driverFactory.getDriver(myNumber, self.loadSleep)
-        print('Sending message to:' + dest) 
+        log.debug('Sending message to:' + dest) 
         #[0] is search in the conversation, [1] is chatbox
         chatboxes = driver.find_elements_by_class_name(self.inputClass)
         chatboxes[0].click()
@@ -53,17 +55,18 @@ class WhatsappWebExecutor:
 
     #Method to send message
     def writeMessage(self, conversation, myNumber, message):
-        print('writing message message to:' + str(conversation)) 
+        log = self.loggerFactory.getLogger(myNumber)
+        log.debug('writing message message to:' + str(conversation)) 
         driver = self.driverFactory.getDriver(myNumber, self.loadSleep)
         conversation.click()
         time.sleep(self.smallInterval)
         #[0] is search in the conversation, [1] is chatbox
         chatboxes = driver.find_elements_by_class_name(self.inputClass)
-        print('Chatbox found:' + str(chatboxes[1])) 
+        log.debug('Chatbox found:' + str(chatboxes[1])) 
         chatboxes[1].click()
         chatboxes[1].clear()
         chatboxes[1].send_keys(message)
-        print('Message sent:' + message) 
+        log.debug('Message sent:' + message) 
         send_icon= driver.find_element_by_xpath(self.xPathForSendBtn)
         send_icon.click()
         time.sleep(self.smallInterval)
@@ -71,7 +74,8 @@ class WhatsappWebExecutor:
         self.goToStopContact(myNumber)
     
     def goToStopContact(self, myNumber):
-        print('going to stop contact:' + self.stopContact) 
+        log = self.loggerFactory.getLogger(myNumber)
+        log.debug('going to stop contact:' + self.stopContact) 
         driver = self.driverFactory.getDriver(myNumber, self.loadSleep)
         leftPane = driver.find_element_by_xpath(self.xPathForLefPane)
         participantList = leftPane.find_element_by_xpath(self.xPathForConversation)
@@ -81,37 +85,38 @@ class WhatsappWebExecutor:
 
     def sendMessage(self, destNumber, message):
         try:          
-            print('Text to be sent to dialogflow api is: ' + message)
+            log = self.loggerFactory.getLogger(myNumber)
+            log.debug('Text to be sent to dialogflow api is: ' + message)
             if message is None:
                 self.conversation.createNew(destNumber)
                 response = self.client.sendSimpleEvent(self.welcomeEvent)
             else: 
                 conversationID = self.conversation.getConversationID(destNumber)
                 response = html2text.html2text(self.client.sendContinuousMessage(conversationID, message)).strip()
-            print( "Dialogflow response: " + str(response))
+            log.debug( "Dialogflow response: " + str(response))
             return response
         except Exception as ex:
-            print('Error sending payload to conversation-api', ex)
+            log.error('Error sending payload to conversation-api', ex)
             return self.errorMessage
 
-    #TODO: Implement preferences for lang configuration based on myNumber param
     def ReadMessages(self, myNumber, dest):
-        print('Starting read messages')
+        log = self.loggerFactory.getLogger(myNumber)
+        log.debug('Starting read messages')
         driver = self.driverFactory.getDriver(myNumber, self.loadSleep)
         leftPane = driver.find_element_by_xpath(self.xPathForLefPane)
         participantList = leftPane.find_element_by_xpath(self.xPathForConversation)
         try:
-            print('Reading new messages of pattern:' + dest)
+            log.debug('Reading new messages of pattern:' + dest)
             conversations = participantList.find_elements_by_xpath(self.xPathForListener.replace("{name}", dest))
             for conversation in conversations:
-                print('Reading new messsages for ' + conversation.text)
+                log.debug('Reading new messsages for ' + conversation.text)
                 newConversation = conversation.find_element_by_xpath(self.xPathForNonRead.replace("{name}", dest))
-                print('New conversation: ' + str(newConversation))
+                log.debug('New conversation: ' + str(newConversation))
                 if(newConversation is not None):
                     conversation.click()
                     time.sleep(self.smallInterval)
                     conversationDiv = driver.find_element_by_xpath("//div[@id='main']")
-                    print('Conversation found, getting texts')
+                    log.debug('Conversation found, getting texts')
                     texts = conversationDiv.find_elements_by_xpath(self.xPathForMessages.replace("{today}", self.date_formated))
                     if(len(texts) > 0):
                         text = html2text.html2text(texts[-1].text).strip()    
@@ -121,4 +126,4 @@ class WhatsappWebExecutor:
                     #call go to stop conversation
                     self.goToStopContact(myNumber)                 
         except Exception as ex:
-            print('Error getting new messages', ex)
+            log.warning('Error getting new messages', ex)
