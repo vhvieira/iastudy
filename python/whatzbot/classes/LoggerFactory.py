@@ -4,11 +4,14 @@ from logging.config import fileConfig
 import datetime
 
 class LoggerFactory:
+    #default log config file
     configFile = "config/logconfig.ini"
-    #def __init__(self):
-        #fileConfig(LoggerFactory.configFile)
+    
+    #loads default file
+    def __init__(self):
+        fileConfig(LoggerFactory.configFile)
 
-    #TODO: Implement log in file configuration for production
+    #get the logger for the given number
     def getLogger(self, myNumber):
         if(myNumber is None):
             myNumber = str(datetime.datetime.now().strftime('%d%m%Y'))
@@ -16,6 +19,7 @@ class LoggerFactory:
         logging.basicConfig(filename=str(myNumber) +'.log')
         return logging.getLogger()
 
+    #Method that reads a custom file for log configuration
     def loadCustomFile(self, filePath):
         LoggerFactory.configFile = filePath
         #fileConfig(LoggerFactory.configFile)

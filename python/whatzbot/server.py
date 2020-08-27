@@ -25,7 +25,6 @@ if (len(sys.argv) > 2):
         factory.loadCustomFile(logConfigFile)
 
     #arg[2] is server port (default is 5000)
-
     if(sys.argv[2] is not None): 
         serverPort = int(sys.argv[2])
     #arg[3] is debug option (default is false) - If present is true
@@ -54,6 +53,9 @@ def startThread(myNumber):
     factory.getLogger(myNumber).debug('Starting listener thread for: ' + myNumber)
     if(listenersList.get(myNumber) is not None):
         listenersActive[myNumber]=True
+        #loading audio bufffer
+        bot.LoadLatestAudioFromList(myNumber, listenersList.get(myNumber))
+        #starting read messasges
         t1 = threading.Thread(target=thread_exec, args=(myNumber,listenersList.get(myNumber)))
         t1.start()
 
@@ -61,12 +63,15 @@ def stopThread(myNumber):
     factory.getLogger(myNumber).debug('Stoping listener thread for: ' + myNumber)
     if(listenersList.get(myNumber) is not None):
         listenersActive[myNumber]=False
+        #unload from audio buffer
+        bot.UnloadLatestAudioFromList(myNumber, listenersList.get(myNumber))
 
+#Simple method that sends a message to whatsapp number
 @app.route('/sendMessage', methods=['POST'])
 def sendMessage():
     #get request body
     data = request.get_json()
-    factory.getLogger(defaultLogFile).debug('Calling sendMessage with data: ' + str(data))
+    factory.getLogger(None).debug('Calling sendMessage with data: ' + str(data))
     myNumber = data["myNumber"]
     dest = data["destinatary"]
     text = data["text"]
@@ -82,7 +87,7 @@ def sendMessage():
                     statusCode= 200,
                     data= data), 200
 
-
+#Method that triggers a event in conversation-api and sends it to the whatsapp number
 @app.route('/sendEvent', methods=['POST'])
 def sendEvent():
     #get request body
@@ -103,6 +108,7 @@ def sendEvent():
                     statusCode= 200,
                     data= data), 200
 
+#start listener for new messages, integrated with conversation-api
 @app.route('/startListener', methods=['POST'])
 def startListener():
     #get request body
@@ -119,7 +125,8 @@ def startListener():
                     message= "Listener started",
                     statusCode= 200,
                     data= data), 200
-
+                    
+#stop listener for new messages
 @app.route('/stopListener', methods=['POST'])
 def stopListener():
     #get request body
@@ -134,6 +141,47 @@ def stopListener():
                     statusCode= 200,
                     data= data), 200
 
+#add a new number for a active listener, integrated with conversation-api
+@app.route('/addNumber', methods=['POST'])
+def addNumberToListener():
+    #get request body
+    data = request.get_json()
+    factory.getLogger(None).debug('Adding number with data: ' + str(data))
+    myNumber = data["myNumber"]
+    dest = data["dest"]
+    #stop thread if any
+    stopThread(myNumber)
+    #adding new number
+    listenersList.get(myNumber).append(dest)
+    #start thread if any
+    startThread(myNumber)
+    #return OK message
+    return jsonify(isError= False,
+                    message= "Number added",
+                    statusCode= 200,
+                    data= data), 200
+
+#remove a number for a active listener, integrated with conversation-api
+@app.route('/removeNumber', methods=['POST'])
+def removeNumberFromListener():
+    #get request body
+    data = request.get_json()
+    factory.getLogger(None).debug('Adding number with data: ' + str(data))
+    myNumber = data["myNumber"]
+    dest = data["dest"]
+    #stop thread if any
+    stopThread(myNumber)
+    #remove number from listening list
+    listenersList.get(myNumber).remove(dest)
+    #start thread if any
+    startThread(myNumber)
+    #return OK message
+    return jsonify(isError= False,
+                    message= "Number removed from listening",
+                    statusCode= 200,
+                    data= data), 200
+                    
+#initializing local server                    
 #default is http://localhost:5000/ 
 log = factory.getLogger(None)
 log.debug("****** SERVER INITIALIZATION *******")

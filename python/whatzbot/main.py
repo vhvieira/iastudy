@@ -1,6 +1,8 @@
 import sys
 from classes.WhatsappBot import WhatsappBot
 from classes.ConversationClient import ConversationClient
+from classes.FileUtils import FileUtils
+from classes.DriverFactory import DriverFactory
 import time
 
 #main method (main execution)
@@ -31,10 +33,16 @@ if (len(sys.argv) > 2):
         response = client.sendSimpleEvent(sys.argv[2])
         print("Response: " + response)
     if command.__eq__("read"):
+       bot.LoadLatestAudio(sys.argv[2])
        bot.ReadNewMessages(sys.argv[2])
        time.sleep(10)
        bot.ReadNewMessages(sys.argv[2])
     if command.__eq__("hi"):
        bot.Test(sys.argv[2])
+    if command.__eq__("download"):
+        fileUtils = FileUtils()
+        driverFactory = DriverFactory()
+        driver = driverFactory.getDriver(sys.argv[2], 10)
+        fileUtils.downloadWithFileSaver(driver, sys.argv[2])
 else:
     print("This program requires at least three argument. See documentation!")

@@ -19,10 +19,13 @@ class ConversationClient:
         self.httpHeaders = config.getConfigValue("httpHeaders")
         self.sendMessageURL = config.getConfigValue("sendMessageURL").replace("{baseURL}", self.baseURL).replace("{version}", self.apiVersion)
         self.sendEventURL = config.getConfigValue("sendEventURL").replace("{baseURL}", self.baseURL).replace("{version}", self.apiVersion)
+        self.sendAudioURL = config.getConfigValue("sendAudioURL").replace("{baseURL}", self.baseURL).replace("{version}", self.apiVersion)
         self.simpleMessageTemplate = config.getConfigValue("simpleMessageTemplate")
         self.continuousMessageTemplate = config.getConfigValue("continuousMessageTemplate")
         self.simpleEventTemplate = config.getConfigValue("simpleEventTemplate")
         self.continuousEventTemplate = config.getConfigValue("continuousEventTemplate")
+        self.simpleAudioTemplate = config.getConfigValue("simpleAudioTemplate")
+        self.continuousAudioTemplate = config.getConfigValue("continuousAudioTemplate")
 
     def sendSimpleMessage(self, messageContent):
         requestJson = self.simpleMessageTemplate.replace("{text}", messageContent).replace("{language}", self.defaultLanguage)
@@ -56,17 +59,36 @@ class ConversationClient:
         requestJson = self.continuousEventTemplate.replace("{conversationId}", conversationId).replace("{event}", eventName).replace("{language}", language)
         return self.processPostRequest(self.sendEventURL, requestJson)
 
+    def sendSimpleAudio(self, audioFile):
+        requestJson = self.simpleAudioTemplate.replace("{audioFile}", audioFile).replace("{language}", self.defaultLanguage)
+        return self.processPostRequest(self.sendAudioURL, requestJson)
+
+    def sendSimpleAudioWithLang(self, audioFile, language):
+        requestJson = self.simpleAudioTemplate.replace("{audioFile}", audioFile).replace("{language}", language)
+        return self.processPostRequest(self.sendAudioURL, requestJson)
+
+    def sendContinuosAudio(self, conversationId, audioFile):
+        requestJson = self.continuousAudioTemplate.replace("{conversationId}", conversationId).replace("{audioFile}", audioFile).replace("{language}", self.defaultLanguage)
+        return self.processPostRequest(self.sendAudioURL, requestJson)
+
+    def sendContinuosAudioWithLang(self, conversationId, audioFile, language):
+        requestJson = self.continuousAudioTemplate.replace("{conversationId}", conversationId).replace("{audioFile}", audioFile).replace("{language}", language)
+        return self.processPostRequest(self.sendAudioURL, requestJson)
+
     """
     Method that executes the post request using requests lib
     """
     def processPostRequest(self, endpointURL, requestJson):
         log = self.loggerFactory.getLogger(None)
-        log.debug("Will send the request: " + str(requestJson))
-        log.debug("URL used is: " + str(endpointURL))
-        resp = requests.post(endpointURL, auth=HTTPBasicAuth(self.apiUser, self.apiPass), json= eval(requestJson.strip()), headers=eval(self.httpHeaders))
-        log.debug("Got the response: " + str(resp))
-        if resp.status_code != 200:
-          log.debug('ERROR on calling method {}'.format(resp.status_code))
-        #print('Created task. ID: {}'.format(resp.json()["id"]))
-        log.debug('Response JSON {}'.format(resp.json()))
-        return resp.json()["responseText"]
+        try:
+            log.debug("Will send the request: " + str(requestJson))
+            log.debug("URL used is: " + str(endpointURL))
+            resp = requests.post(endpointURL, auth=HTTPBasicAuth(self.apiUser, self.apiPass), json= eval(requestJson.strip()), headers=eval(self.httpHeaders))
+            log.debug("Got the response: " + str(resp))
+            if resp.status_code != 200:
+                log.debug('ERROR on calling method {}'.format(resp.status_code))
+            #print('Created task. ID: {}'.format(resp.json()["id"]))
+            log.debug('Response JSON {}'.format(resp.json()))
+            return resp.json()["responseText"]
+        except Exception as ex:
+            log.error('Error when try to call conversation-api (processPostRequest) for url: '  + endpointURL, ex)

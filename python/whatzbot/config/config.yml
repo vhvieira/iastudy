@@ -3,6 +3,10 @@ configMessage: config/message.txt
 configList: config/list.txt
 testList: config/test.txt
 testMessage: config/testMessage.txt
+fileStorage: D:\DEV\git\iastudy\python\whatzbot\temp\files
+audioFilesExtension: .ogg
+#put all string should be removed from url, split by ;
+urlCleanupStr: 'nothing'
 #sleep configuration in seconds
 loadSleep: 15
 shortSleep: 1
@@ -30,10 +34,13 @@ defaultLanguage: pt-BR
 httpHeaders: "{'Content-type': 'application/json', 'Accept': 'application/json'}"
 sendMessageURL: '{baseURL}/conversation-api/api/{version}/conversation/talk'
 sendEventURL: '{baseURL}/conversation-api/api/{version}/conversation/event'
+sendAudioURL: '{baseURL}/conversation-api/api/{version}/conversation/audioFile'
 simpleMessageTemplate: '{"language": "{language}", "text": "{text}"}'
 continuousMessageTemplate: '{"conversationId": "{conversationId}", "language": "{language}", "text": "{text}"}'
 simpleEventTemplate: '{"language": "{language}", "event": "{event}"}'
 continuousEventTemplate: '{"conversationId": "{conversationId}", "language": "{language}", "event": "{event}"}'
+simpleAudioTemplate: '{"language": "{language}", "audioFile": "{audioFile}"}'
+continuousAudioTemplate: '{"conversationId": "{conversationId}", "language": "{language}", "audioFile": "{audioFile}"}'
 
 #whatsapp web configuration
 lang: pt-br
@@ -60,7 +67,7 @@ xPathForMessagesDiv: //div[@class='z_tTQ' and contains(@aria-label,'Lista de men
 xPathForLastestMessages: //footer[@class='_2vJ01]//preceding::div[@class='copyable-text']
 #<div class="copyable-text" data-pre-plain-text="[07:32, 27/07/2020] Irmao Ramiro: "> ##TODO remove hardcode data
 xPathForMessages: ".//*[contains(@data-pre-plain-text, '{today}')]"
-xPathForAudios: ".//*[contains(@audio, 'src')]"
+xPathForAudios: ".//audio[contains(@src, 'http')]"
 
 ##Notes -- xpath expressions examples
 ##CHAINGED DECLARATION (https://www.swtestacademy.com/xpath-selenium/)
