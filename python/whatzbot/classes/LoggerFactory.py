@@ -22,7 +22,7 @@ class LoggerFactory:
     #Method that reads a custom file for log configuration
     def loadCustomFile(self, filePath):
         LoggerFactory.configFile = filePath
-        #fileConfig(LoggerFactory.configFile)
+        fileConfig(LoggerFactory.configFile)
 
 #print test for configuration
 factory = LoggerFactory()
