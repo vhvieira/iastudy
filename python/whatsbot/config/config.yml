@@ -25,7 +25,7 @@ baseURL: http://localhost:8080
 apiVersion: v1
 apiUser: api
 apiPass: api123
-defaultLanguage: pt-BR
+defaultLanguage: en-US
 httpHeaders: "{'Content-type': 'application/json', 'Accept': 'application/json'}"
 sendMessageURL: '{baseURL}/conversation-api/api/{version}/conversation/talk'
 sendEventURL: '{baseURL}/conversation-api/api/{version}/conversation/event'
