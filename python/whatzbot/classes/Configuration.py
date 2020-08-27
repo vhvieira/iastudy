@@ -2,12 +2,18 @@
 import yaml
 
 class Configuration:
+    configFile = "config/config.yml"
     def __init__(self):
-        with open("config/config.yml", "r") as ymlfile:
+        with open(Configuration.configFile, "r") as ymlfile:
             self.cfg = yaml.load(ymlfile)
 
     def getConfigValue(self, key):
         return str(self.cfg[key])
+
+    def loadCustomFile(self, filePath):
+        Configuration.configFile = filePath
+        with open(Configuration.configFile, "r") as ymlfile:
+            self.cfg = yaml.load(ymlfile)
 
 #print test for configuration
 conf = Configuration()

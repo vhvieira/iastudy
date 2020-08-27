@@ -20,12 +20,13 @@ conversationIdSeparator: _
 #interval in minutes
 conversationInterval: 20
 
-#conversation-api configuration
+#conversation-api instance configuration
 baseURL: http://localhost:8080
 apiVersion: v1
 apiUser: api
 apiPass: api123
-defaultLanguage: en-US
+defaultLanguage: pt-BR
+#conversation-api common configuration
 httpHeaders: "{'Content-type': 'application/json', 'Accept': 'application/json'}"
 sendMessageURL: '{baseURL}/conversation-api/api/{version}/conversation/talk'
 sendEventURL: '{baseURL}/conversation-api/api/{version}/conversation/event'

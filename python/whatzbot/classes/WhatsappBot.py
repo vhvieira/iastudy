@@ -3,6 +3,7 @@ from classes.Configuration import Configuration
 from classes.DriverFactory import DriverFactory
 from classes.WhatsappWebExecutor import WhatsappWebExecutor
 from classes.ConversationClient import ConversationClient
+from classes.LoggerFactory import LoggerFactory
 import time
 import html2text
 
@@ -17,6 +18,7 @@ class WhatsappBot:
         self.executor = WhatsappWebExecutor()
         self.driverFactory = DriverFactory()
         self.client = ConversationClient()
+        self.loggerFactory = LoggerFactory()
         
     #Load file configuration
     def LoadFileConfiguration(self, myNumber):
@@ -27,45 +29,51 @@ class WhatsappBot:
 
     #Method to send a single message to a number
     def SendMessage(self, myNumber, dest, message):
+        log = self.loggerFactory.getLogger(myNumber)
         try:
             conversation = self.executor.findConversation(dest, myNumber)
-            print('Conversation found, sending message')
+            log.debug('Conversation found, sending message')
             self.executor.writeMessage(conversation, myNumber, message)
         except Exception as ex:
-            print('Error when sending message from file '  + dest, ex)
+            log.error('Error when sending message from file '  + dest, ex)
 
     #Method to send a dialogflow event to a number
     def SendEvent(self, myNumber, dest, eventName):
+        log = self.loggerFactory.getLogger(myNumber)
         try:
             conversation = self.executor.findConversation(dest, myNumber)
-            print('Conversation found, sending event to dialogflow')
+            log.debug('Conversation found, sending event to dialogflow')
             message = self.client.sendSimpleEvent(eventName)
-            print("Response from dialogflow event: " + message)
+            log.debug("Response from dialogflow event: " + message)
             self.executor.writeMessage(conversation, myNumber, message)
         except Exception as ex:
-            print('Error when sending message from file '  + dest, ex)
+            log.error('Error when sending message from file '  + dest, ex)
 
     #Method to send messages in batch
     def SendBatchMessages(self, myNumber):
+        log = self.loggerFactory.getLogger(myNumber)
         self.LoadFileConfiguration(myNumber)
-        print( 'Sent list from file: ' + str(self.to) )
+        log.debug( 'Sent list from file: ' + str(self.to) )
         for dest in self.to:
            self.SendMessage(myNumber, dest, self.message)
 
     def ReadNewMessages(self, myNumber):
+        log = self.loggerFactory.getLogger(myNumber)
         self.LoadFileConfiguration(myNumber)
-        print( 'Receiving new messages from list: ' + str(self.to) )
+        log.debug( 'Receiving new messages from list: ' + str(self.to) )
         for dest in self.to:
            self.executor.ReadMessages(myNumber, dest)
 
     def ReadMessagesFromList(self, myNumber, list):
+        log = self.loggerFactory.getLogger(myNumber)
         self.LoadFileConfiguration(myNumber)
-        print( 'Receiving new messages from list: ' + str(list) )
+        log.debug( 'Receiving new messages from list: ' + str(list) )
         for dest in list:
            self.executor.ReadMessages(myNumber, dest)
 
     def Setup(self, myNumber, waitTime, directory):
-        print('Setup whatsapp robot')
+        log = self.loggerFactory.getLogger(myNumber)
+        log.debug('Setup whatsapp robot')
         self.driver = self.driverFactory.getDriver(myNumber, int(waitTime))
         time.sleep(int(waitTime))
         self.driver.get_screenshot_as_file(str(directory) + "\\" + str(myNumber) +  ".png")
