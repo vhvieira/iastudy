@@ -50,7 +50,6 @@ whatsapp_url: https://web.whatsapp.com
 inputChatClass: _3FRCZ
 nonReadChatClass: _31gEB
 #xpath to find main participant list object (left side)
-#xPathForLefPane: //div[@class='_1qDvT _3R02z']
 xPathForLefPane: //div[@id='side']
 xPathForConversation: .//*[contains(@aria-label,'Lista de conversas.')]
 #Xpath used to find the right conversation (. is used for sub-element)
@@ -65,7 +64,7 @@ xPathForSendBtn: //span[@data-icon='send']
 xPathForMessagesDiv: //div[@class='z_tTQ' and contains(@aria-label,'Lista de mensagens')]
 #copyable-text before footer <footer tabindex="-1" class="_2vJ01">
 xPathForLastestMessages: //footer[@class='_2vJ01]//preceding::div[@class='copyable-text']
-#<div class="copyable-text" data-pre-plain-text="[07:32, 27/07/2020] Irmao Ramiro: "> ##TODO remove hardcode data
+dateFormatForTexts: '%d/%m/%Y'
 xPathForMessages: ".//*[contains(@data-pre-plain-text, '{today}')]"
 xPathForAudios: ".//audio[contains(@src, 'http')]"
 

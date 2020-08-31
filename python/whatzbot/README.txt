@@ -9,6 +9,8 @@ pip install selenium
 pip install PyYAML
 pip install html2text
 pip install flask
+pip install requests
+pip install python-dateutil
 
 Using as server:
 python server.py dev 5000 no-debug

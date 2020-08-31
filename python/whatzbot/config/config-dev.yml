@@ -3,7 +3,7 @@ configMessage: config/message.txt
 configList: config/list.txt
 testList: config/test.txt
 testMessage: config/testMessage.txt
-fileStorage: D:\DEV\git\iastudy\python\whatzbot\temp\files
+fileStorage: C:\whatzbot\temp\files
 audioFilesExtension: .ogg
 #put all string should be removed from url, split by ;
 urlCleanupStr: 'nothing'
@@ -25,11 +25,11 @@ conversationIdSeparator: _
 conversationInterval: 20
 
 #conversation-api instance configuration
-baseURL: http://localhost:8080
+baseURL: http://localhost:8081
 apiVersion: v1
 apiUser: api
 apiPass: api123
-defaultLanguage: pt-BR
+defaultLanguage: en-US
 #conversation-api common configuration
 httpHeaders: "{'Content-type': 'application/json', 'Accept': 'application/json'}"
 sendMessageURL: '{baseURL}/conversation-api/api/{version}/conversation/talk'
@@ -50,11 +50,10 @@ whatsapp_url: https://web.whatsapp.com
 inputChatClass: _3FRCZ
 nonReadChatClass: _31gEB
 #xpath to find main participant list object (left side)
-#xPathForLefPane: //div[@class='_1qDvT _3R02z']
 xPathForLefPane: //div[@id='side']
-xPathForConversation: .//*[contains(@aria-label,'Lista de conversas.')]
+xPathForConversation: .//*[contains(@aria-label,'Chat list')]
 #Xpath used to find the right conversation (. is used for sub-element)
-xPathForNonRead: ./../../../..//span[contains(@aria-label,'lida')]
+xPathForNonRead: ./../../../..//span[contains(@aria-label,'unread message')]
 xPathForChat: .//span[@title='{name}']
 #bug finding any other chat if uses for xPathForChat
 xPathForListener: .//span[contains(@title,'{name}')]
@@ -62,10 +61,10 @@ xPathForListener: .//span[contains(@title,'{name}')]
 #xPathForChat: .//span[contains(@title,'{name}')]//parent::div[@class='_210SC']
 #xpath to fin the button
 xPathForSendBtn: //span[@data-icon='send']
-xPathForMessagesDiv: //div[@class='z_tTQ' and contains(@aria-label,'Lista de mensagens')]
+xPathForMessagesDiv: //div[@class='z_tTQ' and contains(@aria-label,'Chat list')]
 #copyable-text before footer <footer tabindex="-1" class="_2vJ01">
 xPathForLastestMessages: //footer[@class='_2vJ01]//preceding::div[@class='copyable-text']
-#<div class="copyable-text" data-pre-plain-text="[07:32, 27/07/2020] Irmao Ramiro: "> ##TODO remove hardcode data
+dateFormatForTexts: '{dt.month}/{dt.day}/{dt.year}'
 xPathForMessages: ".//*[contains(@data-pre-plain-text, '{today}')]"
 xPathForAudios: ".//audio[contains(@src, 'http')]"
 
