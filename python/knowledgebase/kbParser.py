@@ -9,7 +9,7 @@ with open('faq.txt') as ifp:
             term = pieces[0]
             definition = ':'.join(pieces[1:]).strip()
             if len(definition) > 10:
-                questions.append("What is {}".format(term))
+                questions.append("{}".format(term))
                 answers.append(definition)
 df = pd.DataFrame.from_dict({
     'question': questions,
