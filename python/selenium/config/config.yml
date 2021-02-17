@@ -1,0 +1,6 @@
+#message configuration files
+fileStorage: D:\DEV\git\iastudy\python\whatzbot\temp\files
+
+#Xpath expressions
+xPathForMessages: ".//*[contains(@data-pre-plain-text, '{today}')]"
+xPathForAudios: ".//audio[contains(@src, 'http')]"
